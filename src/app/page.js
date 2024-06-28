@@ -134,7 +134,7 @@ export default function Home() {
   return (
     <div className="h-min-[100vh] w-full space-y-[40px] md:space-y-[60px] bg-white">
       <PageStarterVideo tit1={"BUSINESS"} videoSrc={"videos/homepagebgVideo.mp4"} tit2={" & ENTERPRISE HUB"} tit1Col={"#F19F1F"} desc={"Empowering businesses with agile, transparent, and innovative technology solutions, Intelli Vectra Technologies drives success through collaboration and passionate expertise."} descColor={"white"} />
-      <div className="w-[100vw] px-10 md:space-x-20 bg-white text-black justify-center items-center flex md:flex-row flex-col">
+      <div className="w-full px-10 md:space-x-20 bg-white text-black justify-center items-center flex md:flex-row flex-col">
         <div className="flex md:w-[40%] w-full">
           {/* First Image */}
           <div className="bg-white">

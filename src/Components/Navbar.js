@@ -43,7 +43,7 @@ export const Navbar = () => {
     }, [pathname])
 
     return (
-        <div className="relative">
+        <div className="relative w-[100%]">
             <div className='bg-white h-[70px] p-4 w-full flex justify-between items-center shadow-md z-50 relative'>
                 <div>
                     <Image height={40} width={200} src='/images/logo.png' alt='Logo' />
@@ -73,32 +73,79 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div className={`transition-all md:transition-none duration-1000 transform ${showContentInner ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} bg-white z-[100] text-black md:w-fit w-[50%] absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm  bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4`}>
+            <div
+                className={`transition-all duration-1000 transform ${showContentInner ? 'translate-x-0 opacity-100' : 'md:translate-x-0 translate-x-full opacity-0'
+                    } bg-white z-[100] text-black md:w-fit w-[80%] absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-4 md:rounded-lg p-4`}
+            >
                 <ul className="space-y-4">
-                    <li onClick={
-                        () => {
+                    <li
+                        onClick={() => {
                             router.push("/blogs");
                             setShowContentInner(false);
-                        }
-                    } className="cursor-pointer flex items-center text-lg space-x-4"><div className="flex items-center justify-between w-full space-x-4"><span><Image src="/images/icons/blog.png" height={40} width={40}></Image></span><p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Blogs</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }}></IoIosArrowForward></span></div></li>
-                    <li onClick={
-                        () => {
+                        }}
+                        className="cursor-pointer flex items-center text-lg space-x-4"
+                    >
+                        <div className="flex items-center justify-between w-full space-x-4">
+                            <span>
+                                <Image src="/images/icons/blog.png" height={40} width={40} alt="Blog" />
+                            </span>
+                            <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Blogs</p>
+                            <span>
+                                <IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} />
+                            </span>
+                        </div>
+                    </li>
+                    <li
+                        onClick={() => {
                             router.push("/news");
                             setShowContentInner(false);
-                        }
-                    } className="cursor-pointer flex items-center text-lg space-x-4"><div className="flex items-center justify-between w-full space-x-4"><span><Image src="/images/icons/news.png" height={40} width={40}></Image></span><p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">News</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }}></IoIosArrowForward></span></div></li>
-                    <li onClick={
-                        () => {
+                        }}
+                        className="cursor-pointer flex items-center text-lg space-x-4"
+                    >
+                        <div className="flex items-center justify-between w-full space-x-4">
+                            <span>
+                                <Image src="/images/icons/news.png" height={40} width={40} alt="News" />
+                            </span>
+                            <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">News</p>
+                            <span>
+                                <IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} />
+                            </span>
+                        </div>
+                    </li>
+                    <li
+                        onClick={() => {
                             router.push("/events");
                             setShowContentInner(false);
-                        }
-                    } className="cursor-pointer flex items-center text-lg space-x-4"><div className="flex items-center justify-between w-full space-x-4"><span><Image src="/images/icons/calender.png" height={40} width={40}></Image></span><p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Events</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }}></IoIosArrowForward></span></div></li>
-                    <li onClick={
-                        () => {
+                        }}
+                        className="cursor-pointer flex items-center text-lg space-x-4"
+                    >
+                        <div className="flex items-center justify-between w-full space-x-4">
+                            <span>
+                                <Image src="/images/icons/calender.png" height={40} width={40} alt="Events" />
+                            </span>
+                            <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Events</p>
+                            <span>
+                                <IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} />
+                            </span>
+                        </div>
+                    </li>
+                    <li
+                        onClick={() => {
                             router.push("/casestudy");
                             setShowContentInner(false);
-                        }
-                    } className="cursor-pointer flex items-center text-lg space-x-4"><div className="flex items-center justify-between w-full space-x-4"><span><Image src="/images/icons/casestudy.png" height={40} width={40}></Image></span><p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Case Study</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }}></IoIosArrowForward></span></div></li>
+                        }}
+                        className="cursor-pointer flex items-center text-lg space-x-4"
+                    >
+                        <div className="flex items-center justify-between w-full space-x-4">
+                            <span>
+                                <Image src="/images/icons/casestudy.png" height={40} width={40} alt="Case Study" />
+                            </span>
+                            <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Case Study</p>
+                            <span>
+                                <IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} />
+                            </span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

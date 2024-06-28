@@ -12,11 +12,15 @@ export default function Layout({ children }) {
       <head>
         <title>Intelli Vectra</title>
       </head>
-      <body className="bg-white">
-        <ContactNavbar></ContactNavbar>
-        <Navbar />
-          {children}
-        <Footer />
+      <body>
+        <div className="bg-white max-w-[100vw]">
+          <ContactNavbar></ContactNavbar>
+          <Navbar />
+          <div>
+            {children}
+          </div>
+          <Footer />
+        </div>
         <ToastContainer position='top-right' autoClose={3000} hideProgressBar={false} />
       </body>
     </html>
