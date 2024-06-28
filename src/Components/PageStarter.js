@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button } from './ui/Button';
 
-export const PageStarter = ({ tit1Col, tit1, tit2, description, imageSrc, descColor, desc }) => {
+export const PageStarter = ({ exploreactive,tit1Col, tit1, tit2, description, imageSrc, descColor, desc }) => {
     return (
         <div
             className="px-4 md:px-10 lg:px-20 flex items-center h-[50vh] md:h-[80vh] w-full bg-cover bg-center"
@@ -17,7 +17,7 @@ export const PageStarter = ({ tit1Col, tit1, tit2, description, imageSrc, descCo
                         {desc}
                     </p>
                 </div>
-                <div>
+                <div className={exploreactive ? "flex" : "hidden"}>
                     <Button buttonText={"Explore"} functionToPerform={null} />
                 </div>
             </div>

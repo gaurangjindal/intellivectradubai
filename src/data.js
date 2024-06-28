@@ -344,6 +344,57 @@ export const jsonforServices = [
             }
         ]
     },
+
+    {
+        "service_id": 15,
+        "service_name": "Cloud Solution",
+        "description": " Intelli Vectra Technologies offers cutting-edge Cloud Services, leveraging scalable infrastructure for seamless data management, security, and accessibility. Our solutions optimize resources, ensuring high performance and reliability for businesses of all sizes.",
+        "heading_pic_url": "/images/services/coludsoln.jpg",
+        "type": "technology",
+        "image1": "/images/dsimage1.png",
+        "image2": "/images/dsimage2.png",
+        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "points":
+            [
+                {
+                    "heading": "Cloud Migration Services",
+                    "desc": "Seamlessly transition your infrastructure to the cloud, ensuring minimal downtime and maximum efficiency.",
+                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
+                },
+                {
+                    "heading": "Cloud Architecture Design and Implementation",
+                    "desc": "Customized cloud solutions tailored to your business needs, designed and implemented by our expert architects.",
+                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
+                },
+                {
+                    "heading": "Cloud Platform Management",
+                    "desc": "Proactive management and optimization of your cloud platforms to ensure optimal performance and scalability.",
+                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
+                },
+                {
+                    "heading": "Cloud Backup and Disaster Recovery",
+                    "desc": "Robust backup and recovery solutions to safeguard your data against unforeseen disasters and ensure business continuity.",
+                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
+                },
+                {
+                    "heading": "Serverless Computing Solutions",
+                    "desc": "Harness the power of serverless computing to build and deploy applications without the complexity of managing infrastructure.",
+                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
+                },
+                {
+                    "heading": "Cloud Cost Management and Optimization",
+                    "desc": "Monitor, analyze, and optimize your cloud spending to maximize ROI and minimize costs.",
+                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
+                },
+                {
+                    "heading": "Cloud Governance and Compliance",
+                    "desc": "Ensure adherence to regulatory requirements and industry best practices with our comprehensive cloud governance and compliance solutions.",
+                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
+                }
+            ]
+
+    },
+    
     {
         "service_id": 8,
         "service_name": "Managed Services",

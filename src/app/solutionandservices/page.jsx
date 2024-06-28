@@ -47,8 +47,8 @@ export default function Page() {
                 </div>
             </div>
 
-            {/* Service navigation section */}
-            <div className="w-full bg-gradient-to-r from-white text-black via-[#F4F4F4] to-white">
+            {/* Service navigation section bg-gradient-to-r from-white text-black via-[#F4F4F4] to-white */}
+            {/* <div className="w-full bg-white">
                 <ul className="md:flex hidden space-y-2 md:space-y-0 justify-center items-center md:space-x-12 space-x-1 md:h-16">
                     <NavItem
                         title="Technologies Solutions"
@@ -73,7 +73,7 @@ export default function Page() {
                         <option className='w-full bg-gray-100 ' value={'staffing'}> Staffing Services </option>
                     </select>
                 </div>
-            </div>
+            </div> */}
 
             {/* Service cards section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8 bg-white">
@@ -87,21 +87,21 @@ export default function Page() {
     );
 }
 
-// Navigation item component
-const NavItem = ({ title, active, onClick }) => {
-    const baseClasses = 'cursor-pointer px-6 h-full flex items-center text-center';
-    const activeClasses = 'border-b-2 border-[#FFAB2E] text-[#FFAB2E]';
-    const inactiveClasses = 'hover:border-b-2 hover:border-[#FFAB2E]';
+// // Navigation item component
+// const NavItem = ({ title, active, onClick }) => {
+//     const baseClasses = 'cursor-pointer px-6 h-full flex items-center text-center';
+//     const activeClasses = 'border-b-2 border-[#FFAB2E] text-[#FFAB2E]';
+//     const inactiveClasses = 'hover:border-b-2 text-black hover:border-[#FFAB2E]';
 
-    return (
-        <li
-            onClick={onClick}
-            className={`${baseClasses} ${active ? activeClasses : inactiveClasses}`}
-        >
-            {title}
-        </li>
-    );
-};
+//     return (
+//         <li
+//             onClick={onClick}
+//             className={`${baseClasses} ${active ? activeClasses : inactiveClasses}`}
+//         >
+//             {title}
+//         </li>
+//     );
+// };
 
 // Service card component
 const ServiceCard = ({ service }) => {
