@@ -49,24 +49,39 @@ export default function Page() {
         <div className='space-y-[30px] w-full bg-white'>
             <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Intelli Vectra Technologies drives digital transformation with cutting-edge IT solutions. We simplify complexities, ensuring operational efficiency and growth. Committed to excellence and customer-centricity, we foster collaboration and innovation to help businesses thrive in a rapidly evolving digital landscape."} />
             <div className="w-full px-4 md:px-10 lg:px-20 space-y-6 bg-white text-black flex flex-col lg:flex-row items-center justify-center md:space-x-20">
-                <div className="relative w-full lg:w-[40%] h-[300px] lg:h-[600px]">
-                    <Image
-                        layout="fill"
-                        src={`/images/aboutusGroup.jpg`}
-                        objectFit="cover"
-                    />
+                <div className="flex md:w-[40%] w-full">
+                    {/* First Image */}
+                    <div className="bg-white">
+                        <div className="relative w-[350px] h-[400px]">
+                            <Image
+                                src="/images/aboutusvert.jpg"
+                                alt="Team hands"
+                                layout='fill'
+                            />
+                        </div>
+                    </div>
+                    {/* Second Image */}
+                    <div className="p-4 z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
+                        <div className="relative w-[400px] h-[200px] max-w-xs">
+                            <Image
+                                src="/images/aboutushorz.jpg"
+                                alt="Team meeting"
+                                layout="fill"
+                            />
+                        </div>
+                    </div>
                 </div>
                 <div className="h-full items-center md:w-[50%] w-full space-y-6">
                     <h1 className="px-2 border-l-2 text-black text-[20px] font-bold border-[#F19F1F]">ABOUT US</h1>
                     <p className="text-[#F19F1F] md:text-4xl text-2xl tracking-wide">Welcome to IVT</p>
 
                     <p className="md:text-[18px] text-normal text-[#3F444]">
-                    Welcome to Intelli Vectra Technologies! We are thrilled to have you here. As a leading IT solutions provider, we are dedicated to helping businesses harness the power of technology to drive digital transformation and simplify IT complexities. Our mission is to deliver innovative, tailored solutions that not only meet but exceed your expectations. With a commitment to excellence, integrity, and customer-centricity, we focus on fostering collaboration and continuous improvement. Our team of experts works tirelessly to ensure operational efficiency, enhanced security, and sustainable growth for our clients. At Intelli Vectra Technologies, we believe in the transformative potential of technology to create a brighter, more connected future for all. Together, let us shape the future of your business.
+                        Welcome to Intelli Vectra Technologies! We are thrilled to have you here. As a leading IT solutions provider, we are dedicated to helping businesses harness the power of technology to drive digital transformation and simplify IT complexities. Our mission is to deliver innovative, tailored solutions that not only meet but exceed your expectations. With a commitment to excellence, integrity, and customer-centricity, we focus on fostering collaboration and continuous improvement. Our team of experts works tirelessly to ensure operational efficiency, enhanced security, and sustainable growth for our clients. At Intelli Vectra Technologies, we believe in the transformative potential of technology to create a brighter, more connected future for all. Together, let us shape the future of your business.
                     </p>
                     <div className="w-full h-6 bg-white"></div>
                     <Link href="/about"><Button buttonText={"Learn More"} /></Link>
                 </div>
-                
+
             </div>
 
             <div className="bg-[#FFFAF2] w-full p-4 md:p-16">

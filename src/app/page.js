@@ -124,6 +124,10 @@ export default function Home() {
     ]
   }
 
+  
+
+
+
   const [activeContentType, setActiveContentType] = useState("blogs");
   const classActive = "border-b-2 md:px-6 border-[#FFAB2E] h-full items-center cursor-pointer flex";
   const classUnactive = "cursor-pointer md:px-6 h-full items-center flex hover:border-b-2 hover:border-[#FFAB2E]"
@@ -133,22 +137,24 @@ export default function Home() {
       <div className="w-[100vw] px-10 md:space-x-20 bg-white text-black justify-center items-center flex md:flex-row flex-col">
         <div className="flex md:w-[40%] w-full">
           {/* First Image */}
-          <div className="w-full max-w-sm">
-            <Image
-              src="/images/image-1.jpg"
-              alt="Team hands"
-              width={300}
-              height={440}
-            />
+          <div className="bg-white">
+            <div className="relative w-[350px] h-[400px]">
+              <Image
+                src="/images/homevert.jpg"
+                alt="Team hands"
+                layout='fill'
+              />
+            </div>
           </div>
           {/* Second Image */}
-          <div className="w-full max-w-xs mt-[350px] ml-[-200px]">
-            <Image
-              src="/images/image-2.jpg"
-              alt="Team meeting"
-              width={400}
-              height={222}
-            />
+          <div className="p-4 z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
+            <div className="relative w-[400px] h-[200px] max-w-xs">
+              <Image
+                src="/images/homehorz.jpg"
+                alt="Team meeting"
+                layout="fill"
+              />
+            </div>
           </div>
         </div>
         <div className="h-full items-center md:w-[50%] w-full space-y-6">
@@ -225,32 +231,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="w-full p-4 flex items-center justify-center">
-        <div className="bg-[#FFFAF2] py-8 p-4 w-full text-black flex items-center justify-center">
-          <div className="w-full md:w-[45%] space-y-8">
-            <div className="space-y-4 flex flex-col justify-center items-center w-full">
-              <h1 className="text-center text-2xl md:text-4xl font-bold">Our <span className="text-[#F19F1F]">Achievements</span></h1>
-              <p className="font-extralight text-sm md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
-            </div>
-            <div className="flex flex-row justify-center">
-              <div className="p-8 text-center space-y-4 border-r">
-                <h1 className="text-[#F19F1F] text-2xl md:text-5xl font-bold">2+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Countries</p>
-              </div>
-              <div className="p-8 text-center space-y-4 border-r">
-                <h1 className="text-[#F19F1F] text-2xl md:text-5xl font-bold">1000+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Projects</p>
-              </div>
-              <div className="p-8 text-center space-y-4">
-                <h1 className="text-[#F19F1F] text-2xl md:text-5xl font-bold">10+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Total Services</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="text-gray-600 w-full space-y-6 flex flex-col justify-between items-center">
         <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
         <ul className="w-full hidden md:flex md:space-x-40 space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
@@ -269,7 +249,7 @@ export default function Home() {
           </select>
         </div>
 
-        <div className="flex flex-col p-4 md:flex-row space-y-2 md:space-y-0 md:space-x-10 items-center justify-center">
+        <div className="flex w-full flex-col px-20 p-4 md:flex-row space-y-2 md:space-y-0 items-center justify-between">
           {
             dataForContentHub[activeContentType].map((event, idx) => {
               return <ContentCard key={idx} content={event} />
@@ -278,6 +258,35 @@ export default function Home() {
         </div>
         <div className="w-full flex items-center justify-center">
           <Link href="/blogs"><button className="bg-[#FFAB2E] p-4 rounded">See More</button></Link>
+        </div>
+      </div>
+
+      <div className="w-full p-4 flex items-center justify-center">
+        <div className="bg-[#FFFAF2] py-8 p-4 w-full text-black flex items-center justify-center">
+          <div className="w-full md:w-[45%] space-y-8">
+            <div className="space-y-4 flex flex-col justify-center items-center w-full">
+              <h1 className="text-center text-2xl md:text-4xl font-bold">Our <span className="text-[#F19F1F]">Achievements</span></h1>
+              <p className="font-extralight text-sm md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
+            </div>
+            <div className="flex flex-row justify-center">
+              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">3+</h1>
+                <p className="font-bold md:text-sm text-xs tracking-wider">Our presence</p>
+              </div>
+              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">19+</h1>
+                <p className="font-bold md:text-sm text-xs tracking-wider">On-time delivery</p>
+              </div>
+              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">80+</h1>
+                <p className="font-bold md:text-sm text-xs tracking-wider">Project executed</p>
+              </div>
+              <div className="md:p-8 p-4 text-center space-y-4">
+                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">50+</h1>
+                <p className="font-bold md:text-sm text-xs tracking-wider">Client satisfaction</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

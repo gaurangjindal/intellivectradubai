@@ -66,7 +66,7 @@ export default function Page() {
   };
   return (
     <div className="w-full">
-      <PageStarter tit1={"Contact"} tit2={" Us"} tit1Col={"black"} descColor={"black"} imageSrc={"/images/contactusback.jpg"} desc={"Have questions or interested in partnering with Intelli Vectra Technology? Contact us today for personalized IT solutions and expert consultation tailored to your business needs."}></PageStarter>
+      <PageStarter tit1={"Contact"} tit2={" Us"} tit1Col={"black"} descColor={"black"} imageSrc={"/images/banners/contactusbanner.jpg"} desc={"Have questions or interested in partnering with Intelli Vectra Technology? Contact us today for personalized IT solutions and expert consultation tailored to your business needs."}></PageStarter>
       <div className='bg-[#FFFAF2] w-full md:py-8 space-y-2 md:px-32 md:space-y-8'>
         <h1 className='text-center text-3xl underline font-bold text-[#FFC872] '> Get In Touch </h1>
         <div className='flex p-4 flex-col md:flex-row-reverse space-y-4 md:space-y-0 md:space-x-4 w-full justify-center items-center'>
