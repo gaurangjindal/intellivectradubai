@@ -96,12 +96,12 @@ const EmblaCarousel = (props) => {
             <div className="embla__viewport w-[70%]" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map((slide,idx) => (
-                        <div key={idx} className="md:space-x-8 flex md:flex-row flex-col justify-between items-start md:items-center embla__slide">
+                        <div key={idx} className="md:space-x-8 flex md:flex-row flex-col justify-between md:items-center embla__slide">
                             <div className="md:w-[50%] w-[100%] relative h-[200px]">
                                 <Image src={slide.image_src} layout='fill'></Image>
                             </div>
-                            <div className="md:w-[50%] w-[100%] space-y-4">
-                                <p>{slide.text_content}</p>
+                            <div className="md:w-[50%] w-[100%] flex items-center space-y-4">
+                                <div>{slide.text_content}</div>
                             </div>
                         </div>
                     ))}

@@ -124,7 +124,7 @@ export default function Home() {
     ]
   }
 
-  
+
 
 
 
@@ -137,8 +137,8 @@ export default function Home() {
       <div className="w-full px-10 md:space-x-20 bg-white text-black justify-center items-center flex md:flex-row flex-col">
         <div className="flex md:w-[40%] w-full">
           {/* First Image */}
-          <div className="bg-white">
-            <div className="relative w-[350px] h-[400px]">
+          <div className="bg-white w-full">
+            <div className="relative w-[100%] md:w-[350px] h-[400px]">
               <Image
                 src="/images/homevert.jpg"
                 alt="Team hands"
@@ -147,8 +147,8 @@ export default function Home() {
             </div>
           </div>
           {/* Second Image */}
-          <div className="p-4 z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
-            <div className="relative w-[400px] h-[200px] max-w-xs">
+          <div className="p-4 w-full z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
+            <div className="relative w-[100%] md:w-[400px] h-[200px] max-w-xs">
               <Image
                 src="/images/homehorz.jpg"
                 alt="Team meeting"

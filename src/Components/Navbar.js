@@ -75,7 +75,7 @@ export const Navbar = () => {
             </div>
             <div
                 className={`transition-all duration-1000 transform ${showContentInner ? 'translate-x-0 opacity-100' : 'md:translate-x-0 translate-x-full opacity-0'
-                    } bg-white z-[100] text-black md:w-fit w-[80%] absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-4 md:rounded-lg p-4`}
+                    } bg-white z-[100] text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4`}
             >
                 <ul className="space-y-4">
                     <li

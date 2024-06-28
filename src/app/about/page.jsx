@@ -40,7 +40,7 @@ export default function Page() {
     const posi = [0, 16, 32, 48, 64, 80, 96];
     const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024];
     const OPTIONS = {
-        loop: true
+        loop: true,
     };
     const SLIDE_COUNT = 5;
     const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -51,8 +51,8 @@ export default function Page() {
             <div className="w-full px-4 md:px-10 lg:px-20 space-y-6 bg-white text-black flex flex-col lg:flex-row items-center justify-center md:space-x-20">
                 <div className="flex md:w-[40%] w-full">
                     {/* First Image */}
-                    <div className="bg-white">
-                        <div className="relative w-[350px] h-[400px]">
+                    <div className="bg-white w-full">
+                        <div className="relative w-[100%] md:w-[350px] h-[400px]">
                             <Image
                                 src="/images/aboutusvert.jpg"
                                 alt="Team hands"
@@ -61,8 +61,8 @@ export default function Page() {
                         </div>
                     </div>
                     {/* Second Image */}
-                    <div className="p-4 z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
-                        <div className="relative w-[400px] h-[200px] max-w-xs">
+                    <div className="p-4 w-full z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
+                        <div className="relative w-[100%] md:w-[400px] h-[200px] max-w-xs">
                             <Image
                                 src="/images/aboutushorz.jpg"
                                 alt="Team meeting"
@@ -155,7 +155,7 @@ export default function Page() {
                         </p>
                     </div>
                     <div className="p-4 md:p-16 bg-[#FFFAF2] w-full md:w-[50%] space-y-4 md:space-y-6">
-                        <h1 className="text-2xl font-bold md:text-4xl">Our <span className="text-[#F19F1F]">Vision</span></h1>
+                        <h1 className="text-2xl font-bold md:text-4xl tracking-widest">Our <span className="text-[#F19F1F]">Vision</span></h1>
                         <p className="text-base md:text-xl font-extralight tracking-widest">
                             Our vision at Intelli Vectra Technologies is to be the forefront catalyst of global digital transformation. We aspire to pioneer cutting-edge technological advancements that empower businesses and individuals alike. Through innovation, integrity, and a commitment to excellence, we envision creating a connected world where technology fosters inclusive growth, transforms industries, and enriches lives on a global scale.
                         </p>
