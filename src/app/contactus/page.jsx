@@ -83,7 +83,7 @@ export default function Page() {
                 </div>
                 <div className='flex items-center justify-between'>
                   <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='w-[49%] p-2 font-extralight border border-black ' type="text" name="email" />
-                  <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder='Phone No' className='w-[49%] p-2 font-extralight border border-black ' type="text" name="phone" />
+                  <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder='Phone' className='w-[49%] p-2 font-extralight border border-black ' type="text" name="phone" />
                 </div>
                 <div>
                   <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' rows={3} className='w-full p-2 font-extralight col-span-4 border border-black '></textarea>
