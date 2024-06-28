@@ -85,7 +85,7 @@ const Page = () => {
 
     return (
         <div className="">
-            <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/carrerheader.jpg"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"} />
+            <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/banners/carrerpagebanner.jpg"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"} />
             <div className='bg-[#FFFAF2] p-4 text-black w-full flex md:flex-row flex-col items-center justify-center space-y-8 md:space-y-0 md:space-x-16'>
                 <div className="md:w-[30%] w-[100%] h-[85vh]  relative">
                     <Image src="/images/wearehiring.png" layout="fill"></Image>
