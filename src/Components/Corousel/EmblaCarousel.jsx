@@ -74,14 +74,14 @@ const EmblaCarousel = (props) => {
     }, [emblaApi])
 
     return (
-        <div className="embla space-y-10">
+        <div className="embla space-y-10 flex flex-col items-center justify-center">
             <div className="w-full">
-                <div className="w-full items-center justify-between flex">
+                <div className="w-full items-center justify-center flex px-16">
                     <div className="rounded-[50%] p-1 border border-white"><PrevButton
                         onClick={() => onButtonAutoplayClick(onPrevButtonClick)}
                         disabled={prevBtnDisabled}
                     /></div>
-                    <div className="border-t-2 relative border-white w-[80vw] px-4" >
+                    <div className="border-t-2 relative border-white w-full px-4" >
                         <div style={{position: 'absolute',left: `${posi[posIdx]}%`}}>
                             <BiDownArrow fontSize={28} />
                             <p>{years[posIdx]}</p>
@@ -93,7 +93,7 @@ const EmblaCarousel = (props) => {
                     /></div>
                 </div>
             </div>
-            <div className="embla__viewport" ref={emblaRef}>
+            <div className="embla__viewport w-[70%]" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map((slide,idx) => (
                         <div key={idx} className="md:space-x-8 flex md:flex-row flex-col justify-between items-start md:items-center embla__slide">
