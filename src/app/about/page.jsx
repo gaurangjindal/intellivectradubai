@@ -108,19 +108,19 @@ export default function Page() {
             </div>
 
 
-            <div className="p-8 bg-[#FFFAF1] w-[100%] text-black space-y-4">
+            <div className="md:p-8 p-2 bg-[#FFFAF1] w-[100%] text-black space-y-4">
                 <h1 className="font-bold text-center text-4xl"><span className="text-[#F19F1F]">Our </span>Approach</h1>
                 <div className="text-center tracking-wider text-lg font-extralight">
                     <p>At IVT, We love technology - But we are obsessed with</p>
                     <p>Your Success</p>
                 </div>
 
-                <div className="relative items-center h-full flex justify-center">
+                <div className="relative w-full h-[340px] md:h-fit flex justify-center">
                     <div className="w-[100vw] md:h-[550px] h-[300px] relative">
                         <Image src="/images/ourprocess.png" layout='fill'></Image>
                     </div>
 
-                    <div className="absolute top-0 h-fit w-[94%] md:space-y-[350px] space-y-[190px]">
+                    <div className="absolute md:top-10 top-4 w-full md:w-[94%] md:space-y-[320px] space-y-[180px]">
                         <div className="flex justify-center">
                             <div className="w-[150px] lg:w-[400px]">
                                 <h1 className="text-sm md:text-lg text-center font-semibold">Consult & Envision</h1>
@@ -128,7 +128,7 @@ export default function Page() {
                             </div>
                         </div>
 
-                        <div className="flex justify-between">
+                        <div className="w-full flex items-center justify-between">
                             <div className="w-[150px] lg:w-[400px]">
                                 <h1 className="text-sm md:text-lg text-center font-semibold">Manage & Improve</h1>
                                 <p className="font-extralight text-center text-[7px] md:text-[15px]"> We employ proactive monitoring, agile methodologies, and responsive support to ensure seamless operation and optimization of your technology infrastructure.</p>
