@@ -19,7 +19,7 @@ const Page = () => {
                 <div className="w-full mx-auto bg-white text-black p-8 rounded-lg shadow-md">
                     <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
                     <p className="mb-4">
-                        Welcome to Intelli Vectra! These terms and conditions outline the rules and regulations for the use of Intelli Vectra Technologies's Website, located at <a href="https://www.intellivectra.tech/" className="text-blue-500 underline">https://www.intellivectra.tech/</a>.
+                        Welcome to Intelli Vectra! These terms and conditions outline the rules and regulations for the use of Intelli Vectra Technologies&apos;s Website, located at <a href="https://www.intellivectra.tech/" className="text-blue-500 underline">https://www.intellivectra.tech/</a>.
                     </p>
                     <p className="mb-4">
                         By accessing this website we assume you accept these terms and conditions. Do not continue to use Intelli Vectra if you do not agree to take all of the terms and conditions stated on this page.
@@ -27,12 +27,12 @@ const Page = () => {
 
                     <h2 className="text-2xl font-semibold mb-4">Terminology</h2>
                     <p className="mb-4">
-                        The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of in. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.
+                        The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: &quot;Client&quot;, &quot;You&quot; and &quot;Your&quot; refers to you, the person log on this website and compliant to the Company&apos;s terms and conditions. &quot;The Company&quot;, &quot;Ourselves&quot;, &quot;We&quot;, &quot;Our&quot; and &quot;Us&quot;, refers to our Company. &quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client&apos;s needs in respect of provision of the Company&apos;s stated services, in accordance with and subject to, prevailing law of in. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.
                     </p>
 
                     <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
                     <p className="mb-4">
-                        We employ the use of cookies. By accessing Intelli Vectra, you agreed to use cookies in agreement with the Intelli Vectra Technologies's Privacy Policy. Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
+                        We employ the use of cookies. By accessing Intelli Vectra, you agreed to use cookies in agreement with the Intelli Vectra Technologies&apos;s Privacy Policy. Most interactive websites use cookies to let us retrieve the user&apos;s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
                     </p>
 
                     <h2 className="text-2xl font-semibold mb-4">License</h2>
@@ -81,7 +81,7 @@ const Page = () => {
                         <li>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</li>
                     </ul>
                     <p className="mb-4">
-                        These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.
+                        These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party&apos;s site.
                     </p>
                     <p className="mb-4">
                         We may consider and approve other link requests from the following types of organizations:
@@ -99,7 +99,7 @@ const Page = () => {
                         We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Intelli Vectra Technologies; and (d) the link is in the context of general resource information.
                     </p>
                     <p className="mb-4">
-                        These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.
+                        These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party&apos;s site.
                     </p>
                     <p className="mb-4">
                         If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Intelli Vectra Technologies. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.
@@ -110,10 +110,10 @@ const Page = () => {
                     <ul className="list-disc list-inside mb-4">
                         <li>By use of our corporate name; or</li>
                         <li>By use of the uniform resource locator being linked to; or</li>
-                        <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.</li>
+                        <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party&apos;s site.</li>
                     </ul>
                     <p className="mb-4">
-                        No use of Intelli Vectra Technologies's logo or other artwork will be allowed for linking absent a trademark license agreement.
+                        No use of Intelli Vectra Technologies&apos;s logo or other artwork will be allowed for linking absent a trademark license agreement.
                     </p>
 
                     <h2 className="text-2xl font-semibold mb-4">iFrames</h2>
@@ -128,7 +128,7 @@ const Page = () => {
 
                     <h2 className="text-2xl font-semibold mb-4">Reservation of Rights</h2>
                     <p className="mb-4">
-                        We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amend these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.
+                        We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amend these terms and conditions and it&apos;s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.
                     </p>
 
                     <h2 className="text-2xl font-semibold mb-4">Removal of links from our website</h2>
