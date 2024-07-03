@@ -174,11 +174,11 @@ export default function Home() {
         <p className="text-gray-600 mb-6 font-light md:text-2xl text-xl">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
 
         <div className="flex items-center justify-center rounded-[50%]">
-          <Image className="rounded-[50%]" width={500} height={500} src="/images/solutionandservices.jpg" alt="Solutions & Services" />
+          <Image className="rounded-[50%]" width={500} height={500} src="/images/wheelImage.png" alt="Solutions & Services" />
         </div>
       </div>
       <div className="text-black space-y-2">
-        <div className="w-full flex items-center flex-col justify-center flex-col space-y-4">
+        <div className="w-full flex items-center flex-col justify-center space-y-4">
           <h1 className="text-center tracking-wide text-2xl font-bold md:text-4xl text-gray-600">Key <span className="text-[#FFAB2E]">Benefits</span></h1>
           <p className="font-extralight text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Tailored IT Solutions for Seamless Operations, Reliable Support, Cybersecurity Expertise, Innovation-driven Approach, Client-Centric Services, Proven Results.</p>
         </div>
