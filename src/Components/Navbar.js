@@ -9,11 +9,13 @@ import { SlCalender } from "react-icons/sl";
 import { IoIosArrowForward } from "react-icons/io";
 import { useRouter } from 'next/navigation';
 import { RiMenu2Fill } from "react-icons/ri";
+import VerticalCarousel from './VerticleCorousel';
 
 
 export const Navbar = () => {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [menuHidden, setMenuHidden] = useState(true);
     const menuRef = useRef(null);
     const router = useRouter();
     const classActive = "flex items-center pb-2 text-[#FFAB2E] space-x-4 px-2 border-b-2 border-[#FFAB2E]";
@@ -42,6 +44,11 @@ export const Navbar = () => {
         setShowContentInner(false);
     }, [pathname])
 
+    const handleSolutionAndServiceMenuOpen = () => {
+        setMenuHidden(false);
+        console.log(menuHidden);
+    }
+
     return (
         <div className="relative w-[100%]">
             <div className='bg-white h-[70px] p-4 w-full flex justify-between items-center shadow-md z-50 relative'>
@@ -62,7 +69,7 @@ export const Navbar = () => {
                         <Link href="/"><li className={`${pathname === '/' ? classActive : classUnActive}`}>Home</li></Link>
                         <Link href="/about"><li className={`${pathname === '/about' ? classActive : classUnActive}`}>About us</li></Link>
                         <Link href="/technologypartner"><li className={`${pathname === '/technologypartner' ? classActive : classUnActive}`}>Technology Partner</li></Link>
-                        <Link href="/solutionandservices"><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solution And Services</li></Link>
+                        <Link href="/solutionandservices" onMouseOver={handleSolutionAndServiceMenuOpen} onMouseOut={() => setMenuHidden(true)}><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solution And Services<span><IoIosArrowDown /></span></li></Link>
                         <button onClick={() => {
                             setShowContentInner(!showContentInner);
                             console.log()
@@ -73,6 +80,9 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
+
+
+
             <div
                 className={`transition-all duration-1000 transform ${showContentInner ? 'translate-x-0 opacity-100' : 'md:translate-x-0 translate-x-full opacity-0'
                     } bg-white z-[100] text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4`}
@@ -147,6 +157,25 @@ export const Navbar = () => {
                         </div>
                     </li>
                 </ul>
+            </div>
+
+            <div className={menuHidden ? 'hidden' : 'flex space-x-4 z-[100] bg-white absolute top-18 left-2 p-4 rounded-lg'}>
+                <div className='text-black'>
+                    <ul className='space-y-8'>
+                        {
+                            
+                        }
+                        <li><Link href="/solutionandservices/1" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/database.png' width={40} height={40}></Image></span><p>Datacenter Design & Optimization</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                        <li><Link href="/solutionandservices/4" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/home.png' width={40} height={40}></Image></span><p>Physical Datacenter Design & Layout</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                        <li><Link href="/solutionandservices/7" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/shield.png' width={40} height={40}></Image></span><p>Cybersecurity Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                        <li><Link href="/solutionandservices/5" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/support_agent.png' width={40} height={40}></Image></span><p>SAP Offerings Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                        <li><Link href="/solutionandservices/2" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/robot_2.png' width={40} height={40}></Image></span><p>AI & RPA Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                        <li><Link href="/solutionandservices/6" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/all_inclusive.png' width={40} height={40}></Image></span><p>Devops Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                        <li><Link href="/solutionandservices/8" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/group_add.png' width={40} height={40}></Image></span><p>Staff Augmentation Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                        <li><Link href="/solutionandservices/3" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/cloud.png' width={40} height={40}></Image></span><p>Cloud Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                    </ul>
+                </div>z
+                <VerticalCarousel></VerticalCarousel>
             </div>
         </div>
     );

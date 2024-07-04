@@ -8,7 +8,7 @@ export const ContactNavbar = () => {
         <div className='flex space-x-10'>
             <div className='flex items-center space-x-2'>
                 <MdOutlineLocalPhone fontSize={20}/>
-                <span className='text-sm cursor-pointer'><a href="tel:+97145667357">+97145667357</a></span>
+                <span className='text-sm cursor-pointer'><a href="tel:+97145667357">+971&nbsp;4&nbsp;5667357</a></span>
             </div>
             <div className='flex items-center space-x-2'>
                 <CiMail fontSize={20}/>

@@ -447,47 +447,4 @@ export const jsonforServices = [
             }
         ]
     },
-
-    {
-        "service_id": 9,
-        "service_name": "IT LIFESTYLE MANAGEMENT",
-        "description": "Consectetur adipiscing elit dolore magna aliqua ipiscing elit dolore magna aliqua",
-        "heading_pic_url": "/images/services/datacenter.jpg",
-        "type": "pit"
-    },
-    {
-        "service_id": 10,
-        "service_name": "IT SECURITY AUDIT SERVICES",
-        "description": "Consectetur adipiscing elit dolore magna aliqua ipiscing elit dolore magna aliqua",
-        "heading_pic_url": "/images/services/itsecsol.jpg",
-        "type": "pit"
-    },
-    {
-        "service_id": 11,
-        "service_name": "CLOUD TRANSFORMATION",
-        "description": "Consectetur adipiscing elit dolore magna aliqua ipiscing elit dolore magna aliqua",
-        "heading_pic_url": "/images/services/coludsoln.jpg",
-        "type": "pit"
-    },
-    {
-        "service_id": 12,
-        "service_name": "PERMANENT HIRING",
-        "description": "Seamless recruitment processes to secure permanent talent perfectly suited to organizational needs.",
-        "heading_pic_url": "/images/services/permanenthiring.jpg",
-        "type": "staffing"
-    },
-    {
-        "service_id": 13,
-        "service_name": "CONTRACT CONSULTANT",
-        "description": "Get full access of top-tier IT expertise on a flexible basis to support project-specific requirements.",
-        "heading_pic_url": "/images/services/contractconsultant.jpg",
-        "type": "staffing"
-    },
-    {
-        "service_id": 14,
-        "service_name": "RECRUITING OUTSOURCING",
-        "description": "Outsourcing of the recruitment process to expert professionals for efficient and effective candidate selection.",
-        "heading_pic_url": "/images/services/recruitoutsourcing.jpg",
-        "type": "staffing"
-    }
 ];

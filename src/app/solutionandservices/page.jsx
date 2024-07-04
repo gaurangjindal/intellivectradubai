@@ -7,7 +7,6 @@ import Link from 'next/link';
 
 export default function Page() {
     const [activeServIdx, setActiveServIdx] = useState('technology');
-
     const handleSetActive = (index) => {
         setActiveServIdx(index);
     };
@@ -23,6 +22,8 @@ export default function Page() {
                 descColor="white"
                 imageSrc="/images/solutionservicesHeader.jpg"
             />
+
+            
 
             {/* Main content section */}
             <div className="flex flex-col md:flex-row items-center justify-center p-8 px-10 space-y-8 md:space-y-0 md:space-x-20 bg-white text-black">
