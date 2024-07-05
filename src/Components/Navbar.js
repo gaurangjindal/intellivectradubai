@@ -159,12 +159,9 @@ export const Navbar = () => {
                 </ul>
             </div>
 
-            <div className={menuHidden ? 'hidden' : 'flex space-x-4 z-[100] bg-white absolute top-18 left-2 p-4 rounded-lg'}>
+            <div className={menuHidden ? 'hidden' : 'hidden md:flex md:space-x-4 z-[100] bg-white absolute top-18 left-2 p-4 rounded-lg'}>
                 <div className='text-black'>
                     <ul className='space-y-8'>
-                        {
-                            
-                        }
                         <li><Link href="/solutionandservices/1" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/database.png' width={40} height={40}></Image></span><p>Datacenter Design & Optimization</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
                         <li><Link href="/solutionandservices/4" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/home.png' width={40} height={40}></Image></span><p>Physical Datacenter Design & Layout</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
                         <li><Link href="/solutionandservices/7" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/shield.png' width={40} height={40}></Image></span><p>Cybersecurity Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
