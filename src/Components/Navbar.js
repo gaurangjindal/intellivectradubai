@@ -171,7 +171,7 @@ export const Navbar = () => {
                         <li><Link href="/solutionandservices/8" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/group_add.png' width={40} height={40}></Image></span><p>Staff Augmentation Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
                         <li><Link href="/solutionandservices/3" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/cloud.png' width={40} height={40}></Image></span><p>Cloud Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
                     </ul>
-                </div>z
+                </div>
                 <VerticalCarousel></VerticalCarousel>
             </div>
         </div>

@@ -4,7 +4,49 @@ import Image from "next/image";
 import { Button } from "@/Components/ui/Button";
 import EmblaCarousel from "@/Components/Corousel/EmblaCarousel";
 import Link from "next/link";
+import Slider from "react-slick";
+import { useState } from "react";
+import { BiDownArrow } from "react-icons/bi";
+import { useEffect } from "react";
+import { MdNavigateNext } from "react-icons/md";
+import { GrPrevious } from "react-icons/gr";
+import { useRef } from "react";
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div className="rounded-[50%] p-4 border border-white"><MdNavigateNext /></div>
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div className="rounded-[50%] p-4 border border-white"><GrPrevious /></div>
+    );
+}
+
 export default function Page() {
+    const [slideIndex, setSlideIndex] = useState(0);
+    const [updateCount, setUpdateCount] = useState(0);
+    let sliderRef = useRef(null);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        dots: false,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "fade",
+        arrows: false,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        afterChange: () => setUpdateCount(updateCount + 1),
+        beforeChange: (current, next) => setSlideIndex(next)
+    };
     const slides = [
         {
             text_content: "Our journey began with a vision to revolutionize the way people connect with technology. Founded in 2018, we set out to democratize access to cutting-edge technology solutions for businesses of all sizes. Our mission was clear to empower organizations to thrive in the digital age by providing innovative, scalable, and user-friendly IT solutions.",
@@ -36,15 +78,8 @@ export default function Page() {
             image_src: "/images/slider1image.png",
         },
     ];
-
     const posi = [0, 16, 32, 48, 64, 80, 96];
     const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024];
-    const OPTIONS = {
-        loop: true,
-    };
-    const SLIDE_COUNT = 5;
-    const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-
     return (
         <div className='space-y-[30px] w-full bg-white'>
             <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Intelli Vectra Technologies drives digital transformation with cutting-edge IT solutions. We simplify complexities, ensuring operational efficiency and growth. Committed to excellence and customer-centricity, we foster collaboration and innovation to help businesses thrive in a rapidly evolving digital landscape."} />
@@ -85,12 +120,64 @@ export default function Page() {
             </div>
 
             <div className="bg-[#FFFAF2] w-full ">
-                <div className="h-fit w-[100vw] md:h-[70vh] space-y-8 md:space-y-16 bg-[#F19F1F] bg-blend-darken p-4" style={{ backgroundImage: "url('images/business-network-background-connecting-dots-technology-design 2.png')" }}>
+                <div className="h-full justify-center w-[100vw] md:h-[70vh] space-y-8 md:space-y-16 bg-[#F19F1F] bg-blend-darken p-4" style={{ backgroundImage: "url('images/business-network-background-connecting-dots-technology-design 2.png')" }}>
                     <div className='space-y-2'>
                         <h1 className="text-center font-bold text-black text-2xl md:text-4xl"><span className="text-white">Our</span> Journey</h1>
                         <p className="text-center text-white text-xl font-bold">Embark on a seamless journey with our IT services.</p>
                     </div>
-                    <EmblaCarousel posi={posi} years={years} slides={slides} options={OPTIONS} />
+
+                    <div className="w-full">
+                        <div className="w-full items-center justify-center flex md:px-16">
+                            <SamplePrevArrow></SamplePrevArrow>
+                            <div className="border-t-2 relative border-white w-full px-4" >
+                                <div style={{ position: 'absolute', left: `${posi[slideIndex]}%` }}>
+                                    <BiDownArrow fontSize={28} />
+                                    <p>{years[slideIndex]}</p>
+                                </div>
+                            </div>
+                            <SampleNextArrow />
+                        </div>
+                    </div>
+
+                    <div className="w-full justify-center hidden md:block">
+                        <Slider {...settings} ref={(slider) => sliderRef = slider}>
+                            {slides.map((slide, idx) => {
+                                return (
+                                    <div key={idx}>
+                                        <div className="flex justify-center space-x-8 w-full flex-row">
+                                            <div className="w-[35%] relative h-[250px]">
+                                                <Image src={slide.image_src} layout='fill'></Image>
+                                            </div>
+                                            <div className="w-[30%] flex items-center space-y-4">
+                                                <div>{slide.text_content}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </Slider>
+                    </div>
+
+                    <div className="w-full justify-center md:hidden block">
+                        <Slider {...settings} ref={(slider) => sliderRef = slider}>
+                            {slides.map((slide, idx) => {
+                                return (
+                                    <div key={idx} >
+                                        <div className="flex flex-col justify-center md:space-x-8 w-full md:flex-row">
+                                            <div className="md:w-[35%] w-full relative h-[250px]">
+                                                <Image src={slide.image_src} layout='fill'></Image>
+                                            </div>
+                                            <div className="md:w-[30%] w-full flex items-center space-y-4">
+                                                <div>{slide.text_content}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                )
+                            })}
+                        </Slider>
+                    </div>
+                    {/* <EmblaCarousel posi={posi} years={years} slides={slides} options={OPTIONS} /> */}
                 </div>
             </div>
 
