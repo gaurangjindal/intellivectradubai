@@ -69,7 +69,7 @@ const VerticalCarousel = () => {
                 {
                     jsonforServices.map((json, idx) => {
                         return (
-                            <SlidingCard idx={idx + 1} heading={json.service_name} content={json.description} link={`/solutionandservices/${json.service_id}`} />
+                            <SlidingCard key={idx} idx={idx + 1} heading={json.service_name} content={json.description} link={`/solutionandservices/${json.service_id}`} />
                         )
                     })
                 }

@@ -84,8 +84,8 @@ export default function Page() {
             <PageStarter tit1={"Case Study"} tit2={""} tit1Col={"black"} descColor={"black"} imageSrc={"/images/blogsHeader.jpg"} desc={"Explore our blog for in-depth analyses, case studies, and practical tips to navigate digital transformation."}></PageStarter>
             <div className="flex flex-col w-full items-center">
                 <div className="flex bg-white md:px-4 justify-center items-center w-full md:w-[70%] space-x-4">
-                    <input value={searchText} onChange={(e) => setSearchText(e.target.value)} type="text" className="bg-[#FFF4E3] border p-2 text-black md:w-[500px]" placeholder="Search" />
-                    <select value={category} onChange={(e) => setCategory(e.target.value)} className="bg-[#FFF4E3] border p-2 text-black md:w-[200px]">
+                    <input value={searchText} onChange={(e) => setSearchText(e.target.value)} type="text" className="bg-[#FFF4E3] rounded-md border p-2 text-black md:w-[500px]" placeholder="Search" />
+                    <select value={category} onChange={(e) => setCategory(e.target.value)} className="bg-[#FFF4E3] rounded-md border p-2 text-black md:w-[200px]">
                         <option value="all">All Categories</option>
                         <option value={"technical"}>Technical</option>
                         <option value={"services"}>Services</option>

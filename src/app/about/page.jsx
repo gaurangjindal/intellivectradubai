@@ -75,11 +75,11 @@ export default function Page() {
                     <h1 className="px-2 border-l-2 text-black text-[20px] font-bold border-[#F19F1F]">ABOUT US</h1>
                     <p className="text-[#F19F1F] md:text-4xl text-2xl tracking-wide">Welcome to IVT</p>
 
-                    <p className="md:text-[18px] text-normal text-[#3F444]">
+                    <p className="text-normal text-[#3F444]">
                         Welcome to Intelli Vectra Technologies! We are thrilled to have you here. As a leading IT solutions provider, we are dedicated to helping businesses harness the power of technology to drive digital transformation and simplify IT complexities. Our mission is to deliver innovative, tailored solutions that not only meet but exceed your expectations. With a commitment to excellence, integrity, and customer-centricity, we focus on fostering collaboration and continuous improvement. Our team of experts works tirelessly to ensure operational efficiency, enhanced security, and sustainable growth for our clients. At Intelli Vectra Technologies, we believe in the transformative potential of technology to create a brighter, more connected future for all. Together, let us shape the future of your business.
                     </p>
                     <div className="w-full h-6 bg-white"></div>
-                    <Link href="/about"><Button buttonText={"Learn More"} /></Link>
+                    <Link href="/about"><button className='cursor-pointer p-2 px-6 h-fit w-fit rounded-md text-white bg-[#F19F1F]'>Learn More</button></Link>
                 </div>
 
             </div>

@@ -133,7 +133,7 @@ export default function Home() {
   const classUnactive = "cursor-pointer md:px-6 h-full items-center flex hover:border-b-2 hover:border-[#FFAB2E]"
   return (
     <div className="h-min-[100vh] w-full space-y-[40px] md:space-y-[60px] bg-white">
-      <PageStarterVideo tit1={"BUSINESS"} videoSrc={"videos/homepagebgVideo.mp4"} tit2={" & ENTERPRISE HUB"} tit1Col={"#F19F1F"} desc={"Empowering businesses with agile, transparent, and innovative technology solutions, Intelli Vectra Technologies drives success through collaboration and passionate expertise."} descColor={"white"} />
+      <PageStarterVideo tit1={"BUSINESS"} videoSrc={"videos/homepagebgVideo.mp4"} tit2={" & ENTERPRISE HUB"} tit1Col={"#F19F1F"} desc={"Empowering businesses with agile, transparent, and innovative technology solutions, Intelli Vectra Technologies drives success through collaboration and passionate expertise."} descColor={"white"} link={"/solutionandservices"} />
       <div className="w-full px-10 md:space-x-20 bg-white text-black justify-center items-center flex md:flex-row flex-col">
         <div className="flex md:w-[40%] w-full">
           {/* First Image */}
@@ -231,9 +231,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="text-gray-600 w-full space-y-6 flex flex-col justify-between items-center">
+      <div className="text-gray-600 w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
-        <ul className="w-full hidden md:flex md:space-x-40 space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
+        <ul className="w-[80%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
           <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>
           <li className={activeContentType === "news" ? classActive : classUnactive} onClick={() => setActiveContentType("news")}>News</li>
           <li className={activeContentType === "case_study" ? classActive : classUnactive} onClick={() => setActiveContentType("case_study")}>Case Study</li>
@@ -249,13 +249,14 @@ export default function Home() {
           </select>
         </div>
 
-        <div className="flex w-full flex-col px-20 p-4 md:flex-row space-y-2 md:space-y-0 items-center justify-between">
+        <div className="flex flex-col w-full px-4 py-4 space-y-4 md:px-20 md:flex-row md:space-y-0 md:space-x-4 items-center justify-between">
           {
             dataForContentHub[activeContentType].map((event, idx) => {
               return <ContentCard key={idx} content={event} />
             })
           }
         </div>
+
         <div className="w-full flex items-center justify-center">
           <Link href="/blogs"><button className="bg-[#FFAB2E] p-4 rounded">See More</button></Link>
         </div>

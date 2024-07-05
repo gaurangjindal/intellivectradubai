@@ -5,7 +5,7 @@ export const ContentCard = ({ content }) => {
     return (
         <div className='bg-gray-200 text-black space-y-4 p-4 md:w-[400px] w-[320px] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-lg'>
             <div className="w-[95%] h-[200px] relative">
-                <Image alt='' layout='fill' src={content.imageSrc} style={{ objectFit: 'cover' }}/>
+                <Image alt='' layout='fill' src={content.imageSrc} style={{ objectFit: 'cover' }} />
             </div>
 
             <div className='flex items-center space-x-4'>
@@ -23,7 +23,9 @@ export const ContentCard = ({ content }) => {
                 {content.date}
             </div>
 
-            <a href={content.link}><Button buttonText={"Read More"}></Button></a>
+            <div>
+                <a href={content.link}><button className='cursor-pointer rounded-lg p-2 px-6 h-fit w-fit text-white bg-[#F19F1F]' buttonText={"Read More"}>Read More</button></a>
+            </div>
         </div>
     )
 }
