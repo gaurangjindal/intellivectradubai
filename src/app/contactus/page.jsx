@@ -68,7 +68,7 @@ export default function Page() {
     <div className="w-full">
       <PageStarter tit1={"Contact"} tit2={" Us"} tit1Col={"black"} descColor={"black"} imageSrc={"/images/banners/contactusbanner.jpg"} desc={"Have questions or interested in partnering with Intelli Vectra Technology? Contact us today for personalized IT solutions and expert consultation tailored to your business needs."}></PageStarter>
       <div className='bg-[#FFFAF2] w-full md:py-8 space-y-2 md:px-32 md:space-y-8'>
-        <h1 className='text-center text-3xl underline font-bold text-[#FFC872] '> Get In Touch </h1>
+        <h1 className='text-center text-2xl font-bold text-[#FFC872] '> Get In Touch </h1>
         <div className='flex p-4 flex-col md:flex-row-reverse space-y-4 md:space-y-0 md:space-x-4 w-full justify-center items-center'>
           <div className='bg-white shadow-lg space-y-8 text-black p-4 py-8 rounded-lg md:w-[70%] w-full h-fit md:h-[420px]'>
             <div>
@@ -78,18 +78,18 @@ export default function Page() {
             <div>
               <form className='space-y-4'>
                 <div className='flex items-center justify-between'>
-                  <input value={name} onChange={(e) => setName(e.target.value)} placeholder='Name' className='w-[100%] p-2 font-extralight border border-black ' type="text" name="name" />
+                  <input value={name} onChange={(e) => setName(e.target.value)} placeholder='Name' className='rounded-lg w-[100%] p-2 font-extralight border border-black ' type="text" name="name" />
 
                 </div>
                 <div className='flex items-center justify-between'>
-                  <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='w-[49%] p-2 font-extralight border border-black ' type="text" name="email" />
-                  <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder='Phone' className='w-[49%] p-2 font-extralight border border-black ' type="text" name="phone" />
+                  <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='rounded-lg w-[49%] p-2 font-extralight border border-black ' type="text" name="email" />
+                  <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder='Phone' className='rounded-lg w-[49%] p-2 font-extralight border border-black ' type="text" name="phone" />
                 </div>
                 <div>
-                  <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' rows={3} className='w-full p-2 font-extralight col-span-4 border border-black '></textarea>
+                  <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' rows={3} className='rounded-lg w-full p-2 font-extralight col-span-4 border border-black '></textarea>
                 </div>
                 <div className='flex items-center justify-end'>
-                  <button disabled={loading} onClick={handleSubmit} className='p-2 bg-[#F19F1F] tracking-wide text-white disabled:bg-gray-200 disabled:text-white'>{loading ? "Loading..." : "Submit"}</button>
+                  <button disabled={loading} onClick={handleSubmit} className='p-3 px-6 bg-[#F19F1F] tracking-wide rounded-lg text-white disabled:bg-gray-200 disabled:text-white'>{loading ? "Loading..." : "Submit"}</button>
                 </div>
               </form>
             </div>

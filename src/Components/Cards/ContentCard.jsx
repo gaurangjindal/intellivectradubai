@@ -24,7 +24,7 @@ export const ContentCard = ({ content }) => {
             </div>
 
             <div>
-                <a href={content.link}><button className='cursor-pointer rounded-lg p-2 px-6 h-fit w-fit text-white bg-[#F19F1F]' buttonText={"Read More"}>Read More</button></a>
+                <a href={content.link}><button className='cursor-pointer rounded-lg p-[12px] px-6 h-fit w-fit text-white bg-[#F19F1F]' buttonText={"Read More"}>Read More</button></a>
             </div>
         </div>
     )

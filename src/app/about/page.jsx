@@ -164,15 +164,11 @@ export default function Page() {
                                 return (
                                     <div key={idx} >
                                         <div className="flex flex-col justify-center md:space-x-8 w-full md:flex-row">
-                                            <div className="md:w-[35%] w-full relative h-[250px]">
-                                                <Image src={slide.image_src} layout='fill'></Image>
-                                            </div>
-                                            <div className="md:w-[30%] w-full flex items-center space-y-4">
+                                            <div className="w-full flex items-center space-y-4">
                                                 <div>{slide.text_content}</div>
                                             </div>
                                         </div>
                                     </div>
-
                                 )
                             })}
                         </Slider>

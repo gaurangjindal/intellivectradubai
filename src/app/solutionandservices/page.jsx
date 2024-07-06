@@ -42,7 +42,7 @@ export default function Page() {
                     <h1 className="text-[#F19F1F] text-4xl font-extralight">
                         <span className="text-black">Solutions</span> & Services
                     </h1>
-                    <p className="text-lg text-[#3F444] font-extralight">
+                    <p className="text-[#3F444]">
                         Intelli Vectra Technology offers comprehensive solutions and services designed to simplify IT complexities and drive business success. From custom software development and IT consulting to cloud solutions and cybersecurity, we deliver tailored strategies that optimize operations and enhance efficiency. Our approach combines cutting-edge technology with industry expertise, ensuring scalable solutions that meet diverse business needs. Partner with us to navigate the digital landscape with confidence and achieve lasting growth.
                     </p>
                 </div>

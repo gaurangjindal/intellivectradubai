@@ -231,6 +231,36 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="w-full p-4 flex items-center justify-center">
+        <div className="bg-[#FFFAF2] py-8 p-4 w-full text-black flex items-center justify-center">
+          <div className="w-full md:w-[45%] space-y-8">
+            <div className="space-y-4 flex flex-col justify-center items-center w-full">
+              <h1 className="text-center text-2xl md:text-4xl font-bold">Our <span className="text-[#F19F1F]">Achievements</span></h1>
+              <p className="font-extralight text-sm md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
+            </div>
+            <div className="flex flex-row justify-center">
+              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">3+</h1>
+                <p className="font-bold md:text-sm text-xs tracking-wider">Our presence</p>
+              </div>
+              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">19+</h1>
+                <p className="font-bold md:text-sm text-xs tracking-wider">On-time delivery</p>
+              </div>
+              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">80+</h1>
+                <p className="font-bold md:text-sm text-xs tracking-wider">Project executed</p>
+              </div>
+              <div className="md:p-8 p-4 text-center space-y-4">
+                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">50+</h1>
+                <p className="font-bold md:text-sm text-xs tracking-wider">Client satisfaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div className="text-gray-600 w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
         <ul className="w-[80%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
@@ -262,34 +292,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full p-4 flex items-center justify-center">
-        <div className="bg-[#FFFAF2] py-8 p-4 w-full text-black flex items-center justify-center">
-          <div className="w-full md:w-[45%] space-y-8">
-            <div className="space-y-4 flex flex-col justify-center items-center w-full">
-              <h1 className="text-center text-2xl md:text-4xl font-bold">Our <span className="text-[#F19F1F]">Achievements</span></h1>
-              <p className="font-extralight text-sm md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
-            </div>
-            <div className="flex flex-row justify-center">
-              <div className="md:p-8 p-4 text-center space-y-4 border-r">
-                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">3+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Our presence</p>
-              </div>
-              <div className="md:p-8 p-4 text-center space-y-4 border-r">
-                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">19+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">On-time delivery</p>
-              </div>
-              <div className="md:p-8 p-4 text-center space-y-4 border-r">
-                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">80+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Project executed</p>
-              </div>
-              <div className="md:p-8 p-4 text-center space-y-4">
-                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">50+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Client satisfaction</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }

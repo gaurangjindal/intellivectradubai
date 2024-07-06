@@ -14,7 +14,7 @@ export const PageStarter = ({ exploreactive, tit1Col, tit1, tit2, description, i
                         <span style={{ color: tit1Col }}>{tit1}</span>
                         <span className="text-[#F19F1F]">{tit2}</span>
                     </h1>
-                    <p className="w-full md:w-[75%] lg:w-[50%]" style={{ color: 'white' }}>
+                    <p className="w-full" style={{ color: 'white' }}>
                         {desc}
                     </p>
                 </div>
