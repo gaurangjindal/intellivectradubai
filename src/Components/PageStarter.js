@@ -15,7 +15,7 @@ export const PageStarter = ({ exploreactive, tit1Col, tit1, tit2, description, i
                         <span className="text-[#F19F1F]">{tit2}</span>
                     </h1>
                     <p className="w-full" style={{ color: 'white' }}>
-                        {desc}
+                    Lorem Ipsum is simply dummy text.
                     </p>
                 </div>
                 <div className={exploreactive ? "flex" : "hidden"}>

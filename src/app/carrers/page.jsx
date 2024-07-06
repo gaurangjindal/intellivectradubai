@@ -7,6 +7,8 @@ import { useState } from 'react';
 import { GoArrowRight } from "react-icons/go";
 import { toast } from 'react-toastify';
 import axios from 'axios'
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 export default function Page() {
     const router = useRouter();
@@ -17,11 +19,31 @@ export default function Page() {
     const [coverletter, setCoverLetter] = useState("");
     const [file, setFile] = useState(null); // State to hold the uploaded file
     const [loading, setLoading] = useState(false);
-    const [applyOpen,setApplyOpen] = useState(false);
-    
+    const [applyOpen, setApplyOpen] = useState(false);
+
     const moveToApply = () => {
         setApplyOpen(!applyOpen);
     }
+
+    const validationSchema = Yup.object({
+        name: Yup.string().required('Full Name is required'),
+        email: Yup.string().email('Invalid email address').required('Email is required'),
+        phone: Yup.string()
+          .matches(/^[0-9]+$/, 'Phone must be only digits')
+          .min(10, 'Phone must be at least 10 digits')
+          .required('Phone Number is required'),
+        appliedFor: Yup.string().required('Applied For is required'),
+        coverletter: Yup.string(),
+        cv: Yup.mixed().required('CV is required').test(
+          'fileSize',
+          'File too large',
+          value => value && value.size <= 1024 * 1024 // 1MB
+        ).test(
+          'fileFormat',
+          'Unsupported Format',
+          value => value && ['application/pdf'].includes(value.type)
+        ),
+      });
 
     const handleFileChange = (e) => {
         const file = e.target.files[0];
@@ -118,31 +140,89 @@ export default function Page() {
                     </div>
                     <div className='md:space-y-8 md:w-[30%] w-[100%]'>
                         <h1 className='text-4xl text-[#F19F1F] text-light text-center tracking-wide'>Join The Team</h1>
-                        <form onSubmit={handleSubmit}>
-                            <fieldset className="flex flex-col space-y-8" disabled={loading}>
-                                <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Full Name *" type="text" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
-                                <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email *" type="text" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
-                                <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone Number *" type="text" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
-                                <input value={appliedFor} onChange={(e) => setAppliedFor(e.target.value)} placeholder="Applied For *" type="text" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
-                                <textarea value={coverletter} onChange={(e) => setCoverLetter(e.target.value)} placeholder="Cover Letter" rows={4} className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
-                                <div className='space-y-2'>
-                                    <div className="shrink-0">
-                                        Upload Your CV<sup>*</sup>
-                                    </div>
-                                    <label className="block">
-                                        <span className="sr-only">Choose profile photo</span>
-                                        <input accept=".pdf" onChange={handleFileChange} type="file" className="block w-full text-sm text-slate-500
-                                                        file:mr-4 file:py-2 file:px-4
-                                                        file:rounded-full file:border-0
-                                                        file:text-sm file:font-semibold
-                                                        file:bg-violet-50 file:text-violet-700
-                                                        hover:file:bg-violet-100"/>
-                                        <label className="italic text-gray-400">Only Pdf is allowed max size 1MB</label>
-                                    </label>
-                                </div>
-                                <button disabled={loading} className="bg-[#F19F1F] disabled:bg-gray-200 disabled:text-white font-bold flex space-x-2 items-center rounded-lg p-2 w-fit text-white" type="Submit">{loading ? <div>Loading...</div> : <div className="flex items-center justify-between space-x-2">Submit <span><GoArrowRight fontWeight="bold" /></span></div>}</button>
-                            </fieldset>
-                        </form>
+                        <Formik
+                            initialValues={{ name: '', email: '', phone: '', appliedFor: '', coverletter: '', cv: null }}
+                            validationSchema={validationSchema}
+                            onSubmit={handleSubmit}
+                        >
+                            {({ setFieldValue, isSubmitting }) => (
+                                <Form className='space-y-8'>
+                                    <fieldset className="flex flex-col space-y-8" disabled={loading}>
+                                        <div>
+                                            <Field
+                                                name="name"
+                                                placeholder="Full Name *"
+                                                type="text"
+                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                            />
+                                            <ErrorMessage name="name" component="div" className="text-red-500 text-sm" />
+                                        </div>
+                                        <div>
+                                            <Field
+                                                name="email"
+                                                placeholder="Email *"
+                                                type="email"
+                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                            />
+                                            <ErrorMessage name="email" component="div" className="text-red-500 text-sm" />
+                                        </div>
+                                        <div>
+                                            <Field
+                                                name="phone"
+                                                placeholder="Phone Number *"
+                                                type="text"
+                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                            />
+                                            <ErrorMessage name="phone" component="div" className="text-red-500 text-sm" />
+                                        </div>
+                                        <div>
+                                            <Field
+                                                name="appliedFor"
+                                                placeholder="Applied For *"
+                                                type="text"
+                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                            />
+                                            <ErrorMessage name="appliedFor" component="div" className="text-red-500 text-sm" />
+                                        </div>
+                                        <div>
+                                            <Field
+                                                name="coverletter"
+                                                as="textarea"
+                                                placeholder="Cover Letter"
+                                                rows={4}
+                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                            />
+                                            <ErrorMessage name="coverletter" component="div" className="text-red-500 text-sm" />
+                                        </div>
+                                        <div className='space-y-2'>
+                                            <div className="shrink-0">
+                                                Upload Your CV<sup>*</sup>
+                                            </div>
+                                            <label className="block">
+                                                <span className="sr-only">Choose profile photo</span>
+                                                <input
+                                                    accept=".pdf"
+                                                    type="file"
+                                                    className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
+                                                    onChange={(event) => {
+                                                        setFieldValue("cv", event.currentTarget.files[0]);
+                                                    }}
+                                                />
+                                                <label className="italic text-gray-400">Only Pdf is allowed max size 1MB</label>
+                                            </label>
+                                            <ErrorMessage name="cv" component="div" className="text-red-500 text-sm" />
+                                        </div>
+                                        <button
+                                            disabled={loading || isSubmitting}
+                                            className="bg-[#F19F1F] disabled:bg-gray-200 disabled:text-white font-bold flex space-x-2 items-center rounded-lg p-2 w-fit text-white"
+                                            type="submit"
+                                        >
+                                            {loading ? <div>Loading...</div> : <div className="flex items-center justify-between space-x-2">Submit <span><GoArrowRight fontWeight="bold" /></span></div>}
+                                        </button>
+                                    </fieldset>
+                                </Form>
+                            )}
+                        </Formik>
                     </div>
                 </div>
             </div>
