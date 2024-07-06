@@ -69,7 +69,7 @@ export const Navbar = () => {
                         <Link href="/"><li className={`${pathname === '/' ? classActive : classUnActive}`}>Home</li></Link>
                         <Link href="/about"><li className={`${pathname === '/about' ? classActive : classUnActive}`}>About us</li></Link>
                         <Link href="/technologypartner"><li className={`${pathname === '/technologypartner' ? classActive : classUnActive}`}>Technology Partner</li></Link>
-                        <Link href="/solutionandservices" onMouseOver={handleSolutionAndServiceMenuOpen} onMouseOut={() => setMenuHidden(true)}><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solution And Services<span><IoIosArrowDown /></span></li></Link>
+                        <Link href="/solutionandservices" onMouseOver={handleSolutionAndServiceMenuOpen} onMouseOut={() => setMenuHidden(true)}><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solutions And Services<span><IoIosArrowDown /></span></li></Link>
                         <button onClick={() => {
                             setShowContentInner(!showContentInner);
                             console.log()
