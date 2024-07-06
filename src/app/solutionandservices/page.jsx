@@ -16,8 +16,8 @@ export default function Page() {
             {/* PageStarter component with optimized props */}
             <PageStarter
                 desc=" Intelli Vectra Technology provides tailored solutions and services that simplify IT complexities, optimize operations, and drive sustainable growth for businesses."
-                tit1="Solution and Services"
-                tit2=""
+                tit1="Solution"
+                tit2=" & Services"
                 tit1Col="white"
                 descColor="white"
                 imageSrc="/images/solutionservicesHeader.jpg"

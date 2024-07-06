@@ -358,17 +358,17 @@ export default function Page() {
           </div>
           <div className='w-full md:grid-cols-1 grid grid-cols-1 gap-1 gap-y-2 md:w-[25%]'>
             <div className='md:h-[100px] h-full p-2 flex items-center md:justify-between space-x-4 shadow-lg md:w-[250px] w-full bg-white rounded-lg'>
-              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><FaPhoneAlt style={{ fontSize: '30px' }} /></div>
+              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a className='underline cursor-pointer' href='tel:012-4496-0635'><FaPhoneAlt style={{ fontSize: '30px' }} /></a></div>
               <div className='text-black w-[90%] text-sm font-extralight'>
                 <p className="text-[#F19F1F] font-normal">Call Us On</p>
-                <a className='underline cursor-pointer' href='tel:012-4496-0635'>012-4496-0635</a>
+                <a className='cursor-pointer' href='tel:012-4496-0635'>012-4496-0635</a>
               </div>
             </div>
             <div className='md:h-[100px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[250px] w-full bg-white rounded-lg'>
-              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><MdEmail style={{ fontSize: '30px' }} /></div>
+              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a className='cursor-pointer' href='mailto:info@intellivectra.tech'><MdEmail style={{ fontSize: '30px' }} /></a></div>
               <div className='text-black w-[90%] text-sm font-extralight'>
                 <p className="text-[#F19F1F] font-normal">Mail Address</p>
-                <a className='underline cursor-pointer' href='mailto:info@intellivectra.tech'>info@intellivectra.tech</a>
+                <a className='cursor-pointer' href='mailto:info@intellivectra.tech'>info@intellivectra.tech</a>
               </div>
             </div>
             <div className='md:h-[100px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[250px] w-full bg-white rounded-lg'>
@@ -376,9 +376,9 @@ export default function Page() {
               <div className="text-black  w-[90%] font-extralight">
                 <p className="text-[#F19F1F] font-normal text-xs">Visit Us At</p>
                 <p className="text-xs">
-                  2nd Floor, Plot No. 29, Maruti
-                  Industrial Area, Sector-18,
-                  Gurugram–122015 (Haryana).
+                  Office #1111,
+                  Clover Bay Tower, Business Bay,
+                  PO Box: 283426, Dubai, UAE
                 </p>
 
               </div>
@@ -387,7 +387,7 @@ export default function Page() {
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><FaRegClock style={{ fontSize: '30px' }} /></div>
               <div className="text-black  w-[90%] font-extralight text-sm">
                 <p className="text-[#F19F1F] font-normal text-xs">Opening Time</p>
-                <p>Mon - Fri : 9.30am - 5.30pm</p>
+                <p>Mon - Fri<br /> 9.30AM - 5.30PM</p>
               </div>
             </div>
           </div>
@@ -410,17 +410,17 @@ export default function Page() {
           <h1 className='text-4xl text-[#F19F1F] text-center'>Delhi NCR, India</h1>
           <p className='text-[#3F444D] text-center font-extralight'>2nd Floor, Plot No. 29,<br />
             Maruti Industrial Area, Sector-18,<br />
-            Gurugram–122015 (Haryana).</p>
+            Gurugram–122015 (Haryana), India.</p>
           <div className='flex justify-center w-full'>
             <button className='bg-[#F19F1F] p-2 w-fit'>Get Directions</button>
           </div>
         </div>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/indiagate.jpg" height={300} width={500} />
-          <h1 className='text-4xl text-[#F19F1F] text-center'>Riyadh,Saudi Arabia</h1>
+          <h1 className='text-4xl text-[#F19F1F] text-center'>Riyadh, Saudi Arabia</h1>
           <p className='text-[#3F444D] text-center font-extralight'>Samama Tower<br />
             King Fahd Road,Riyadh<br />
-            Kingdom of Saudi Arabia 29
+            Kingdom of Saudi Arabia
           </p>
           <div className='flex justify-center w-full'>
             <button className='bg-[#F19F1F] p-2 w-fit'>Get Directions</button>
@@ -428,7 +428,7 @@ export default function Page() {
         </div>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/burzkhalifa.jpg" height={300} width={500} />
-          <h1 className='text-4xl text-[#F19F1F] text-center'>London,UK</h1>
+          <h1 className='text-4xl text-[#F19F1F] text-center'>London, UK</h1>
           <p className='text-[#3F444D] text-center font-extralight'>Coming Soon<br />
             <br />
           </p>

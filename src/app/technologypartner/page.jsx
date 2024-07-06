@@ -76,7 +76,7 @@ const Page = () => {
                     <div className="flex flex-col space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
                         <div className="border-[#F19F1F] border-l-4 p-4 space-y-2 md:space-y-4 px-2 md:px-4">
                             <h1 className="text-2xl text-white font-bold md:text-3xl lg:text-4xl">
-                                Technology Partner
+                                <span className='text-[#F19F1F]'>Technology</span> Partner
                             </h1>
                             <p className="w-full" style={{ color: 'white' }}>
                             Lorem Ipsum is simply dummy text.

@@ -174,7 +174,7 @@ export default function Home() {
         <p className="text-gray-600 mb-6 font-light md:text-2xl text-xl">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
 
         <div className="flex items-center justify-center rounded-[50%]">
-          <Image className="rounded-[50%]" width={500} height={500} src="/images/wheelImage.png" alt="Solutions & Services" />
+          <Link href={"/solutionandservices"}><Image className="rounded-[50%]" width={500} height={500} src="/images/wheelImage.png" alt="Solutions & Services" /></Link>
         </div>
       </div>
       <div className="text-black space-y-2">
@@ -288,7 +288,7 @@ export default function Home() {
         </div>
 
         <div className="w-full flex items-center justify-center">
-          <Link href="/blogs"><button className="bg-[#FFAB2E] p-4 rounded">See More</button></Link>
+          <Link href="/blogs"><button className="bg-[#FFAB2E] p-4 rounded-lg">See More</button></Link>
         </div>
       </div>
 

@@ -11,6 +11,8 @@ import { useEffect } from "react";
 import { MdNavigateNext } from "react-icons/md";
 import { GrPrevious } from "react-icons/gr";
 import { useRef } from "react";
+import { FaCaretDown } from "react-icons/fa";
+
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -120,7 +122,7 @@ export default function Page() {
             </div>
 
             <div className="bg-[#FFFAF2] w-full ">
-                <div className="h-full justify-center w-[100vw] md:h-[70vh] space-y-8 md:space-y-16 bg-[#F19F1F] bg-blend-darken p-4" style={{ backgroundImage: "url('images/business-network-background-connecting-dots-technology-design 2.png')" }}>
+                <div className="justify-center w-[100vw] space-y-8 md:space-y-16 bg-[#F19F1F] bg-blend-darken p-4" style={{ backgroundImage: "url('images/business-network-background-connecting-dots-technology-design 2.png')" }}>
                     <div className='space-y-2'>
                         <h1 className="text-center font-bold text-black text-2xl md:text-4xl"><span className="text-white">Our</span> Journey</h1>
                         <p className="text-center text-white text-xl font-bold">Embark on a seamless journey with our IT services.</p>
@@ -131,7 +133,7 @@ export default function Page() {
                             <SamplePrevArrow></SamplePrevArrow>
                             <div className="border-t-2 relative border-white w-full px-4" >
                                 <div style={{ position: 'absolute', left: `${posi[slideIndex]}%` }}>
-                                    <BiDownArrow fontSize={28} />
+                                    <FaCaretDown fontSize={40} />
                                     <p>{years[slideIndex]}</p>
                                 </div>
                             </div>
@@ -139,16 +141,16 @@ export default function Page() {
                         </div>
                     </div>
 
+                    <div className="h-[2vh]">
+
+                    </div>
                     <div className="w-full justify-center hidden md:block">
                         <Slider {...settings} ref={(slider) => sliderRef = slider}>
                             {slides.map((slide, idx) => {
                                 return (
                                     <div key={idx}>
                                         <div className="flex justify-center space-x-8 w-full flex-row">
-                                            <div className="w-[35%] relative h-[250px]">
-                                                <Image src={slide.image_src} layout='fill'></Image>
-                                            </div>
-                                            <div className="w-[30%] flex items-center space-y-4">
+                                            <div className="w-[70%] rounded-lg bg-black bg-opacity-10 backdrop-blur-sm p-4 flex items-center space-y-4">
                                                 <div>{slide.text_content}</div>
                                             </div>
                                         </div>
@@ -164,7 +166,7 @@ export default function Page() {
                                 return (
                                     <div key={idx} >
                                         <div className="flex flex-col justify-center md:space-x-8 w-full md:flex-row">
-                                            <div className="w-full flex items-center space-y-4">
+                                            <div className="w-[95%] rounded-lg bg-black bg-opacity-10 backdrop-blur-sm p-4  flex items-center space-y-4">
                                                 <div>{slide.text_content}</div>
                                             </div>
                                         </div>
@@ -238,7 +240,7 @@ export default function Page() {
                         </p>
                     </div>
                     <div className="p-4 md:p-16 bg-[#FFFAF2] w-full md:w-[50%] space-y-4 md:space-y-6">
-                        <h1 className="text-2xl font-bold md:text-4xl tracking-widest">Our <span className="text-[#F19F1F]">Vision</span></h1>
+                        <h1 className="text-2xl font-bold md:text-4xl">Our <span className="text-[#F19F1F]">Vision</span></h1>
                         <p className="text-base md:text-xl font-extralight tracking-widest">
                             Our vision at Intelli Vectra Technologies is to be the forefront catalyst of global digital transformation. We aspire to pioneer cutting-edge technological advancements that empower businesses and individuals alike. Through innovation, integrity, and a commitment to excellence, we envision creating a connected world where technology fosters inclusive growth, transforms industries, and enriches lives on a global scale.
                         </p>
