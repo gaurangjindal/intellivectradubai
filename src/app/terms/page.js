@@ -4,22 +4,24 @@ const Page = () => {
     return (
         <div>
             <div
-                className="px-4 md:px-10 lg:px-20 flex items-center h-[50vh] w-full bg-cover bg-center"
+                className="h-[50vh] w-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${"/images/banners/techpartbanner.png"})` }}
             >
-                <div className="flex flex-col w-full space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
-                    <div className="border-[#F19F1F] w-full border-l-4 p-4 space-y-2 md:space-y-4 px-2 md:px-4">
-                        <h1 className="text-2xl text-center text-white font-bold md:text-4xl lg:text-5xl">
-                            <span className='text-[#F19F1F]'>Terms</span> and Condition
-                        </h1>
+                <div className="bg-black px-4 md:px-10 lg:px-20 bg-blend-overlay flex items-center  w-full h-full bg-opacity-10 backdrop-blur-sm">
+                    <div className="flex flex-col space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
+                        <div className="border-[#F19F1F] border-l-4 p-4 space-y-2 md:space-y-4 px-2 md:px-4">
+                            <h1 className="text-2xl text-white font-bold md:text-3xl lg:text-4xl">
+                                <span className='text-[#F19F1F]'>Terms</span> and Condition
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-100 p-6 sm:p-12">
-                <div className="w-full mx-auto bg-white text-black p-8 rounded-lg shadow-md">
+            <div className="p-6 sm:p-12">
+                <div className="w-full mx-auto bg-white text-black p-8 rounded-lg">
                     <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
                     <p className="mb-4">
-                        Welcome to Intelli Vectra! These terms and conditions outline the rules and regulations for the use of Intelli Vectra Technologies&apos;s Website, located at <a href="https://www.intellivectra.tech/" className="text-blue-500 underline">https://www.intellivectra.tech/</a>.
+                        Welcome to Intelli Vectra! These terms and conditions outline the rules and regulations for the use of Intelli Vectra Technologies&apos;s Website, located at <a href="https://www.intellivectra.com/" className="text-blue-500 underline">https://www.intellivectra.com/</a>.
                     </p>
                     <p className="mb-4">
                         By accessing this website we assume you accept these terms and conditions. Do not continue to use Intelli Vectra if you do not agree to take all of the terms and conditions stated on this page.
@@ -154,10 +156,6 @@ const Page = () => {
                     </p>
                     <p className="mb-4">
                         As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.
-                    </p>
-
-                    <p className="text-sm text-gray-500 mt-4">
-                        Generated using Terms and Conditions Generator
                     </p>
                 </div>
             </div>

@@ -4,20 +4,22 @@ const Page = () => {
     return (
         <div>
             <div
-                className="px-4 md:px-10 lg:px-20 flex items-center h-[50vh] w-full bg-cover bg-center"
+                className="h-[50vh] w-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${"/images/banners/techpartbanner.png"})` }}
             >
-                <div className="flex w-full flex-col space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
-                    <div className="border-[#F19F1F] w-full border-l-4 p-4 space-y-2 md:space-y-4 px-2 md:px-4">
-                        <h1 className="text-2xl text-white text-center font-bold md:text-4xl lg:text-5xl">
-                            <span className='text-[#F19F1F]'>Privacy </span> and Policy
-                        </h1>
+                <div className="bg-black px-4 md:px-10 lg:px-20 bg-blend-overlay flex items-center  w-full h-full bg-opacity-10 backdrop-blur-sm">
+                    <div className="flex flex-col space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
+                        <div className="border-[#F19F1F] border-l-4 p-4 space-y-2 md:space-y-4 px-2 md:px-4">
+                            <h1 className="text-2xl text-white font-bold md:text-3xl lg:text-4xl">
+                                <span className='text-[#F19F1F]'>Privacy</span> and Policy
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className="bg-gray-100 p-6 sm:p-12">
-                <div className="w-full mx-auto bg-white text-black p-8 rounded-lg shadow-md">
+            <div className="p-6 sm:p-12">
+                <div className="w-full mx-auto bg-white text-black p-8 rounded-lg ">
                     <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
                     <p className="text-gray-700 mb-6">Last updated: June 30, 2024</p>
 
@@ -237,12 +239,8 @@ const Page = () => {
                         If you have any questions about this Privacy Policy, You can contact us:
                     </p>
                     <ul className="list-disc list-inside mb-4">
-                        <li>By email: <a href="mailto:info@intellivectra.tech" className="text-blue-500 underline">info@intellivectra.tech</a></li>
+                        <li>By email: <a href="mailto:info@intellivectra.com" className="text-blue-500 underline">info@intellivectra.com</a></li>
                     </ul>
-
-                    <p className="text-sm text-gray-500 mt-4">
-                        Generated using TermsFeed Privacy Policy Generator
-                    </p>
                 </div>
             </div>
         </div>

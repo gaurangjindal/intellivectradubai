@@ -12,7 +12,7 @@ export default function Page({ params }) {
     console.log(service)
     return (
         <div className='bg-white w-full space-y-[30px] md:space-y-[60px]'>
-            <PageStarter imageSrc={service.heading_pic_url} desc={service.short_description} descColor={'white'} tit1={service.service_name} tit1Col={'white'}/>
+            <PageStarter imageSrc={service.heading_pic_url} desc={service.short_description} descColor={'white'} tit1={service.service_name} tit1Col={'white'} />
             <div className="w-full md:px-10 md:space-x-20 bg-white text-black items-center justify-center flex flex-col md:flex-row">
                 <div className="flex md:w-[40%] w-[100%]">
                     {/* First Image */}
@@ -46,12 +46,12 @@ export default function Page({ params }) {
             </div>
             <div className="gap-8 md:p-0 p-2 grid md:grid-cols-2 grid-cols-1 justify-items-center">
                 {
-                    service.points.map((point,idx) => {
+                    service.points.map((point, idx) => {
                         return (
-                            <div key={idx} className="md:w-[80%] w-[100%] group  border-l-8 hover-box hover:text-white  transition duration-1000 ease-in-out  hover:bg-[#F19F1F] text-[#F19F1F] border-[#F19F1F] space-y-4 p-8">
-                                <div>{point.logo}</div>
+                            <div key={idx} className="md:w-[80%] w-[100%] group  border-l-8 hover-box hover:text-white  transition duration-1000 ease-in-out  hover:bg-[#F19F1F]  border-[#F19F1F] space-y-4 p-8">
+
                                 <div className=" text-black group-hover:text-white space-y-4">
-                                    <h1 className="text-2xl font-extralight">{point.heading}</h1>
+                                    <div className='flex text-[#F19F1F] hover:text-white items-center space-x-2'><div>{point.logo}</div> <h1 className="text-2xl font-extralight">{point.heading}</h1></div>
                                     <p>{point.desc}</p>
                                 </div>
                             </div>

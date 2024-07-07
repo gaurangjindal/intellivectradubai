@@ -129,8 +129,8 @@ export default function Home() {
 
 
   const [activeContentType, setActiveContentType] = useState("blogs");
-  const classActive = "border-b-2 md:px-6 border-[#FFAB2E] h-full items-center cursor-pointer flex";
-  const classUnactive = "cursor-pointer md:px-6 h-full items-center flex hover:border-b-2 hover:border-[#FFAB2E]"
+  const classActive = "text-xl border-b-2 md:px-6 border-[#FFAB2E] h-full items-center cursor-pointer flex";
+  const classUnactive = "text-xl cursor-pointer md:px-6 h-full items-center flex hover:border-b-2 hover:border-[#FFAB2E]"
   return (
     <div className="h-min-[100vh] w-full space-y-[40px] md:space-y-[60px] bg-white">
       <PageStarterVideo tit1={"BUSINESS"} videoSrc={"videos/homepagebgVideo.mp4"} tit2={" & ENTERPRISE HUB"} tit1Col={"#F19F1F"} desc={"Empowering businesses with agile, transparent, and innovative technology solutions, Intelli Vectra Technologies drives success through collaboration and passionate expertise."} descColor={"white"} link={"/solutionandservices"} />
@@ -233,7 +233,7 @@ export default function Home() {
       </div>
 
       <div className="w-full p-4 flex items-center justify-center">
-        <div className="bg-[#FFFAF2] py-8 p-4 w-full text-black flex items-center justify-center">
+        <div className="bg-white py-8 p-4 w-full text-black flex items-center justify-center">
           <div className="w-full md:w-[45%] space-y-8">
             <div className="space-y-4 flex flex-col justify-center items-center w-full">
               <h1 className="text-center text-2xl md:text-4xl font-bold">Our <span className="text-[#F19F1F]">Achievements</span></h1>
@@ -263,7 +263,7 @@ export default function Home() {
       
       <div className="text-gray-600 w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
-        <ul className="w-[80%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
+        <ul className="w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
           <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>
           <li className={activeContentType === "news" ? classActive : classUnactive} onClick={() => setActiveContentType("news")}>News</li>
           <li className={activeContentType === "case_study" ? classActive : classUnactive} onClick={() => setActiveContentType("case_study")}>Case Study</li>

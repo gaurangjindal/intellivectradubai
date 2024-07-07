@@ -54,15 +54,14 @@ export const Footer = () => {
                     <div className='space-y-2 text-center lg:text-left'>
                         <h1 className='text-[#FFAB2E] font-bold'>Contact Us</h1>
                         <ul className='list-style-none space-y-2'>
-                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><CiPhone style={{ color: '#FFAB2E' }} /></span><span>+91-012-4496-0635</span></li>
-                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><MdOutlineEmail style={{ color: '#FFAB2E' }} /></span><span>info@intellivectra.tech</span></li>
+                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><CiPhone style={{ color: '#FFAB2E' }} /></span><span>+971 4 5667357</span></li>
+                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><MdOutlineEmail style={{ color: '#FFAB2E' }} /></span><span>info@intellivectra.com</span></li>
                             <li className='flex justify-center items-start lg:justify-start space-x-1'>
                                 <span><CiLocationOn style={{ color: '#FFAB2E' }} /></span>
                                 <span className="mt-[-5px]">
-                                    Office #1111,<br />
-                                    Clover Bay Tower, Business Bay,<br />
-                                    PO Box: 283426, Dubai, UAE<br />
-
+                                    Office #1111,Clover Bay Tower<br />
+                                    Business Bay,PO Box: 283426<br />
+                                    Dubai, United Arab Emirates<br />
                                 </span>
                             </li>
                         </ul>
@@ -70,7 +69,7 @@ export const Footer = () => {
                 </div>
 
                 <div className='bg-[#343A40] p-4 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left space-y-4 lg:space-y-0'>
-                    <p className="text-white">© 2024 Intelli Vectra Technologies Pvt. Ltd. All rights reserved.</p>
+                    <p className="text-white">© 2024 Intelli Vectra Technologies LLC All rights reserved.</p>
                     <ul className='flex list-style-none text-white items-center space-x-4'>
                         <Link href={'/terms'}><li>Terms and Condition</li></Link>
                         <Link href={'/privacy'}><li>Privacy and Policy</li></Link>
