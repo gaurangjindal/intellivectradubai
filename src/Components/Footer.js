@@ -59,8 +59,8 @@ export const Footer = () => {
                             <li className='flex justify-center items-start lg:justify-start space-x-1'>
                                 <span><CiLocationOn style={{ color: '#FFAB2E' }} /></span>
                                 <span className="mt-[-5px]">
-                                    Office #1111,Clover Bay Tower<br />
-                                    Business Bay,PO Box: 283426<br />
+                                    Office #1111, Clover Bay Tower<br />
+                                    Business Bay, PO Box: 283426<br />
                                     Dubai, United Arab Emirates<br />
                                 </span>
                             </li>

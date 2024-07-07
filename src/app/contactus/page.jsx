@@ -14,6 +14,17 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
 import { GrLocation } from "react-icons/gr";
 
+import styled from 'styled-components';
+
+// Styled container with responsive width
+const PhoneInputContainer = styled.div`
+  width: 100%;
+  
+  @media (min-width: 768px) {
+    width: 49%;
+  }
+`;
+
 export default function Page() {
   const [name, setName] = React.useState("")
   const [email, setEmail] = React.useState("")
@@ -248,7 +259,7 @@ export default function Page() {
         <div className='flex p-4 flex-col md:flex-row-reverse space-y-4 md:space-y-0 md:space-x-4 w-full justify-center items-center'>
           <div className='bg-white shadow-lg space-y-8 text-black p-4 py-8 rounded-lg md:w-[70%] w-full h-fit'>
             <div>
-              <p className='text-xl font-extralight'> We&apos;re committed to helping your organization with our solutions. Submit the form below, and we&apos;ll be in touch soon.</p>
+              <p className='text-xl font-normal'> We&apos;re committed to helping your organization with our solutions. Submit the form below, and we&apos;ll be in touch soon.</p>
             </div>
             <Formik
               initialValues={{ name: '', email: '', countryCode: '', phone: '', message: '' }}
@@ -300,7 +311,7 @@ export default function Page() {
                     <Field
                       name='name'
                       placeholder='Name'
-                      className='rounded-lg w-full p-2 font-extralight border border-black'
+                      className='rounded-lg w-full p-2 font-normal border border-black'
                     />
                   </div>
                   <div className='mb-4'>
@@ -310,23 +321,22 @@ export default function Page() {
                     <Field
                       name='email'
                       placeholder='Email Address'
-                      className='rounded-lg md:w-[49%] w-full p-2 font-extralight border border-black'
+                      className='rounded-lg md:w-[49%] w-full p-2 font-normal border border-black'
                     />
-                    <div>
+
+                    <PhoneInputContainer>
                       <PhoneInput
-                        containerClass='md:w-[49%] w-full'
-                        buttonClass='h-[50px] w-full'
-                        inputClass='h-[50px] w-[100px] w-full'
-                        country={"eg"}
+                        // containerClass='md:w-[49%] w-full rounded-lg border'
+                        buttonClass='h-[50px]'
+                        inputClass='h-[50px] '
+                        containerStyle={{ width: '100%' }}  // Ensuring the PhoneInput takes full width of its container
+                        inputStyle={{ width: '100%' }}
+                        country={"+971"}
                         enableSearch={true}
                         value={phone}
                         onChange={(code) => setPhone(code)}
                       />
-                    </div>
-
-
-
-
+                    </PhoneInputContainer>
                   </div>
                   <div className='mb-4'>
                     <Field
@@ -334,7 +344,7 @@ export default function Page() {
                       name='message'
                       placeholder='Message'
                       rows={3}
-                      className='rounded-lg w-full p-2 font-extralight border border-black'
+                      className='rounded-lg w-full p-2 font-normal border border-black'
                     />
                   </div>
                   <div className='flex items-center md:justify-end justify-center'>
@@ -353,25 +363,25 @@ export default function Page() {
           <div className='w-full md:grid-cols-1 grid grid-cols-1 gap-1 gap-y-2 md:w-[25%]'>
             <div className='md:h-[100px] h-full p-2 flex items-center md:justify-between space-x-4 shadow-lg md:w-[250px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a className='underline cursor-pointer' href='tel:012-4496-0635'><FaPhoneAlt style={{ fontSize: '30px' }} /></a></div>
-              <div className='text-black w-[90%] text-sm font-extralight'>
+              <div className='text-black w-[90%] text-sm font-normal'>
                 <p className="text-[#F19F1F] font-normal">Call Us On</p>
                 <a className='cursor-pointer' href='tel:012-4496-0635'>+971 4 5667357</a>
               </div>
             </div>
             <div className='md:h-[100px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[250px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a className='cursor-pointer' href='mailto:info@intellivectra.tech'><MdEmail style={{ fontSize: '30px' }} /></a></div>
-              <div className='text-black w-[90%] text-sm font-extralight'>
+              <div className='text-black w-[90%] text-sm font-normal'>
                 <p className="text-[#F19F1F] font-normal">Mailing Address</p>
                 <a className='cursor-pointer' href='mailto:info@intellivectra.com'>info@intellivectra.com</a>
               </div>
             </div>
             <div className='md:h-[100px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[250px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><FaLocationDot style={{ fontSize: '30px' }} /></div>
-              <div className="text-black  w-[90%] font-extralight">
+              <div className="text-black  w-[90%] font-normal">
                 <p className="text-[#F19F1F] font-normal text-xs">Visit Us At</p>
                 <p className="text-xs">
-                  Office #1111,Clover Bay Tower
-                  Business Bay,PO Box: 283426
+                  Office #1111, Clover Bay Tower
+                  Business Bay, PO Box: 283426
                   Dubai, UAE
                 </p>
 
@@ -379,7 +389,7 @@ export default function Page() {
             </div>
             <div className='md:h-[100px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[250px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><FaRegClock style={{ fontSize: '30px' }} /></div>
-              <div className="text-black  w-[90%] font-extralight text-sm">
+              <div className="text-black  w-[90%] font-normal text-sm">
                 <p className="text-[#F19F1F] font-normal text-xs">Office Hours</p>
                 <p>Monday - Friday<br /> 9.30AM - 5.30PM</p>
               </div>
@@ -392,9 +402,9 @@ export default function Page() {
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/burzkhalifa.jpg" height={300} width={500} />
           <h1 className='text-4xl text-[#F19F1F] text-center'>Dubai, UAE</h1>
-          <p className='text-[#3F444D] text-center font-extralight'>
-            Office #1111,Clover Bay Tower<br />
-            Business Bay,PO Box: 283426<br />
+          <p className='text-[#3F444D] text-center font-normal'>
+            Office #1111, Clover Bay Tower<br />
+            Business Bay, PO Box: 283426<br />
             Dubai, United Arab Emirates
           </p>
           <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
@@ -404,7 +414,7 @@ export default function Page() {
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/indiagate.jpg" height={300} width={500} />
           <h1 className='text-4xl text-[#F19F1F] text-center'>Delhi NCR, India</h1>
-          <p className='text-[#3F444D] text-center font-extralight'>2nd Floor, Plot No. 29<br />
+          <p className='text-[#3F444D] text-center font-normal'>2nd Floor, Plot No. 29<br />
             Maruti Industrial Area, Sector-18<br />
             Gurugram–122015 (Haryana), India</p>
           <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
@@ -412,10 +422,10 @@ export default function Page() {
           </div>
         </div>
         <div className='space-y-4 flex flex-col justify-center'>
-          <Image src="/images/riyadh.jpg" height={300} width={500} />
+          <Image src="/images/riyadh.png" height={300} width={500} />
           <h1 className='text-4xl text-[#F19F1F] text-center'>Riyadh, Saudi Arabia</h1>
-          <p className='text-[#3F444D] text-center font-extralight'>Samama Tower<br />
-            King Fahd Road,Riyadh<br />
+          <p className='text-[#3F444D] text-center font-normal'>Samama Tower<br />
+            King Fahd Road, Riyadh<br />
             Kingdom of Saudi Arabia
           </p>
           <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
@@ -425,7 +435,7 @@ export default function Page() {
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/london.jpg" height={300} width={500} />
           <h1 className='text-4xl text-[#F19F1F] text-center'>London, UK</h1>
-          <p className='text-[#3F444D] text-center font-extralight'>Coming Soon<br />
+          <p className='text-[#3F444D] text-center font-normal'>Coming Soon<br />
             <br />
           </p>
           <div className='flex text-[#F19F1F] justify-center w-full items-center space-x-2 cursor-pointer'>

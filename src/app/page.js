@@ -171,7 +171,7 @@ export default function Home() {
 
       <div className="text-center min-h-[70vh] bg-[#FFFAF2] p-8">
         <h1 className="md:text-4xl text-2xl text-gray-800 mb-2 font-bold">Solutions & <span className="text-[#FFAB2E]">Services</span></h1>
-        <p className="text-gray-600 mb-6 font-light md:text-2xl text-xl">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
+        <p className="text-black mb-6 md:text-xl text-sm">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
 
         <div className="flex items-center justify-center rounded-[50%]">
           <Link href={"/solutionandservices"}><Image className="rounded-[50%]" width={500} height={500} src="/images/wheelImage.png" alt="Solutions & Services" /></Link>
@@ -180,7 +180,7 @@ export default function Home() {
       <div className="text-black space-y-2">
         <div className="w-full flex items-center flex-col justify-center space-y-4">
           <h1 className="text-center tracking-wide text-2xl font-bold md:text-4xl text-gray-600">Key <span className="text-[#FFAB2E]">Benefits</span></h1>
-          <p className="font-extralight text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Tailored IT Solutions for Seamless Operations, Reliable Support, Cybersecurity Expertise, Innovation-driven Approach, Client-Centric Services, Proven Results.</p>
+          <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Tailored IT Solutions for Seamless Operations, Reliable Support, Cybersecurity Expertise, Innovation-driven Approach, Client-Centric Services, Proven Results.</p>
         </div>
         <div className="bg-white grid grid-cols-2 xl:grid-cols-4 justify-items-center gap-x-4 gap-y-12 md:gap-x-4 md:space-y-0 p-4">
           <BenifitCard
@@ -202,31 +202,31 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full p-4 flex items-center justify-center">
-        <div className="w-full text-gray-600 space-y-10 bg-[#FFFAF2] py-12 flex flex-col">
+        <div className="w-full text-black space-y-10 bg-[#FFFAF2] py-12 flex flex-col">
           <div className="w-full space-y-4 flex-col flex items-center">
             <h1 className="text-2xl md:text-4xl font-bold text-center">Technology <span className="text-[#FFAB2E]">Partners</span></h1>
-            <p className="font-extralight text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Partnering with industry-leading manufacturers to deliver cutting-edge technology solutions<br /> tailored to your business needs.</p>
+            <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Partnering with industry-leading manufacturers to deliver cutting-edge technology solutions<br /> tailored to your business needs.</p>
           </div>
 
           <div className="flex md:space-y-16 space-y-8 p-2 flex-col justify-center">
             <div className="md:space-x-32 gap-2 md:flex grid grid-cols-4 justify-items-center w-full md:justify-center">
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp1.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp2.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp3.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp4.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp1.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp2.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp3.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp4.png" />
             </div>
             <div className="md:space-x-32 gap-2 md:flex grid grid-cols-5 justify-items-center w-full md:justify-center">
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp5.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp6.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp7.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp8.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp9.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp5.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp6.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp7.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp8.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp9.png" />
             </div>
             <div className="md:space-x-32 gap-2 md:flex grid grid-cols-4 justify-items-center w-full md:justify-center">
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp10.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp11.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp12.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/tp13.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp10.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp11.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp12.png" />
+              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp13.png" />
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@ export default function Home() {
           <div className="w-full md:w-[45%] space-y-8">
             <div className="space-y-4 flex flex-col justify-center items-center w-full">
               <h1 className="text-center text-2xl md:text-4xl font-bold">Our <span className="text-[#F19F1F]">Achievements</span></h1>
-              <p className="font-extralight text-sm md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
+              <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
             </div>
             <div className="flex flex-row justify-center">
               <div className="md:p-8 p-4 text-center space-y-4 border-r">
@@ -261,7 +261,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="text-gray-600 w-full space-y-6 flex flex-col justify-center items-center">
+      <div className="text-black w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
         <ul className="w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
           <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>

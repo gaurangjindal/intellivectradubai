@@ -5,7 +5,7 @@ export const jsonforServices = [
     {
         "service_id": 1,
         "service_name": "DATACENTER DESIGN & OPTIMIZATION",
-        "description": " Datacenter Design & Optimization encompasses assessing, planning, and implementing improvements in network, storage, and server virtualization. Intelli Vectra Solutions offers comprehensive services to enhance the efficiency and reliability of your data center infrastructure.",
+        "description": "Intelli Vectra Technology specializes in datacenter design and optimization, offering planning, infrastructure optimization, cooling and power management, network solutions, security measures, and disaster recovery strategies to create efficient, scalable, and secure datacenter infrastructures.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
@@ -47,7 +47,7 @@ export const jsonforServices = [
     {
         "service_id": 2,
         "service_name": "AI & RPA",
-        "description": " AI & RPA combine artificial intelligence and automation to streamline processes, enhance decision-making, and improve efficiency. It includes machine learning, natural language processing, computer vision, and robotic automation for business innovation. Intelli Vectra Solutions offers advanced AI and Robotic Process Automation (RPA) services to enhance business operations.",
+        "description": "Intelli Vectra Technology specializes in AI and RPA, providing solutions for automating processes, enhancing efficiency, and driving innovation. Our offerings include intelligent automation, machine learning, predictive analytics, and workflow optimization to streamline operations and boost productivity.",
         "heading_pic_url": "/images/services/itsecsol.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
@@ -99,7 +99,7 @@ export const jsonforServices = [
     {
         "service_id": 3,
         "service_name": "Cloud Solution",
-        "description": " Intelli Vectra Technologies offers cutting-edge Cloud Services, leveraging scalable infrastructure for seamless data management, security, and accessibility. Our solutions optimize resources, ensuring high performance and reliability for businesses of all sizes.",
+        "description": "Intelli Vectra Technology offers comprehensive cloud solutions, including cloud migration, infrastructure management, security, and optimization. Our services ensure scalable, flexible, and secure cloud environments, enabling businesses to enhance performance, reduce costs, and improve agility.",
         "heading_pic_url": "/images/services/coludsoln.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
@@ -148,7 +148,7 @@ export const jsonforServices = [
     {
         "service_id": 4,
         "service_name": "Physical Datacenter Design & Layout",
-        "description": " Physical Datacenter Design & Layout entails planning the infrastructure of data centers, including server room layout, cooling, power distribution, and security measures, to ensure optimal performance, reliability, and safety.Intelli Vectra Solutions provides comprehensive services for physical datacenter design and layout, ensuring optimal performance and reliability.",
+        "description": "Intelli Vectra Technology excels in physical datacenter design and layout, creating efficient, scalable, and secure infrastructures. Our services include space utilization, cooling solutions, power management, and connectivity optimization to ensure optimal performance and energy efficiency.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
@@ -190,7 +190,7 @@ export const jsonforServices = [
     {
         "service_id": 5,
         "service_name": "SAP Offerings",
-        "description": " SAP Offerings encompass a range of enterprise solutions including ERP, CRM, SCM, HCM, BI, industry-specific solutions, mobile applications, integration services, and consulting to optimize business processes and drive innovation.Intelli Vectra Solutions provides a wide range of SAP solutions and services tailored to meet your business needs.",
+        "description": "Intelli Vectra Technology provides comprehensive SAP offerings, including implementation, integration, and support services. We specialize in optimizing SAP solutions for business processes, enhancing efficiency, and ensuring seamless operation, tailored to meet the unique needs of each client.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
@@ -248,7 +248,7 @@ export const jsonforServices = [
     {
         "service_id": 6,
         "service_name": "DevOps",
-        "description": "DevOps merges development and operations, emphasizing collaboration, automation, and continuous delivery to accelerate software development, improve deployment frequency, and enhance business agility through faster time-to-market. Intelli Vectra Solutions offers DevOps services to streamline software development and deployment processes.",
+        "description": "Intelli Vectra Technology offers DevOps services, focusing on automating development, deployment, and operations processes. Our solutions include continuous integration, continuous delivery, infrastructure as code, and monitoring, aimed at accelerating development cycles, enhancing collaboration, and improving software quality.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
@@ -295,7 +295,7 @@ export const jsonforServices = [
     {
         "service_id": 7,
         "service_name": "Cybersecurity",
-        "description": "Cybersecurity focuses on protecting computer systems, networks, and data from unauthorized access, cyberattacks, and breaches. It includes measures such as network security, endpoint protection, and security awareness training to mitigate risks. Intelli Vectra Solutions offers comprehensive cybersecurity solutions to protect your organization from evolving threats.",
+        "description": "Intelli Vectra Technology provides robust cybersecurity solutions, including threat detection, risk assessment, incident response, and compliance management. Our services ensure comprehensive protection of digital assets, safeguarding businesses against cyber threats and enhancing overall security posture.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
@@ -348,7 +348,7 @@ export const jsonforServices = [
     {
         "service_id": 15,
         "service_name": "Cloud Solution",
-        "description": " Intelli Vectra Technologies offers cutting-edge Cloud Services, leveraging scalable infrastructure for seamless data management, security, and accessibility. Our solutions optimize resources, ensuring high performance and reliability for businesses of all sizes.",
+        "description": "Intelli Vectra Technology offers comprehensive cloud solutions, including cloud migration, infrastructure management, security, and optimization. Our services ensure scalable, flexible, and secure cloud environments, enabling businesses to enhance performance, reduce costs, and improve agility.",
         "heading_pic_url": "/images/services/coludsoln.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
@@ -398,7 +398,7 @@ export const jsonforServices = [
     {
         "service_id": 8,
         "service_name": "Managed Services",
-        "description": "Intelli Vectra Solutions provides a full range of Managed Services, covering IT support, security, cloud management, backup, disaster recovery, network services, endpoint security, application management, and compliance. We ensure seamless operations and robust security for businesses.",
+        "description": "Intelli Vectra Technology offers managed services, providing proactive monitoring, maintenance, and support for IT systems. Our services include network management, server management, helpdesk support, and IT strategy, ensuring optimal performance, reduced downtime, and efficient operations for businesses.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",

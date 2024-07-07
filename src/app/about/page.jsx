@@ -81,7 +81,7 @@ export default function Page() {
     const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024];
     return (
         <div className='space-y-[30px] w-full bg-white'>
-            <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Intelli Vectra Technologies drives digital transformation with cutting-edge IT solutions. We simplify complexities, ensuring operational efficiency and growth. Committed to excellence and customer-centricity, we foster collaboration and innovation to help businesses thrive in a rapidly evolving digital landscape."} />
+            <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Forging Connections in the Digital Realm."} />
             <div className="w-full px-4 md:px-10 lg:px-20 space-y-6 bg-white text-black flex flex-col lg:flex-row items-center justify-center md:space-x-20">
                 <div className="flex md:w-[40%] w-full">
                     {/* First Image */}
@@ -109,9 +109,11 @@ export default function Page() {
                     <h1 className="px-2 border-l-2 text-black text-[20px] font-bold border-[#F19F1F]">ABOUT US</h1>
                     <p className="text-[#F19F1F] md:text-4xl text-2xl tracking-wide">Welcome to IVT</p>
 
-                    <p className="text-normal text-[#3F444]">
-                        Welcome to Intelli Vectra Technologies! We are thrilled to have you here. As a leading IT solutions provider, we are dedicated to helping businesses harness the power of technology to drive digital transformation and simplify IT complexities. Our mission is to deliver innovative, tailored solutions that not only meet but exceed your expectations. With a commitment to excellence, integrity, and customer-centricity, we focus on fostering collaboration and continuous improvement. Our team of experts works tirelessly to ensure operational efficiency, enhanced security, and sustainable growth for our clients. At Intelli Vectra Technologies, we believe in the transformative potential of technology to create a brighter, more connected future for all. Together, let us shape the future of your business.
+                    <p className="md:text-[18px] text-normal text-[#3F444]">
+                    Intelli Vectra Technologies empower businesses through innovative technology solutions, our vision is to be the catalyst for digital transformation worldwide. With a commitment to excellence, integrity, and customer-centricity, we strive to redefine the possibilities of IT, delivering cutting-edge solutions that inspire progress, drive growth, and shape the future of industries. Our steadfast dedication to innovation and our drive to exceed expectations position us as the ideal partner for organizations striving to succeed in the dynamic digital landscape. Together, we foresee a future where technology empowers, connects, and transforms lives, fostering a brighter and more inclusive world for all.Our steadfast dedication to innovation and our drive to exceed expectations position us as the ideal partner for organizations striving to succeed in the dynamic digital landscape. Together, we foresee a future where technology empowers, connects, and transforms lives, fostering a brighter and more inclusive world for all.
                     </p>
+                    {/* <p className="md:text-[18px] text-normal text-[#3F444]">Our mission is to utilize the power of technology to empower businesses and individuals, driving positive change and facilitating success in an ever more digital world. Through our unwavering commitment to innovation, expertise, and customer satisfaction, we strive to deliver tailored IT solutions that exceed expectations, optimize efficiency, and unlock new opportunities for growth. With a focus on collaboration, integrity, and continuous improvement, we aim to be a trusted partner for our clients, providing reliable support, strategic guidance, and cutting-edge solutions that drive them towards their goals. Together, we embrace the transformative potential of technology to create a brighter, more connected future for all.</p> */}
+                    
                     <div className="w-full h-6 bg-white"></div>
                     <Link href="/about"><button className='cursor-pointer p-2 px-6 h-fit w-fit rounded-md text-white bg-[#F19F1F]'>Learn More</button></Link>
                 </div>
@@ -121,8 +123,8 @@ export default function Page() {
             <div className="bg-[#FFFAF2] w-full ">
                 <div className="justify-center w-[100vw] space-y-8 md:space-y-16 bg-[#F19F1F] bg-blend-darken p-4" style={{ backgroundImage: "url('images/business-network-background-connecting-dots-technology-design 2.png')" }}>
                     <div className='space-y-2'>
-                        <h1 className="text-center font-bold text-black text-2xl md:text-4xl"><span className="text-white">Our</span> Journey</h1>
-                        <p className="text-center text-white text-xl font-bold">Embark on a seamless journey with our IT services.</p>
+                        <h1 className="text-center font-bold text-black text-2xl md:text-4xl"><span className="text-white">Journey </span> Unfolded</h1>
+                        <p className="text-center text-white md:text-xl text-sm">Exploring the journey towards excellence</p>
                     </div>
 
                     <div className="w-full">
@@ -177,10 +179,9 @@ export default function Page() {
             </div>
 
             <div className="p-4 md:p-8 bg-white space-y-4 flex flex-col items-center">
-                <h1 className="text-center text-4xl font-bold text-black">Our <span className="text-[#F19F1F]">Process</span></h1>
-                <div className="text-center text-black tracking-wider text-lg font-extralight">
-                    <p>Streamlined Solutions for Seamless IT Services Tailored to</p>
-                    <p>Your Business Needs</p>
+                <h1 className="text-center text-4xl font-bold text-black">Our <span className="text-[#F19F1F]">Methodology</span></h1>
+                <div className="text-center text-black md:text-xl text-sm font-normal">
+                    <p>Navigating Excellence: From Concept to Completion</p>
                 </div>
                 <div className="w-full flex justify-center">
                     <div className="relative w-full md:w-[80%] h-[300px] md:h-[400px]">
@@ -192,7 +193,7 @@ export default function Page() {
 
             <div className="md:p-8 p-2 bg-[#FFFAF1] w-[100%] text-black space-y-4">
                 <h1 className="font-bold text-center text-4xl"><span className="text-[#F19F1F]">Our </span>Approach</h1>
-                <div className="text-center tracking-wider text-lg font-extralight">
+                <div className="text-center md:text-xl text-sm font-normal">
                     <p>At IVT, We love technology - But we are obsessed with</p>
                     <p>Your Success</p>
                 </div>
@@ -206,18 +207,18 @@ export default function Page() {
                         <div className="flex justify-center">
                             <div className="w-[150px] lg:w-[400px]">
                                 <h1 className="text-sm md:text-lg text-center font-semibold">Consult & Envision</h1>
-                                <p className="font-extralight text-center text-[7px] md:text-[15px]"> Through strategic planning and innovative thinking, we envision tailored solutions aligning with your growth and efficiency vision.</p>
+                                <p className="font-normal text-center text-[7px] md:text-[15px]"> Through strategic planning and innovative thinking, we envision tailored solutions aligning with your growth and efficiency vision.</p>
                             </div>
                         </div>
 
                         <div className="w-full flex items-center justify-between">
                             <div className="w-[150px] lg:w-[400px]">
                                 <h1 className="text-sm md:text-lg text-center font-semibold">Manage & Improve</h1>
-                                <p className="font-extralight text-center text-[7px] md:text-[15px]"> We employ proactive monitoring, agile methodologies, and responsive support to ensure seamless operation and optimization of your technology infrastructure.</p>
+                                <p className="font-normal text-center text-[7px] md:text-[15px]"> We employ proactive monitoring, agile methodologies, and responsive support to ensure seamless operation and optimization of your technology infrastructure.</p>
                             </div>
                             <div className="w-[150px] lg:w-[400px]">
                                 <h1 className="md:text-lg text-sm text-center font-semibold">Build & Implement</h1>
-                                <p className="font-extralight text-center text-[7px] md:text-[15px]"> Our comprehensive approach guarantees reliable implementation and ongoing support, empowering your business with innovative capabilities for sustained growth.</p>
+                                <p className="font-normal text-center text-[7px] md:text-[15px]"> Our comprehensive approach guarantees reliable implementation and ongoing support, empowering your business with innovative capabilities for sustained growth.</p>
                             </div>
                         </div>
                     </div>
@@ -232,13 +233,13 @@ export default function Page() {
                 <div className="space-x-0  md:space-x-2 space-y-4 md:space-y-0 flex flex-col md:flex-row">
                     <div className="p-4 md:p-16 bg-[#FFFAF2] w-full md:w-[50%] space-y-4 md:space-y-6">
                         <h1 className="text-2xl font-bold md:text-4xl">Our <span className="text-[#F19F1F]">Mission</span></h1>
-                        <p className="text-lg md:text-xl font-extralight">
+                        <p className="text-lg md:text-xl font-normal">
                             Our mission at Intelli Vectra Technologies is to drive digital transformation by delivering innovative, tailored IT solutions. We strive to simplify complexities, optimize efficiency, and enhance security for businesses across diverse industries. With a commitment to excellence, integrity, and customer satisfaction, we empower our clients to achieve sustainable growth and success in a rapidly evolving technological landscape.
                         </p>
                     </div>
                     <div className="p-4 md:p-16 bg-[#FFFAF2] w-full md:w-[50%] space-y-4 md:space-y-6">
                         <h1 className="text-2xl font-bold md:text-4xl">Our <span className="text-[#F19F1F]">Vision</span></h1>
-                        <p className="text-lg md:text-xl font-extralight">
+                        <p className="text-lg md:text-xl font-normal">
                             Our vision at Intelli Vectra Technologies is to be the forefront catalyst of global digital transformation. We aspire to pioneer cutting-edge technological advancements that empower businesses and individuals alike. Through innovation, integrity, and a commitment to excellence, we envision creating a connected world where technology fosters inclusive growth, transforms industries, and enriches lives on a global scale.
                         </p>
                     </div>

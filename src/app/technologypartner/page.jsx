@@ -6,64 +6,64 @@ import { TechPartCard } from '@/Components/Cards/TechPartCard';
 const Page = () => {
     const partners = [
         {
-            imageSrc: "/images/tp1.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp1.png",
+            link: "https://www.aquilai.io/"
         },
         {
-            imageSrc: "/images/tp2.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp2.png",
+            link: "https://www.vmware.com/"
         },
         {
-            imageSrc: "/images/tp3.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp3.png",
+            link: "https://www.veritas.com/"
         },
         {
-            imageSrc: "/images/tp4.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp4.png",
+            link: "https://www.sap.com/india/index.html"
         },
         {
-            imageSrc: "/images/tp5.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp5.png",
+            link: "https://www.redhat.com/en"
         },
         {
-            imageSrc: "/images/tp6.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp6.png",
+            link: "https://www.microsoft.com/en-in"
         },
         {
-            imageSrc: "/images/tp7.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp7.png",
+            link: "https://www.imperva.com/"
         },
         {
-            imageSrc: "/images/tp8.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp8.png",
+            link: "https://www.imperva.com/"
         },
         {
-            imageSrc: "/images/tp9.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp9.png",
+            link: "https://arconnet.com/"
         },
         {
-            imageSrc: "/images/tp10.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp10.png",
+            link: "https://arconnet.com/"
         },
         {
-            imageSrc: "/images/tp11.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp11.png",
+            link: "https://www.hpe.com/in/en/home.html"
         },
         {
-            imageSrc: "/images/tp12.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp12.png",
+            link: "https://about.gitlab.com/"
         },
         {
-            imageSrc: "/images/tp13.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp13.png",
+            link: "https://www.arista.com/en/"
         },
         {
-            imageSrc: "/images/tp14.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp14.png",
+            link: "https://www.cohesity.com/"
         },
         {
-            imageSrc: "/images/tp15.png",
-            link: "/"
+            imageSrc: "/images/techpartner/tp15.png",
+            link: "https://www.exagrid.com/"
         },
     ]
     return (

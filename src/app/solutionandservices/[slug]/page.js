@@ -51,7 +51,7 @@ export default function Page({ params }) {
                             <div key={idx} className="md:w-[80%] w-[100%] group  border-l-8 hover-box hover:text-white  transition duration-1000 ease-in-out  hover:bg-[#F19F1F]  border-[#F19F1F] space-y-4 p-8">
 
                                 <div className=" text-black group-hover:text-white space-y-4">
-                                    <div className='flex text-[#F19F1F] hover:text-white items-center space-x-2'><div>{point.logo}</div> <h1 className="text-2xl font-extralight">{point.heading}</h1></div>
+                                    <div className='flex text-[#F19F1F] hover:text-white items-center space-x-2'><div>{point.logo}</div> <h1 className="text-2xl font-normal">{point.heading}</h1></div>
                                     <p>{point.desc}</p>
                                 </div>
                             </div>

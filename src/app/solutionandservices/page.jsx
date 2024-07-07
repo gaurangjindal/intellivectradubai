@@ -39,7 +39,7 @@ export default function Page() {
                 </div>
                 <div className="w-full md:w-[50%] space-y-6">
                     {/* Main text content */}
-                    <h1 className="text-[#F19F1F] text-4xl font-extralight">
+                    <h1 className="text-[#F19F1F] text-4xl font-normal">
                         <span className="text-black">Solutions</span> & Services
                     </h1>
                     <p className="text-[#3F444]">
@@ -81,7 +81,7 @@ export default function Page() {
                 {jsonforServices
                     .filter((serv) => serv.type === activeServIdx)
                     .map((service) => (
-                        <ServiceCard key={service.service_id} service={service} />
+                        <ServiceCard key={service.service_id} service={service} desc={service.description}/>
                     ))}
             </div>
         </div>
@@ -112,7 +112,7 @@ const ServiceCard = ({ service }) => {
                 <Image src={service.heading_pic_url} layout="fill" className="rounded-lg" />
             </div>
             <h1 className="text-[#FFAB2E] text-xl font-semibold">{service.service_name}</h1>
-            <p className="text-black">{service.short_description}</p>
+            <p className="text-black">{service.description}</p>
             <Link href={`/solutionandservices/${service.service_id}`}>
                 <button className="mt-2 bg-[#FFAB2E] text-white px-4 py-2 rounded-lg hover:bg-opacity-80 transition duration-300">
                     Learn More

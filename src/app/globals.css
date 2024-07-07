@@ -37,7 +37,7 @@
 }
 
 .hover-box {
-  @apply text-[#F19F1F] font-extralight py-2 px-4;
+  @apply text-[#F19F1F] font-normal py-2 px-4;
   background: white;
   background-image: linear-gradient(to right, white 50%, #F19F1F 50%);
   background-size: 200% 100%;
