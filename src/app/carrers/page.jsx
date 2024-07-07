@@ -34,15 +34,7 @@ export default function Page() {
             .required('Phone Number is required'),
         appliedFor: Yup.string().required('Applied For is required'),
         coverletter: Yup.string(),
-        cv: Yup.mixed().required('CV is required').test(
-            'fileSize',
-            'File too large',
-            value => value && value.size <= 1024 * 1024 // 1MB
-        ).test(
-            'fileFormat',
-            'Unsupported Format',
-            value => value && ['application/pdf'].includes(value.type)
-        ),
+        
     });
 
     const handleFileChange = (e) => {
@@ -76,40 +68,7 @@ export default function Page() {
             toast.error("You Have Some Values are missing");
             return;
         }
-        const formData = new FormData();
-        formData.append('name', name);
-        formData.append('email', email);
-        formData.append('phone', phone);
-        formData.append('appliedFor', appliedFor);
-        formData.append('coverletter', coverletter);
-        formData.append('cvFile', file); // Assuming cvFile is a File object
 
-        setLoading(true);
-        try {
-            const response = await axios.post('/api/apply', formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data'
-                }
-            });
-
-            if (response.status === 200) {
-                toast.success('Application submitted successfully');
-                setName("");
-                setEmail("");
-                setPhone("");
-                setAppliedFor("");
-                setCoverLetter("");
-                setAppliedFor("");
-                setFile("");
-            } else {
-                toast.error('Failed to submit application');
-            }
-        } catch (error) {
-            console.error('Error submitting application:', error);
-            toast.error('Failed to submit application');
-        } finally {
-            setLoading(false);
-        }
     };
 
 
@@ -144,7 +103,38 @@ export default function Page() {
                             <Formik
                                 initialValues={{ name: '', email: '', phone: '', appliedFor: '', coverletter: '', cv: null }}
                                 validationSchema={validationSchema}
-                                onSubmit={handleSubmit}
+                                onSubmit={
+                                    async (values, { setSubmitting, resetForm}) => {
+                                        const formData = new FormData();
+                                        formData.append('name', values.name);
+                                        formData.append('email', values.email);
+                                        formData.append('phone', values.phone);
+                                        formData.append('appliedFor', values.appliedFor);
+                                        formData.append('coverletter', values.coverletter);
+                                        formData.append('cvFile', file); // Assuming cvFile is a File object
+
+                                        setLoading(true);
+                                        try {
+                                            const response = await axios.post('/api/apply', formData, {
+                                                headers: {
+                                                    'Content-Type': 'multipart/form-data'
+                                                }
+                                            });
+
+                                            if (response.status === 200) {
+                                                toast.success('Application submitted successfully');
+                                                resetForm();
+                                            } else {
+                                                toast.error('Failed to submit application');
+                                            }
+                                        } catch (error) {
+                                            console.error('Error submitting application:', error);
+                                            toast.error('Failed to submit application');
+                                        } finally {
+                                            setLoading(false);
+                                        }
+                                    }
+                                }
                             >
                                 {({ setFieldValue, isSubmitting }) => (
                                     <Form className='space-y-8'>
@@ -205,9 +195,7 @@ export default function Page() {
                                                         accept=".pdf"
                                                         type="file"
                                                         className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
-                                                        onChange={(event) => {
-                                                            setFieldValue("cv", event.currentTarget.files[0]);
-                                                        }}
+                                                        onChange={handleFileChange}
                                                     />
                                                     <label className=" text-gray-400">Only Pdf is allowed max size 1MB</label>
                                                 </label>

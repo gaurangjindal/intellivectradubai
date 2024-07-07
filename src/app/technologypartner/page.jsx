@@ -85,7 +85,7 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full p-4 grid grid-cols-2 md:grid-cols-5 md:gap-y-8 gap-y-4   justify-items-center">
+            <div className="w-full p-4 grid grid-cols-2 md:grid-cols-4 md:gap-y-8 gap-y-4   justify-items-center">
                 {
                     partners.map((partner, idx) => {
                         return <TechPartCard key={idx} imgsrc={partner.imageSrc} link={partner.link} />

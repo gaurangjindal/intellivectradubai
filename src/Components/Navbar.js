@@ -41,14 +41,19 @@ export const Navbar = () => {
 
     useEffect(() => {
         setIsMenuOpen(false);
+        setMenuHidden(true);
         setShowContentInner(false);
     }, [pathname])
 
     const handleSolutionAndServiceMenuOpen = () => {
         setMenuHidden(false);
-        console.log(menuHidden);
     }
 
+    const handleSolutionAndServiceMenuClose = () => {
+
+        setMenuHidden(true);
+
+    }
     return (
         <div className="relative w-[100%]">
             <div className='bg-white h-[70px] p-4 w-full flex justify-between items-center shadow-md z-50 relative'>
@@ -68,7 +73,7 @@ export const Navbar = () => {
                     <ul className='flex-col lg:flex-row flex space-y-8 lg:space-y-0 lg:space-x-8 cursor-pointer list-style-none text-gray-600 w-full lg:w-auto'>
                         <Link href="/"><li className={`${pathname === '/' ? classActive : classUnActive}`}>Home</li></Link>
                         <Link href="/about"><li className={`${pathname === '/about' ? classActive : classUnActive}`}>About us</li></Link>
-                        <Link href="/solutionandservices" onMouseOver={handleSolutionAndServiceMenuOpen} onMouseOut={() => setMenuHidden(true)}><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solutions and Services<span><IoIosArrowDown /></span></li></Link>
+                        <Link href="/solutionandservices" onMouseOver={handleSolutionAndServiceMenuOpen} onMouseOut={handleSolutionAndServiceMenuClose}><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solutions and Services<span><IoIosArrowDown /></span></li></Link>
                         <Link href="/technologypartner"><li className={`${pathname === '/technologypartner' ? classActive : classUnActive}`}>Technology Partner</li></Link>
                         <button onClick={() => {
                             setShowContentInner(!showContentInner);
@@ -84,7 +89,7 @@ export const Navbar = () => {
 
 
             <div
-                className={`transition-all duration-1000 transform ${showContentInner ? 'translate-x-0 opacity-100' : 'md:translate-x-0 translate-x-full opacity-0'
+                className={`transition-all duration-1000 transform ${showContentInner ? 'translate-y-0 opacity-100' : 'md:translate-y-0 translate-y-full opacity-0'
                     } bg-white z-[100] text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4`}
             >
                 <ul className="space-y-4">
@@ -159,7 +164,7 @@ export const Navbar = () => {
                 </ul>
             </div>
 
-            <div className={menuHidden ? 'hidden' : 'hidden md:flex md:space-x-4 z-[100] bg-white absolute top-18 left-2 p-4 rounded-lg'}>
+            <div className={`md:space-x-4 z-[1000]  bg-white absolute top-14 left-2 p-4 rounded-lg ${(menuHidden) ? 'hidden hover:flex' : 'hidden md:flex'}`}>
                 <div className='text-black'>
                     <ul className='space-y-8'>
                         <li><Link href="/solutionandservices/1" className='w-full justify-between flex items-center space-x-4 text-lg font-semibold'><span><Image src='/images/icons/database.png' width={40} height={40}></Image></span><p>Datacenter Design & Optimization</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>

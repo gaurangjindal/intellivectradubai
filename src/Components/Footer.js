@@ -5,9 +5,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import Image from 'next/image';
 import { SocialIcon } from './ui/SocialIcon';
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
 import Link from 'next/link';
 
 export const Footer = () => {
@@ -81,7 +80,7 @@ export const Footer = () => {
                             <FaLinkedin size={20} />
                         </SocialIcon>
                         <SocialIcon>
-                            <FaTwitter size={20} />
+                            <FaXTwitter size={20} />
                         </SocialIcon>
                     </div>
                 </div>

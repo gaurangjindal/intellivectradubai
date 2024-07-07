@@ -238,43 +238,7 @@ export default function Page() {
       return;
     }
 
-    // Prepare data for API request
-    const formData = {
-      name,
-      email,
-      phone,
-      subject,
-      message,
-    };
-    setLoading(true);
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
 
-      const data = await response.json();
-
-      if (response.ok) {
-        toast.success(data.message);
-        // Clear form fields after successful submission
-        setName('');
-        setEmail('');
-        setPhone('');
-        setSubject('');
-        setMessage('');
-      } else {
-        toast.error(data.message || 'Something went wrong');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      toast.error('Failed to send email');
-    } finally {
-      setLoading(false)
-    }
   };
   return (
     <div className="w-full">
@@ -290,48 +254,75 @@ export default function Page() {
             <Formik
               initialValues={{ name: '', email: '', countryCode: '', phone: '', message: '' }}
               validationSchema={validationSchema}
-              onSubmit={(values, { setSubmitting }) => {
-                // Handle form submission
+              onSubmit={async (values, { setSubmitting, resetForm}) => {
+                // Prepare data for API request
+                const formData = {
+                  name: values.name,
+                  email: values.email,
+                  phone: values.countryCode + " " + values.phone,
+                  message: values.message,
+                  subject: "Contact Us Email"
+                };
+                setLoading(true);
+                try {
+                  const response = await fetch('/api/sendEmail', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                  });
+
+                  const data = await response.json();
+
+                  if (response.ok) {
+                    toast.success(data.message);
+                    // Clear form fields after successful submission
+                    resetForm();
+                  } else {
+                    toast.error(data.message || 'Something went wrong');
+                  }
+                } catch (error) {
+                  console.error('Error:', error);
+                  toast.error('Failed to send email');
+                } finally {
+                  setLoading(false)
+                }
                 console.log(values);
                 setSubmitting(false);
               }}
             >
-              {({ isSubmitting }) => (
+              {({ isSubmitting, errors, touched }) => (
                 <Form className='space-y-4'>
+                  <div className='text-red-500 text-sm'>
+                    {Object.keys(errors).map((key) => touched[key] && <div key={key}>{errors[key]}</div>)}
+                  </div>
                   <div className='mb-4'>
                     <Field
                       name='name'
                       placeholder='Name'
                       className='rounded-lg w-full p-2 font-extralight border border-black'
                     />
-                    <ErrorMessage name='name' component='div' className='text-red-500 text-sm' />
                   </div>
-                  <div className='flex items-center justify-between mb-4 space-x-2'>
-                    <div className='w-[44%]'>
-                      <Field
-                        name='email'
-                        placeholder='Email'
-                        className='rounded-lg w-full p-2 font-extralight border border-black'
-                      />
-                      <ErrorMessage name='email' component='div' className='text-red-500 text-sm' />
-                    </div>
-                    <div className='w-[80px]'>
-                      <Field as='select' name='countryCode' className='rounded-lg w-full p-2 font-extralight border border-black'>
-                        <option value='' label='Code' />
-                        {countryCodes.map((country) => (
-                          <option key={country.code} value={country.code} label={`${country.code}`} />
-                        ))}
-                      </Field>
-                      <ErrorMessage name='countryCode' component='div' className='text-red-500 text-sm' />
-                    </div>
-                    <div className='w-[44%]'>
-                      <Field
-                        name='phone'
-                        placeholder='Phone'
-                        className='rounded-lg w-full p-2 font-extralight border border-black'
-                      />
-                      <ErrorMessage name='phone' component='div' className='text-red-500 text-sm' />
-                    </div>
+                  <div className='mb-4'>
+                    <Field
+                      name='email'
+                      placeholder='Email'
+                      className='rounded-lg w-full p-2 font-extralight border border-black'
+                    />
+                  </div>
+                  <div className='mb-4 flex'>
+                    <Field as='select' name='countryCode' className='rounded-lg w-[100px] p-2 font-extralight border border-black'>
+                      <option value='' label='Code' />
+                      {countryCodes.map((country) => (
+                        <option key={country.code} value={country.code} label={country.code + " " + country.name} />
+                      ))}
+                    </Field>
+                    <Field
+                      name='phone'
+                      placeholder='Phone'
+                      className='rounded-lg w-full p-2 ml-2 font-extralight border border-black'
+                    />
                   </div>
                   <div className='mb-4'>
                     <Field
@@ -341,15 +332,14 @@ export default function Page() {
                       rows={3}
                       className='rounded-lg w-full p-2 font-extralight border border-black'
                     />
-                    <ErrorMessage name='message' component='div' className='text-red-500 text-sm' />
                   </div>
                   <div className='flex items-center justify-end'>
                     <button
                       type='submit'
-                      disabled={isSubmitting}
+                      disabled={loading}
                       className='p-3 px-6 bg-[#F19F1F] tracking-wide rounded-lg text-white disabled:bg-gray-200 disabled:text-white'
                     >
-                      {isSubmitting ? "Loading..." : "Submit"}
+                      {loading ? "Loading..." : "Submit"}
                     </button>
                   </div>
                 </Form>

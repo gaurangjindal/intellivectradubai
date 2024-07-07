@@ -52,13 +52,14 @@ const VerticalCarousel = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 2000,
+        speed: 3000,
         slidesToShow: 2,
         slidesToScroll: 1,
         vertical: true,
         autoplay: true,
         autoplaySpeed: 100,
-        cssEase: "linear"
+        cssEase: "linear",
+        pauseOnHover: true,
     };
 
 

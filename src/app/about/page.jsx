@@ -1,13 +1,9 @@
 'use client'
 import { PageStarter } from "@/Components/PageStarter";
 import Image from "next/image";
-import { Button } from "@/Components/ui/Button";
-import EmblaCarousel from "@/Components/Corousel/EmblaCarousel";
 import Link from "next/link";
 import Slider from "react-slick";
 import { useState } from "react";
-import { BiDownArrow } from "react-icons/bi";
-import { useEffect } from "react";
 import { MdNavigateNext } from "react-icons/md";
 import { GrPrevious } from "react-icons/gr";
 import { useRef } from "react";
@@ -44,6 +40,7 @@ export default function Page() {
         autoplaySpeed: 2000,
         cssEase: "fade",
         arrows: false,
+        pauseOnHover:false,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         afterChange: () => setUpdateCount(updateCount + 1),

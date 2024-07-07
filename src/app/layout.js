@@ -12,8 +12,8 @@ export default function Layout({ children }) {
       <head>
         <title>Intelli Vectra</title>
       </head>
-      <body>
-        <div className="bg-white max-w-[100vw]">
+      <body className="bg-white max-w-[100%]">
+        <div>
           <ContactNavbar></ContactNavbar>
           <Navbar />
           <div>
