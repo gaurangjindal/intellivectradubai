@@ -248,7 +248,7 @@ export default function Page() {
         <div className='flex p-4 flex-col md:flex-row-reverse space-y-4 md:space-y-0 md:space-x-4 w-full justify-center items-center'>
           <div className='bg-white shadow-lg space-y-8 text-black p-4 py-8 rounded-lg md:w-[70%] w-full h-fit'>
             <div>
-              <p className='text-xl font-extralight'> We're committed to helping your organization with our solutions. Submit the form below, and we'll be in touch soon.</p>
+              <p className='text-xl font-extralight'> We&apos;re committed to helping your organization with our solutions. Submit the form below, and we&apos;ll be in touch soon.</p>
             </div>
             <Formik
               initialValues={{ name: '', email: '', countryCode: '', phone: '', message: '' }}
