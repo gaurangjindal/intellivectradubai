@@ -70,7 +70,7 @@ export const Navbar = () => {
                 </div>
                 <div ref={menuRef} className={`lg:flex lg:flex-row ${isMenuOpen ? 'flex' : 'hidden'} flex-col items-center absolute lg:static top-[70px] right-0 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-80 bg-white lg:w-auto lg:bg-transparent p-4 lg:p-0 w-fit
     ${isMenuOpen ? 'slide-in-right' : 'slide-out-right'} transition-all duration-300 ease-in-out md:transition-none md:w-auto`}>
-                    <ul className='flex-col lg:flex-row flex space-y-8 lg:space-y-0 lg:space-x-8 cursor-pointer list-style-none text-gray-600 w-full lg:w-auto'>
+                    <ul className='flex-col lg:flex-row flex space-y-4 lg:space-y-0 lg:space-x-8 cursor-pointer list-style-none text-gray-600 w-full lg:w-auto'>
                         <Link href="/"><li className={`${pathname === '/' ? classActive : classUnActive}`}>Home</li></Link>
                         <Link href="/about"><li className={`${pathname === '/about' ? classActive : classUnActive}`}>About us</li></Link>
                         <Link href="/solutionandservices" onMouseOver={handleSolutionAndServiceMenuOpen} onMouseOut={handleSolutionAndServiceMenuClose}><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solutions and Services<span><IoIosArrowDown /></span></li></Link>
@@ -90,7 +90,7 @@ export const Navbar = () => {
 
             <div
                 className={`transition-all duration-1000 transform ${showContentInner ? 'translate-y-0 opacity-100' : 'md:translate-y-0 translate-y-full opacity-0'
-                    } bg-white z-[100] text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4`}
+                    } bg-white z-[1001] text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4`}
             >
                 <ul className="space-y-4">
                     <li
