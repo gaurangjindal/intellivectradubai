@@ -9,7 +9,7 @@ const Page = () => {
             >
                 <div className="bg-black px-4 md:px-10 lg:px-20 bg-blend-overlay flex items-center  w-full h-full bg-opacity-10 backdrop-blur-sm">
                     <div className="flex flex-col space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
-                        <div className="border-[#F19F1F] border-l-4 p-4 space-y-2 md:space-y-4 px-2 md:px-4">
+                        <div className="border-[#F19F1F] border-l-2 rounded-lg p-4 space-y-2 md:space-y-4 px-2 md:px-4">
                             <h1 className="text-2xl text-white font-bold md:text-3xl lg:text-4xl">
                                 <span className='text-[#F19F1F]'>Terms</span> and Condition
                             </h1>

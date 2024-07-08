@@ -74,7 +74,7 @@ export default function Page() {
 
     return (
         <div className="space-y-[5vh]">
-            <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/banners/carrerpagebanner.jpg"} desc={"Craft Your Career Path with Us: Where Growth Thrives."} />
+            <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/banners/carrerpagebanner.jpg"} desc={"Craft your career path with us: where growth thrives."} />
             <div>
                 <div className="flex flex-col w-[100vw] justify-center items-center space-y-4 bg-white">
                     <div className="space-y-4 w-[70vw]">
@@ -88,7 +88,7 @@ export default function Page() {
                             <Image src="/images/nowhiring.jpg" layout="fill" />
                         </div>
                         <div className="md:w-[50%] w-[100%] bg-[#FFDFAD] p-16 py-16 space-y-8">
-                            <p className="text-black tracking-widest font-normal">We are expanding our team at Intelli Vectra Technology and looking for driven individuals like you to join us. Explore rewarding career opportunities and apply your skills to shape the future of IT solutions. Whether you are an experienced professional or new to the field, we invite you to be part of our innovative journey. Apply now and make an impact with us.</p>
+                            <p className="text-black font-normal">We are expanding our team at Intelli Vectra Technology and looking for driven individuals like you to join us. Explore rewarding career opportunities and apply your skills to shape the future of IT solutions. Whether you are an experienced professional or new to the field, we invite you to be part of our innovative journey. Apply now and make an impact with us.</p>
                             <button onClick={moveToApply} className="py-2 rounded-lg bg-[#F19F1F] px-8">Apply</button>
                         </div>
                     </div>
@@ -189,7 +189,7 @@ export default function Page() {
                                                     <input
                                                         accept=".pdf"
                                                         type="file"
-                                                        className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
+                                                        className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#F19F1F] file:text-[#F19F1F] file:bg-opacity-5 hover:bg-opacity-10"
                                                         onChange={(event) => {
                                                             setFieldValue('cv', event.currentTarget.files[0]);
                                                         }}
@@ -201,7 +201,7 @@ export default function Page() {
                                                 className="bg-[#F19F1F] disabled:bg-gray-200 disabled:text-white font-bold flex py-2 px-6 space-x-2 items-center rounded-lg p-2 w-fit text-white"
                                                 type="submit"
                                             >
-                                                {loading ? <div>Loading...</div> : <div className="flex items-center justify-between space-x-2">Submit <span><GoArrowRight fontWeight="bold" /></span></div>}
+                                                {loading ? <div>Loading...</div> : <div className="flex items-center justify-between space-x-2">Submit</div>}
                                             </button>
                                         </fieldset>
                                     </Form>

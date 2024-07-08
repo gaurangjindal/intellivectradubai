@@ -81,7 +81,7 @@ export default function Page() {
     const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024];
     return (
         <div className='space-y-[30px] w-full bg-white'>
-            <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Forging Connections in the Digital Realm."} />
+            <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Forging Connections in the digital realm."} />
             <div className="w-full px-4 md:px-10 lg:px-20 space-y-6 bg-white text-black flex flex-col lg:flex-row items-center justify-center md:space-x-20">
                 <div className="flex md:w-[40%] w-full">
                     {/* First Image */}
