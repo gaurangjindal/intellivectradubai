@@ -209,24 +209,24 @@ export default function Home() {
           </div>
 
           <div className="flex md:space-y-16 space-y-8 p-2 flex-col justify-center">
-            <div className="md:space-x-32 gap-2 md:flex grid grid-cols-4 justify-items-center w-full md:justify-center">
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp1.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp2.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp3.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp4.png" />
+            <div className="md:space-x-32 gap-2 md:flex grid md:grid-cols-4 grid-cols-2 justify-items-center w-full md:justify-center">
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp1.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp2.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp3.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp4.png" /></div></div>
             </div>
-            <div className="md:space-x-32 gap-2 md:flex grid grid-cols-5 justify-items-center w-full md:justify-center">
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp5.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp6.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp7.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp8.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp9.png" />
+            <div className="md:space-x-32 gap-2 md:flex grid grid-cols-2 md:grid-cols-5 justify-items-center w-full md:justify-center">
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp5.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp6.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp7.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp8.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp9.png" /></div></div>
             </div>
-            <div className="md:space-x-32 gap-2 md:flex grid grid-cols-4 justify-items-center w-full md:justify-center">
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp10.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp11.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp12.png" />
-              <Image alt="Technology Partner" height={100} width={100} src="/images/techpartner/tp13.png" />
+            <div className="md:space-x-32 gap-2 md:flex grid md:grid-cols-4 grid-cols-2 justify-items-center w-full md:justify-center">
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp10.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp11.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp12.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp13.png" /></div></div>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       <div className="text-black w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
         <ul className="w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
@@ -292,7 +292,7 @@ export default function Home() {
         </div>
       </div>
 
-      
+
     </div>
   );
 }

@@ -115,7 +115,7 @@ const ServiceCard = ({ service }) => {
             <p className="text-black">{service.description}</p>
             <Link href={`/solutionandservices/${service.service_id}`}>
                 <button className="mt-2 bg-[#FFAB2E] text-white px-4 py-2 rounded-lg hover:bg-opacity-80 transition duration-300">
-                    Learn More
+                    Read More
                 </button>
             </Link>
         </div>
