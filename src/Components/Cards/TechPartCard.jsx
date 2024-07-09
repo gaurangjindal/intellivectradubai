@@ -13,7 +13,7 @@ export const TechPartCard = ({ imgsrc, link }) => {
             </div>
 
             <div className='flex justify-end w-full'>
-                <a className='text-white space-x-2 bg-black flex items-center font-light rounded-[50%] p-1 border' href={link}><span><IoMdArrowRoundForward></IoMdArrowRoundForward></span></a>
+                <a className='text-white space-x-2 bg-black flex items-center font-light rounded-[50%] p-1 border' href={link}  target="_blank"><span><IoMdArrowRoundForward></IoMdArrowRoundForward></span></a>
             </div>
         </div>
     )
