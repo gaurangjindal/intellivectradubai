@@ -408,7 +408,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className='flex flex-col md:flex-row items-end justify-center w-full bg-white'>
+      <div className='flex pb-4 flex-col md:flex-row items-end justify-center w-full bg-white'>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/burzkhalifa.jpg" height={300} width={500} />
           <h1 className='text-3xl text-[#F19F1F] text-center'>Dubai, UAE</h1>

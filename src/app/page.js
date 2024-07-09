@@ -278,7 +278,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-black w-full space-y-6 flex flex-col justify-center items-center">
+      <div className="text-black pb-4 w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
         <ul className="w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
           <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>
