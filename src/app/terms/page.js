@@ -11,15 +11,15 @@ const Page = () => {
                     <div className="flex flex-col space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
                         <div className="border-[#F19F1F] border-l-2 rounded-lg p-4 space-y-2 md:space-y-4 px-2 md:px-4">
                             <h1 className="text-2xl text-white font-bold md:text-3xl lg:text-4xl">
-                                <span className='text-[#F19F1F]'>Terms</span> and Condition
+                                <span className='text-[#F19F1F]'>Terms</span> & Condition
                             </h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="p-6 sm:p-12">
+            <div className="px-6 py-2 sm:px-12 sm:py-2">
                 <div className="w-full mx-auto bg-white text-black p-8 rounded-lg">
-                    <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
+                    <h1 className="text-3xl font-bold mb-4">Terms & Condition</h1>
                     <p className="mb-4">
                         Welcome to Intelli Vectra! These terms and conditions outline the rules and regulations for the use of Intelli Vectra Technologies&apos;s Website, located at <a href="https://www.intellivectra.com/" className="text-blue-500 underline">https://www.intellivectra.com/</a>.
                     </p>

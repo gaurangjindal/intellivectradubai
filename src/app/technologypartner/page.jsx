@@ -35,14 +35,10 @@ const Page = () => {
         },
         {
             imageSrc: "/images/techpartner/tp8.png",
-            link: "https://www.imperva.com/"
+            link: "https://www.prolabs.com/"
         },
         {
             imageSrc: "/images/techpartner/tp9.png",
-            link: "https://arconnet.com/"
-        },
-        {
-            imageSrc: "/images/techpartner/tp10.png",
             link: "https://arconnet.com/"
         },
         {
@@ -79,11 +75,15 @@ const Page = () => {
                                 <span className='text-[#F19F1F]'>Technology</span> Partner
                             </h1>
                             <p className="w-full" style={{ color: 'white' }}>
-                            Empowering innovation through seamless technology partnerships.
+                                Empowering innovation through seamless technology partnerships.
                             </p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='text-black px-8 py-3 space-y-4'>
+                <h1 className='text-4xl font-bold text-center'>Technology <span className='text-[#F19F1F]'>Partner</span></h1>
+                <p>At Intelli Vectra Technologies, we understand the power of partnerships. That's why we collaborate with industry-leading technology partners to bring the best solutions tailored to meet our customers business needs. By leveraging the expertise of our partners, we deliver cutting-edge technology solutions that drive innovation, efficiency, and growth for our customers business. From Artificial Intelligence to DevOps, Cloud Solutions to Cybersecurity, our network of technology partners ensures that you have access to the latest advancements and best-in-class solutions.</p>
             </div>
             <div className="w-full p-4 grid grid-cols-2 md:grid-cols-4 md:gap-y-8 gap-y-4   justify-items-center">
                 {

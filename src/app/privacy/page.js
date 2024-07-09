@@ -18,9 +18,9 @@ const Page = () => {
                 </div>
             </div>
 
-            <div className="p-6 sm:p-12">
+            <div className="px-6 py-2 sm:px-12 sm:py-2">
                 <div className="w-full mx-auto bg-white text-black p-8 rounded-lg ">
-                    <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
+                    <h1 className="text-3xl font-bold mb-4">Privacy & Policy</h1>
                     <p className="mb-4">
                         This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
                     </p>

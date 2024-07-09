@@ -19,11 +19,15 @@ import styled from 'styled-components';
 // Styled container with responsive width
 const PhoneInputContainer = styled.div`
   width: 100%;
-  
+  height: 52px;
+  border: 1px solid black; /* Add border of 5px solid black */
+  border-radius: 8px; /* Rounded corners with 8px radius */
   @media (min-width: 768px) {
     width: 49%;
   }
 `;
+
+
 
 export default function Page() {
   const [name, setName] = React.useState("")
@@ -318,8 +322,8 @@ export default function Page() {
                     />
                     {touched.name && errors.name && <ErrorMessage>{errors.name}</ErrorMessage>}
                   </div>
-                  <div className='mb-4 flex flex-col md:flex-row justify-between'>
-                    <div className='w-[49%]'>
+                  <div className='mb-4 flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between'>
+                    <div className='md:w-[49%] w-full'>
                       <Field
                         name='email'
                         placeholder='Email Address'
@@ -331,7 +335,8 @@ export default function Page() {
                     <PhoneInputContainer>
                       <PhoneInput
                         buttonClass='h-[50px]'
-                        inputClass='h-[50px]'
+                        inputClass='h-[50px] border-0'
+                        containerClass=''
                         containerStyle={{ width: '100%' }}
                         inputStyle={{ width: '100%' }}
                         country={'ae'}
@@ -396,7 +401,7 @@ export default function Page() {
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><FaRegClock style={{ fontSize: '30px' }} /></div>
               <div className="text-black  w-[90%] font-normal text-sm">
                 <p className="text-[#F19F1F] font-normal text-sm">Office Hours</p>
-                <p>Monday - Friday<br /> 9.30AM - 5.30PM</p>
+                <p>Monday - Friday<br /> 9.30 AM - 5.30 PM</p>
               </div>
             </div>
           </div>
@@ -412,9 +417,11 @@ export default function Page() {
             Business Bay, PO Box: 283426<br />
             Dubai, United Arab Emirates
           </p>
-          <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
-            <span><GrLocation /></span> <p className=''>Get Direction</p>
-          </div>
+          <a href="https://www.google.com/maps/place/Clover+Bay+Tower+-+6a+Marasi+Dr+-+Business+Bay+-+Dubai+-+United+Arab+Emirates/data=!4m2!3m1!1s0x3e5f69d353d52701:0xea5908e654d1ea82?sa=X&ved=1t:242&ictx=111">
+            <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
+              <span><GrLocation /></span> <p className='hover:text-black'>Get Direction</p>
+            </div>
+          </a>
         </div>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/indiagate.jpg" height={300} width={500} />
@@ -422,9 +429,10 @@ export default function Page() {
           <p className='text-[#3F444D] text-center font-normal'>2nd Floor, Plot No. 29<br />
             Maruti Industrial Area, Sector-18<br />
             Gurugram–122015 (Haryana), India</p>
-          <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
-            <span><GrLocation /></span> <p className=''>Get Direction</p>
+          <a href='https://www.google.com/maps/dir/25.6170256,85.116814/Intelli+Vectra+Technologies/@26.787533,75.8239746,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390d1930ce6b42f9:0xb39219cee9e1d009!2m2!1d77.0743589!2d28.490693?entry=ttu'><div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
+            <span><GrLocation /></span> <p className='hover:text-black'>Get Direction</p>
           </div>
+          </a>
         </div>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/riyadh.png" height={300} width={500} />
@@ -434,7 +442,7 @@ export default function Page() {
             Kingdom of Saudi Arabia
           </p>
           <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
-            <span><GrLocation /></span> <p className=''>Get Direction</p>
+            <span><GrLocation /></span> <p className='hover:text-black'>Get Direction</p>
           </div>
         </div>
         <div className='space-y-4 flex flex-col'>
@@ -442,6 +450,7 @@ export default function Page() {
           <h1 className='text-3xl text-[#F19F1F] text-center'>London, UK</h1>
           <p className='text-[#3F444D] text-center font-normal'>Coming Soon<br />
             <br />
+            <br/>
           </p>
           <div className='flex text-[#F19F1F] justify-center w-full items-center space-x-2 cursor-pointer'>
             <span><GrLocation /></span> <p className=''>Get Direction</p>

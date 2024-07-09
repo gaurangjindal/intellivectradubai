@@ -9,6 +9,19 @@ import { toast } from 'react-toastify';
 import axios from 'axios'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import PhoneInput from "react-phone-input-2";
+import styled from 'styled-components';
+import "react-phone-input-2/lib/bootstrap.css";
+
+const PhoneInputContainer = styled.div`
+  width: 100%;
+  height: 52px;
+  border: 1px solid black; /* Add border of 5px solid black */
+  border-radius: 8px; /* Rounded corners with 8px radius */
+  @media (min-width: 768px) {
+    width: 49%;
+  }
+`;
 
 export default function Page() {
     const router = useRouter();
@@ -28,10 +41,6 @@ export default function Page() {
     const validationSchema = Yup.object({
         name: Yup.string().required('Full Name is required'),
         email: Yup.string().email('Invalid email address').required('Email is required'),
-        phone: Yup.string()
-            .matches(/^[0-9]+$/, 'Phone must be only digits')
-            .min(10, 'Phone must be at least 10 digits')
-            .required('Phone Number is required'),
         appliedFor: Yup.string().required('Applied For is required'),
         coverletter: Yup.string(),
 
@@ -89,7 +98,7 @@ export default function Page() {
                         </div>
                         <div className="md:w-[50%] w-[100%] bg-[#FFDFAD] p-16 py-16 space-y-8">
                             <p className="text-black font-normal">We are expanding our team at Intelli Vectra Technology and looking for driven individuals like you to join us. Explore rewarding career opportunities and apply your skills to shape the future of IT solutions. Whether you are an experienced professional or new to the field, we invite you to be part of our innovative journey. Apply now and make an impact with us.</p>
-                            <button onClick={moveToApply} className="py-2 rounded-lg bg-[#F19F1F] px-8">Apply</button>
+                            <button onClick={moveToApply} className="p-3 px-6 bg-[#F19F1F] tracking-wide rounded-lg text-white">Apply</button>
                         </div>
                     </div>
                 </div>
@@ -104,10 +113,10 @@ export default function Page() {
                                     const formData = new FormData();
                                     formData.append('name', values.name);
                                     formData.append('email', values.email);
-                                    formData.append('phone', values.phone);
+                                    formData.append('phone', phone);
                                     formData.append('appliedFor', values.appliedFor);
                                     formData.append('coverletter', values.coverletter);
-                                    formData.append('cvFile', values.cv); // Assuming cvFile is a File object
+                                    formData.append('cvFile', file); // Assuming cvFile is a File object
 
                                     setLoading(true);
                                     try {
@@ -132,43 +141,52 @@ export default function Page() {
                                 }}
                             >
                                 {({ setFieldValue, isSubmitting, errors }) => (
-                                    <Form className='space-y-8'>
-                                        <ErrorSummary errors={errors} />
-                                        <fieldset className="flex flex-col space-y-8" disabled={loading}>
-                                            <div className="flex w-full items-center justify-between">
-                                                <div className="w-[49%]">
+                                    <Form className='space-y-8 bg-white shadow-lg rounded-lg p-8'>
+                                        <fieldset className="flex flex-col space-y-4" disabled={loading}>
+                                            <div className="flex space-y-4 md:space-y-0 flex-col md:flex-row w-full h-full justify-between">
+                                                <div className="md:w-[49%] w-full">
                                                     <Field
                                                         name="name"
                                                         placeholder="Full Name *"
                                                         type="text"
-                                                        className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                                        className="placeholder:text-slate-400 h-[50px] block bg-white w-full border border-black rounded-md py-2 px-3 shadow-sm  sm:text-sm"
                                                     />
+                                                    <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-1" />
                                                 </div>
-                                                <div className="w-[49%]">
+                                                <div className="md:w-[49%] w-full">
                                                     <Field
                                                         name="email"
                                                         placeholder="Email *"
                                                         type="email"
-                                                        className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                                        className="placeholder:text-slate-400 h-[50px] block bg-white w-full border border-black rounded-md py-2 px-3 shadow-sm  sm:text-sm"
                                                     />
+                                                    <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
                                                 </div>
                                             </div>
-                                            <div className="flex w-full items-center justify-between">
-                                                <div className="w-[49%]">
-                                                    <Field
+                                            <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row w-full justify-between">
+                                                <PhoneInputContainer>
+                                                    <PhoneInput
+                                                        buttonClass='h-[50px]'
+                                                        inputClass='h-[50px]'
+                                                        containerClass=''
+                                                        containerStyle={{ width: '100%' }}
+                                                        inputStyle={{ width: '100%' }}
+                                                        country={'ae'}
+                                                        enableSearch={true}
+                                                        // value={phone}
+                                                        // onChange={(code) => setPhone(code)}
                                                         name="phone"
-                                                        placeholder="Phone Number *"
-                                                        type="text"
-                                                        className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
                                                     />
-                                                </div>
-                                                <div className="w-[49%]">
+                                                    <ErrorMessage name="phone" component="div" className="text-red-500 text-sm mt-1" />
+                                                </PhoneInputContainer>
+                                                <div className="md:w-[49%] w-full">
                                                     <Field
                                                         name="appliedFor"
                                                         placeholder="Applied For *"
                                                         type="text"
-                                                        className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                                        className="placeholder:text-slate-400 h-[50px] block bg-white w-full border border-black rounded-md py-2 px-3 shadow-sm  sm:text-sm"
                                                     />
+                                                    <ErrorMessage name="appliedFor" component="div" className="text-red-500 text-sm mt-1" />
                                                 </div>
                                             </div>
                                             <div>
@@ -177,14 +195,15 @@ export default function Page() {
                                                     as="textarea"
                                                     placeholder="Cover Letter"
                                                     rows={4}
-                                                    className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                                    className="placeholder:text-slate-400 block bg-white w-full border border-black  rounded-md py-2 px-3 shadow-sm  sm:text-sm"
                                                 />
+                                                <ErrorMessage name="coverletter" component="div" className="text-red-500 text-sm mt-1" />
                                             </div>
                                             <div className='space-y-2'>
                                                 <div className="shrink-0">
                                                     Upload Your CV/Resume<sup>*</sup>
                                                 </div>
-                                                <label className="block">
+                                                <label className="block relative">
                                                     <span className="sr-only">Choose profile photo</span>
                                                     <input
                                                         accept=".pdf"
@@ -195,10 +214,11 @@ export default function Page() {
                                                         }}
                                                     />
                                                 </label>
+                                                <ErrorMessage name="cv" component="div" className="text-red-500 text-sm mt-1" />
                                             </div>
                                             <button
                                                 disabled={loading || isSubmitting}
-                                                className="bg-[#F19F1F] disabled:bg-gray-200 disabled:text-white font-bold flex py-2 px-6 space-x-2 items-center rounded-lg p-2 w-fit text-white"
+                                                className="p-3 px-6 bg-[#F19F1F] tracking-wide rounded-lg text-white disabled:bg-gray-100 disabled:text-gray-200 w-fit"
                                                 type="submit"
                                             >
                                                 {loading ? <div>Loading...</div> : <div className="flex items-center justify-between space-x-2">Submit</div>}
@@ -207,6 +227,7 @@ export default function Page() {
                                     </Form>
                                 )}
                             </Formik>
+
                         </div>
                     </div>
                 </div>

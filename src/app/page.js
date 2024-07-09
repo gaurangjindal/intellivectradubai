@@ -159,9 +159,9 @@ export default function Home() {
         </div>
         <div className="h-full items-center md:w-[50%] w-full space-y-6">
           <h1 className="px-2 border-l-2 text-black text-[20px] font-bold border-[#F19F1F]">ABOUT US</h1>
-          <p className="text-[#F19F1F] md:text-4xl text-2xl tracking-wide">Empowering Digital Transformation with Innovative IT Solutions</p>
+          <p className="text-[#F19F1F] md:text-4xl text-2xl md:text-justify text-start">Empowering Digital Transformation with Innovative IT Solutions</p>
 
-          <p className="md:text-[18px] text-normal text-[#3F444]">
+          <p className="md:text-[18px] text-normal text-start text-[#3F444]">
             Intelli Vectra Technologies is a premier IT solutions provider committed to helping clients harness the power of technology innovation while simplifying IT complexities. Our mission is to drive digital transformation and maximize return on IT investments. Leveraging cutting-edge technologies and delivering customized solutions, we empower businesses to stay ahead in an ever-evolving digital landscape. Our expertise spans various domains, ensuring operational efficiency, enhanced security, and sustainable growth for our clients. At Intelli Vectra Technologies, we prioritize collaboration, transparency, and passion, making us a trusted partner in achieving your business goals and driving meaningful change.
           </p>
           <div className="w-full h-6 bg-white"></div>
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-center min-h-[70vh] bg-[#FFFAF2] p-8">
+      <div className="text-center md:min-h-[70vh] bg-[#FFFAF2] p-8">
         <h1 className="md:text-4xl text-2xl text-gray-800 mb-2 font-bold">Solutions & <span className="text-[#FFAB2E]">Services</span></h1>
         <p className="text-black mb-6 md:text-xl text-sm">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
 
@@ -201,14 +201,14 @@ export default function Home() {
             description={" We cultivate teamwork internally and with clients and partners to achieve superior outcomes and lasting value through shared expertise and mutual respect."} />
         </div>
       </div>
-      <div className="w-full p-4 flex items-center justify-center">
-        <div className="w-full text-black space-y-10 bg-[#FFFAF2] py-12 flex flex-col">
+      <div className="w-full flex items-center justify-center">
+        <div className="w-full p-4 text-black space-y-10 bg-[#FFFAF2] py-12 flex flex-col">
           <div className="w-full space-y-4 flex-col flex items-center">
             <h1 className="text-2xl md:text-4xl font-bold text-center">Technology <span className="text-[#FFAB2E]">Partners</span></h1>
             <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Partnering with industry-leading manufacturers to deliver cutting-edge technology solutions<br /> tailored to your business needs.</p>
           </div>
 
-          <div className="flex md:space-y-16 space-y-8 p-2 flex-col justify-center">
+          <div className="hidden md:flex md:space-y-16 space-y-8 p-2 flex-col justify-center">
             <div className="md:space-x-32 gap-2 md:flex grid md:grid-cols-4 grid-cols-2 justify-items-center w-full md:justify-center">
               <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp1.png" /></div></div>
               <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp2.png" /></div></div>
@@ -220,14 +220,31 @@ export default function Home() {
               <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp6.png" /></div></div>
               <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp7.png" /></div></div>
               <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp8.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp9.png" /></div></div>
+
             </div>
             <div className="md:space-x-32 gap-2 md:flex grid md:grid-cols-4 grid-cols-2 justify-items-center w-full md:justify-center">
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp10.png" /></div></div>
+              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp9.png" /></div></div>
               <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp11.png" /></div></div>
               <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp12.png" /></div></div>
               <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp13.png" /></div></div>
             </div>
+          </div>
+
+          <div className="grid grid-cols-2 p-2 gap-4 md:hidden">
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp1.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp2.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp3.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp4.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp5.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp6.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp7.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp8.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp9.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp10.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp11.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp12.png" /></div></div>
+            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp13.png" /></div></div>
+
           </div>
         </div>
       </div>

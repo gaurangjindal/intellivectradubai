@@ -12,7 +12,7 @@ export default function Layout({ children }) {
       <head>
         <title>Intelli Vectra</title>
       </head>
-      <body className="bg-white max-w-[100%] text-justify ">
+      <body className="bg-white max-w-[100%] md:text-justify text-start">
         <div>
           <ContactNavbar></ContactNavbar>
           <Navbar />

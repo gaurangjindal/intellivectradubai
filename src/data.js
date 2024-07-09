@@ -4,7 +4,7 @@ import { GrStorage } from "react-icons/gr";
 export const jsonforServices = [
     {
         "service_id": 1,
-        "service_name": "Datacenter Design & Optimization",
+        "service_name": "Infrastructure Design & Optimization",
         "description": "Intelli Vectra Technology specializes in datacenter design and optimization, offering planning, infrastructure optimization, cooling and power management, network solutions, security measures, and disaster recovery strategies to create efficient, scalable, and secure datacenter infrastructures.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
