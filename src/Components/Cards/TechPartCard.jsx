@@ -8,7 +8,7 @@ export const TechPartCard = ({ imgsrc, link }) => {
     return (
         <div className='p-4 rounded-lg shadow-md space-y-1 flex flex-col flex-wrap justify-center items-center '>
 
-            <div className='relative h-[60px] w-[120px] z-[100] md:h-[120px] md:w-[250px]'>
+            <div className='relative h-[60px] w-[120px] z-[100] md:h-[120px] md:w-[210px]'>
                 <Image layout='fill' src={imgsrc}></Image>
             </div>
 
