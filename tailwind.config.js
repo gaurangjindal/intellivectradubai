@@ -5,6 +5,15 @@ module.exports = {
     "./src/Components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
+  theme: {
+    extend: {
+      filter: {
+        'invert-25': 'invert(25%)',
+      },
+    },
+  },
+
   // purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   plugins: [],
 };

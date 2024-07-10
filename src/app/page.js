@@ -8,6 +8,71 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react'
 export default function Home() {
+
+  const partners = [
+    {
+      imageSrc: "/images/techpartner/tp6.png",
+      link: "https://www.microsoft.com/en-in"
+    },
+    {
+      imageSrc: "/images/techpartner/tp11.png",
+      link: "https://www.hpe.com/in/en/home.html",
+      out: true
+    },
+    {
+      imageSrc: "/images/techpartner/tp5.png",
+      link: "https://www.redhat.com/en",
+      out:true
+    },
+    {
+      imageSrc: "/images/techpartner/tp2.png",
+      link: "https://www.vmware.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp3.png",
+      link: "https://www.veritas.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp14.png",
+      link: "https://www.cohesity.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp12.png",
+      link: "https://about.gitlab.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp4.png",
+      link: "https://www.sap.com/india/index.html"
+    },
+
+    {
+      imageSrc: "/images/techpartner/tp7.png",
+      link: "https://www.imperva.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp15.png",
+      link: "https://www.exagrid.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp9.png",
+      link: "https://arconnet.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp1.png",
+      link: "https://www.aquilai.io/",
+      out: true
+    },
+    {
+      imageSrc: "/images/techpartner/tp8.png",
+      link: "https://www.prolabs.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp13.png",
+      link: "https://www.arista.com/en/"
+    },
+
+  ]
+
   const dataForContentHub = {
     "events": [
       {
@@ -207,44 +272,16 @@ export default function Home() {
             <h1 className="text-2xl md:text-4xl font-bold text-center">Technology <span className="text-[#FFAB2E]">Partners</span></h1>
             <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Partnering with industry-leading manufacturers to deliver cutting-edge technology solutions<br /> tailored to your business needs.</p>
           </div>
-
-          <div className="hidden md:flex md:space-y-16 space-y-8 p-2 flex-col justify-center">
-            <div className="md:space-x-32 gap-2 md:flex grid md:grid-cols-4 grid-cols-2 justify-items-center w-full md:justify-center">
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp1.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp2.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp3.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp4.png" /></div></div>
+          <div className="flex items-center justify-center">
+            <div className="md:w-[80%] flex flex-wrap justify-center items-center">
+              {
+                partners.map((partner,idx) => {
+                  return (
+                    <a href={partner.link} key={idx} target="_blank"><div className="p-2"><div className="border-2 bg-white rounded-md p-2 md:h-[80px] h-[] w-[150px] md:w-[200px] items-center justify-center"><div className="h-full relative w-full"><Image objectFit={partner.out ? "fill" :"cover"} alt="Technology Partner" layout='fill' src={partner.imageSrc}/></div></div></div></a>
+                  )
+                })
+              }
             </div>
-            <div className="md:space-x-32 gap-2 md:flex grid grid-cols-2 md:grid-cols-5 justify-items-center w-full md:justify-center">
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp5.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp6.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp7.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp8.png" /></div></div>
-
-            </div>
-            <div className="md:space-x-32 gap-2 md:flex grid md:grid-cols-4 grid-cols-2 justify-items-center w-full md:justify-center">
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp9.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp11.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp12.png" /></div></div>
-              <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp13.png" /></div></div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 p-2 gap-4 md:hidden">
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp1.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp2.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp3.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp4.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp5.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp6.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp7.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp8.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout='fill' src="/images/techpartner/tp9.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp10.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp11.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp12.png" /></div></div>
-            <div className="border-2 p-2 h-[130px] items-center justify-center"><div className="h-full relative w-[130px]"><Image alt="Technology Partner" layout="fill" src="/images/techpartner/tp13.png" /></div></div>
-
           </div>
         </div>
       </div>

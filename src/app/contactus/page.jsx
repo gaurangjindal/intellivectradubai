@@ -272,7 +272,7 @@ export default function Page() {
         <div className='flex p-4 flex-col md:flex-row-reverse space-y-4 md:space-y-0 md:space-x-4 w-full justify-center items-center'>
           <div className='bg-white shadow-lg space-y-8 text-black p-4 py-8 rounded-lg md:w-[70%] w-full h-fit'>
             <div>
-              <p className='text-xl font-normal'> We&apos;re committed to helping your organization with our Services & Solutions. Submit the form below, and we&apos;ll be in touch soon.</p>
+              <p className='text-lg font-normal'> We&apos;re committed to helping your organization with our Solutions & Services. Submit the form below, and we&apos;ll be in touch soon.</p>
             </div>
             <Formik
               initialValues={{ name: '', email: '', phone: '', message: '' }}
@@ -334,6 +334,7 @@ export default function Page() {
 
                     <PhoneInputContainer>
                       <PhoneInput
+                      className='border-0'
                         buttonClass='h-[50px]'
                         inputClass='h-[50px] border-0'
                         containerClass=''
@@ -374,21 +375,21 @@ export default function Page() {
             <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4 shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a className='underline cursor-pointer' href='tel:012-4496-0635'><FaPhoneAlt style={{ fontSize: '30px' }} /></a></div>
               <div className='text-black w-[90%] text-sm font-normal'>
-                <p className="text-[#F19F1F] font-normal">Call Us On</p>
+                <p className="text-[#F19F1F] font-bold">Call Us On</p>
                 <a className='cursor-pointer' href='tel:012-4496-0635'>+971 4 5667357</a>
               </div>
             </div>
             <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a className='cursor-pointer' href='mailto:info@intellivectra.tech'><MdEmail style={{ fontSize: '30px' }} /></a></div>
               <div className='text-black w-[90%] text-sm font-normal'>
-                <p className="text-[#F19F1F] font-normal">Mailing Address</p>
+                <p className="text-[#F19F1F] font-bold">Mailing Address</p>
                 <a className='cursor-pointer' href='mailto:info@intellivectra.com'>info@intellivectra.com</a>
               </div>
             </div>
             <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a href="https://www.google.com/maps/place/Clover+Bay+Tower+-+6a+Marasi+Dr+-+Business+Bay+-+Dubai+-+United+Arab+Emirates/data=!4m2!3m1!1s0x3e5f69d353d52701:0xea5908e654d1ea82?sa=X&ved=1t:242&ictx=111"><FaLocationDot style={{ fontSize: '30px' }} /></a></div>
               <div className="text-black  w-[90%] font-normal">
-                <p className="text-[#F19F1F] font-normal text-sm">Visit Us At</p>
+                <p className="text-[#F19F1F] font-bold text-sm">Visit Us At</p>
                 <p className="text-sm">
                   Office #1111, Clover Bay Tower
                   Business Bay, PO Box: 283426
@@ -400,7 +401,7 @@ export default function Page() {
             <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><FaRegClock style={{ fontSize: '30px' }} /></div>
               <div className="text-black  w-[90%] font-normal text-sm">
-                <p className="text-[#F19F1F] font-normal text-sm">Office Hours</p>
+                <p className="text-[#F19F1F] font-bold text-sm">Office Hours</p>
                 <p>Monday - Friday<br /> 9.30 AM - 5.30 PM</p>
               </div>
             </div>
@@ -411,7 +412,7 @@ export default function Page() {
       <div className='flex pb-4 flex-col md:flex-row items-end justify-center w-full bg-white'>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/burzkhalifa.jpg" height={300} width={500} />
-          <h1 className='text-3xl text-[#F19F1F] text-center'>Dubai, UAE</h1>
+          <h1 className='text-2xl text-[#F19F1F] text-center'>Dubai, UAE</h1>
           <p className='text-[#3F444D] text-center font-normal'>
             Office #1111, Clover Bay Tower<br />
             Business Bay, PO Box: 283426<br />
@@ -425,7 +426,7 @@ export default function Page() {
         </div>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/indiagate.jpg" height={300} width={500} />
-          <h1 className='text-3xl text-[#F19F1F] text-center'>Delhi NCR, India</h1>
+          <h1 className='text-2xl text-[#F19F1F] text-center'>Delhi NCR, India</h1>
           <p className='text-[#3F444D] text-center font-normal'>2nd Floor, Plot No. 29<br />
             Maruti Industrial Area, Sector-18<br />
             Gurugram–122015 (Haryana), India</p>
@@ -436,7 +437,7 @@ export default function Page() {
         </div>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/riyadh.png" height={300} width={500} />
-          <h1 className='text-3xl text-[#F19F1F] text-center'>Riyadh, Saudi Arabia</h1>
+          <h1 className='text-2xl text-[#F19F1F] text-center'>Riyadh, Saudi Arabia</h1>
           <p className='text-[#3F444D] text-center font-normal'>Samama Tower<br />
             King Fahd Road, Riyadh<br />
             Kingdom of Saudi Arabia
@@ -447,7 +448,7 @@ export default function Page() {
         </div>
         <div className='space-y-4 flex flex-col'>
           <Image src="/images/london.jpg" height={300} width={500} />
-          <h1 className='text-3xl text-[#F19F1F] text-center'>London, UK</h1>
+          <h1 className='text-2xl text-[#F19F1F] text-center'>London, UK</h1>
           <p className='text-[#3F444D] text-center font-normal'>Coming Soon<br />
             <br />
             <br/>

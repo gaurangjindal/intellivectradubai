@@ -4,12 +4,12 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 
 
 
-export const TechPartCard = ({ imgsrc, link }) => {
+export const TechPartCard = ({ imgsrc, link,out }) => {
     return (
         <div className='p-4 rounded-lg shadow-md space-y-1 flex flex-col flex-wrap justify-center items-center '>
 
             <div className='relative h-[60px] w-[120px] z-[100] md:h-[120px] md:w-[210px]'>
-                <Image layout='fill' src={imgsrc}></Image>
+                <Image layout='fill' objectFit={out ? 'fill' : 'cover'} src={imgsrc}></Image>
             </div>
 
             <div className='flex justify-end w-full'>

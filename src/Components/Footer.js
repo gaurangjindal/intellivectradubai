@@ -23,21 +23,21 @@ export const Footer = () => {
                     <div className='space-y-2 text-center lg:text-left'>
                         <h1 className='text-[#FFAB2E] font-bold'>Company</h1>
                         <ul className='list-style-none space-y-2'>
-                            <li><Link href="/about">About us</Link></li>
-                            <li><Link href="/technologypartner">Technology Partners</Link></li>
-                            <li><Link href="/carrers">Careers</Link></li>
-                            <li><Link href="/blog">Content Hub</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/about">About Us</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/technologypartner">Technology Partners</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/carrers">Careers</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/blog">Content Hub</Link></li>
                         </ul>
                     </div>
 
                     <div className='space-y-2 text-center lg:text-left'>
                         <h1 className='text-[#FFAB2E] font-bold'>Solutions and Services</h1>
                         <ul className='list-style-none space-y-2'>
-                            <li><Link href="/solutionandservices/1">Infrastructure Design & Optimization</Link></li>
-                            <li><Link href="/solutionandservices/2">AI & RPA Consulting Services</Link></li>
-                            <li><Link href="/solutionandservices/3">Cloud Consulting Services</Link></li>
-                            <li><Link href="/solutionandservices/7">Cybersecurity Consulting Services</Link></li>
-                            <li><Link href="/solutionandservices/6">Devops Consulting Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/1">Infrastructure Design & Optimization</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/2">AI & RPA Consulting Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/3">Cloud Consulting Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Cybersecurity Consulting Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/6">Devops Consulting Services</Link></li>
                             
                         </ul>
                     </div>
@@ -45,10 +45,10 @@ export const Footer = () => {
                     <div className='space-y-2 text-center lg:text-left'>
                         <h1 className='text-[#FFAB2E] font-bold'>&nbsp;</h1>
                         <ul className='list-style-none space-y-2'>
-                            <li><Link href="/solutionandservices/4">Physical Datacenter Design & Layout</Link></li>
-                            <li><Link href="/solutionandservices/5">SAP Offerings Consulting Services</Link></li>
-                            <li><Link href="/solutionandservices/7">Managed Services</Link></li>
-                            <li><Link href="/solutionandservices/8">Staff Augmentation Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/4">Physical Datacenter Design & Layout</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/5">SAP Offerings Consulting Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Managed Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/8">Staff Augmentation Services</Link></li>
                         </ul>
                     </div>
 
@@ -70,10 +70,10 @@ export const Footer = () => {
                 </div>
 
                 <div className='bg-[#343A40] p-4 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left space-y-4 lg:space-y-0'>
-                    <p className="text-white">© 2024 Intelli Vectra Technologies LLC All rights reserved.</p>
+                    <p className="text-white">© 2024 Intelli Vectra Technologies LLC All Rights Reserved.</p>
                     <ul className='flex list-style-none text-white items-center space-x-4'>
-                        <Link href={'/terms'}><li>Terms & Condition</li></Link>
-                        <Link href={'/privacy'}><li>Privacy & Policy</li></Link>
+                        <Link className='hover:text-[#FFAB2E]' href={'/terms'}><li>Terms & Condition</li></Link>
+                        <Link className='hover:text-[#FFAB2E]' href={'/privacy'}><li>Privacy & Policy</li></Link>
                     </ul>
                     <div className='flex items-center space-x-4 text-white'>
                         <SocialIcon link={'https://www.linkedin.com/company/intellivectra/'}>
