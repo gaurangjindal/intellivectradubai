@@ -209,9 +209,7 @@ export default function Page() {
                                                         accept=".pdf"
                                                         type="file"
                                                         className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#F19F1F] file:text-[#F19F1F] file:bg-opacity-5 hover:bg-opacity-10"
-                                                        onChange={(event) => {
-                                                            setFieldValue('cv', event.currentTarget.files[0]);
-                                                        }}
+                                                        onChange={handleFileChange}
                                                     />
                                                 </label>
                                                 <ErrorMessage name="cv" component="div" className="text-red-500 text-sm mt-1" />

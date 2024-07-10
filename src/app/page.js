@@ -64,7 +64,8 @@ export default function Home() {
     },
     {
       imageSrc: "/images/techpartner/tp8.png",
-      link: "https://www.prolabs.com/"
+      link: "https://www.prolabs.com/",
+      out: true
     },
     {
       imageSrc: "/images/techpartner/tp13.png",
@@ -277,7 +278,7 @@ export default function Home() {
               {
                 partners.map((partner,idx) => {
                   return (
-                    <a href={partner.link} key={idx} target="_blank"><div className="p-2"><div className="border-2 bg-white rounded-md p-2 md:h-[80px] h-[] w-[150px] md:w-[200px] items-center justify-center"><div className="h-full relative w-full"><Image objectFit={partner.out ? "fill" :"cover"} alt="Technology Partner" layout='fill' src={partner.imageSrc}/></div></div></div></a>
+                    <a href={partner.link} key={idx} target="_blank"><div className="p-2"><div className="border-2 bg-white rounded-md p-2 md:h-[90px] h-[60px] w-[150px] md:w-[200px] items-center justify-center"><div className="h-full relative w-full"><Image objectFit={partner.out ? "fill" :"cover"} alt="Technology Partner" layout='fill' src={partner.imageSrc}/></div></div></div></a>
                   )
                 })
               }
