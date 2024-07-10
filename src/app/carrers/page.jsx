@@ -120,7 +120,14 @@ export default function Page() {
 
                                     setLoading(true);
                                     try {
-                                        await axios.post('/api/apply', formData, {
+                                        await axios.post('/api/apply', {
+                                            name: values.name,
+                                            email: values.email,
+                                            phone: phone,
+                                            appliedFor: values.appliedFor,
+                                            coverletter: values.coverletter,
+                                            cvFile: file
+                                        }, {
                                             headers: {
                                                 'Content-Type': 'multipart/form-data'
                                             }
@@ -173,8 +180,8 @@ export default function Page() {
                                                         inputStyle={{ width: '100%' }}
                                                         country={'ae'}
                                                         enableSearch={true}
-                                                        // value={phone}
-                                                        // onChange={(code) => setPhone(code)}
+                                                        value={phone}
+                                                        onChange={(code) => setPhone(code)}
                                                         name="phone"
                                                     />
                                                     <ErrorMessage name="phone" component="div" className="text-red-500 text-sm mt-1" />
