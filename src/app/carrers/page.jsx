@@ -120,7 +120,7 @@ export default function Page() {
 
                                     setLoading(true);
                                     try {
-                                        const response = await axios.post('/api/apply', formData, {
+                                        await axios.post('/api/apply', formData, {
                                             headers: {
                                                 'Content-Type': 'multipart/form-data'
                                             }
