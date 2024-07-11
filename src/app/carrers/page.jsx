@@ -132,7 +132,7 @@ export default function Page() {
                                                 'Content-Type': 'multipart/form-data'
                                             }
                                         });
-
+                                        console.log(response)
                                         if (response.status === 200) {
                                             toast.success('Application submitted successfully');
                                             resetForm();
