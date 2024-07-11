@@ -120,7 +120,7 @@ export default function Page() {
 
                                     setLoading(true);
                                     try {
-                                        await axios.post('/api/apply', {
+                                        const response = await axios.post('/api/apply', {
                                             name: values.name,
                                             email: values.email,
                                             phone: phone,
