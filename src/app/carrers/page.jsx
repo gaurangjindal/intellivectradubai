@@ -83,13 +83,13 @@ export default function Page() {
 
     return (
         <div className="space-y-[5vh]">
-            <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/banners/carrerpagebanner.jpg"} desc={"Craft your career path with us: where growth thrives."} />
+            <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/banners/carrerpagebanner.jpg"} desc={"Craft your career path with us: where growth thrives…"} />
             <div>
                 <div className="flex flex-col w-[100vw] justify-center items-center space-y-4 bg-white">
                     <div className="space-y-4 w-[70vw]">
-                        <h1 className="text-4xl text-center text-black font-bold">Be a part of our mission</h1>
+                        <h1 className="text-4xl text-center text-black font-bold">Join us on our journey to make a difference.</h1>
                         <p className="text-black text-center font-normal">
-                            Be a vital part of Intelli Vectra Technology mission to lead digital transformation globally. Join us in creating impactful solutions that empower businesses and shape the future of technology.
+                            A workplace should be welcoming and engaging, exciting and meaningful. Our culture embodies years of hard work nurturing our employees with the right blend of opportunities—from pursuing innovative career tracks and upskilling through professional development, with best-in-class learning and training, to ensuring a fulfilling work-life balance.
                         </p>
                     </div>
                     <div className="w-full flex flex-col md:flex-row">
@@ -97,8 +97,8 @@ export default function Page() {
                             <Image src="/images/nowhiring.jpg" layout="fill" />
                         </div>
                         <div className="md:w-[50%] w-[100%] bg-[#FFDFAD] p-16 py-16 space-y-8">
-                            <p className="text-black font-normal">We are expanding our team at Intelli Vectra Technology and looking for driven individuals like you to join us. Explore rewarding career opportunities and apply your skills to shape the future of IT solutions. Whether you are an experienced professional or new to the field, we invite you to be part of our innovative journey. Apply now and make an impact with us.</p>
-                            <button onClick={moveToApply} className="p-3 px-6 bg-[#F19F1F] tracking-wide rounded-lg text-white">Apply</button>
+                            <p className="text-black font-normal">We&apos;re a company that emphasizes autonomy, personal responsibility, and trust because satisfied clients start with employees who enjoy what they do. Our success as a company depends on our strength as a team and cultivating a workplace that&apos;s professionally empowering and enjoyable has been a priority from the beginning. We are always looking for new team members, If you&apos;re interested in joining our team, the process starts with a simple.</p>
+                            <button onClick={moveToApply} className="cursor-pointer rounded-lg p-2 px-6 h-fit w-fit text-white bg-[#F19F1F]">Apply</button>
                         </div>
                     </div>
                 </div>
@@ -223,7 +223,7 @@ export default function Page() {
                                             </div>
                                             <button
                                                 disabled={loading || isSubmitting}
-                                                className="p-3 px-6 bg-[#F19F1F] tracking-wide rounded-lg text-white disabled:bg-gray-100 disabled:text-gray-200 w-fit"
+                                                className="cursor-pointer rounded-lg p-2 px-6 h-fit w-fit text-white bg-[#F19F1F] disabled:bg-gray-100 disabled:text-gray-200 w-fit"
                                                 type="submit"
                                             >
                                                 {loading ? <div>Loading...</div> : <div className="flex items-center justify-between space-x-2">Submit</div>}

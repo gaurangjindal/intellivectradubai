@@ -25,6 +25,11 @@ const Page = () => {
             link: "https://www.vmware.com/"
         },
         {
+            imageSrc: "/images/techpartner/tp17.png",
+            link: "https://cloud.google.com/",
+            out: true
+        },
+        {
             imageSrc: "/images/techpartner/tp3.png",
             link: "https://www.veritas.com/"
         },
@@ -40,7 +45,11 @@ const Page = () => {
             imageSrc: "/images/techpartner/tp4.png",
             link: "https://www.sap.com/india/index.html"
         },
-
+        {
+            imageSrc: "/images/techpartner/tp21.png",
+            link: "https://aws.amazon.com/?nc2=h_lg",
+            out: true
+        },
         {
             imageSrc: "/images/techpartner/tp7.png",
             link: "https://www.imperva.com/"
@@ -67,13 +76,30 @@ const Page = () => {
             imageSrc: "/images/techpartner/tp13.png",
             link: "https://www.arista.com/en/"
         },
+        {
+            imageSrc: "/images/techpartner/tp16.png",
+            link: "https://www.arista.com/en/"
+        },
+
+        {
+            imageSrc: "/images/techpartner/tp18.jpg",
+            link: "https://www.commvault.com/",
+        },
+        {
+            imageSrc: "/images/techpartner/tp19.jpg",
+            link: "https://www.proofpoint.com/us",
+        },
+        {
+            imageSrc: "/images/techpartner/tp20.png",
+            link: "https://www.indusface.com/",
+        },
 
     ]
 
     return (
-        <div className="text-black bg-white space-y-4">
+        <div className="text-black bg-white bg-opacity-10 space-y-4">
             <div
-                className="h-[50vh] w-full bg-cover bg-center"
+                className="h-[50vh] w-full bg-cover bg-center flex felx -col items-center justify-center"
                 style={{ backgroundImage: `url(${"/images/banners/techpartbanner.png"})` }}
             >
                 <div className="bg-black px-4 md:px-10 lg:px-20 bg-blend-overlay flex items-center  w-full h-full bg-opacity-10 backdrop-blur-sm">
@@ -89,14 +115,20 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            <div className='text-black px-8 py-3 space-y-4'>
-                {/* <h1 className='text-4xl font-bold text-center'>Technology <span className='text-[#F19F1F]'>Partner</span></h1> */}
-                <p>Collaborating with industry-leading technology vendors, we deliver bespoke technology solutions precisely tailored to meet our customer&apos;s business needs. From Artificial Intelligence to DevOps, Cloud Solutions to Cybersecurity our strategic partnerships ensure access to cutting-edge innovations and expertise, empowering organizations with the latest advancements in technology. With seamless integration to personalized support, we&apos;re committed to driving success through tailored solutions that optimize efficiency, enhance productivity, and propel growth.</p>
+            <div className='text-black flex flex-col items-center justify-center px-8 py-3 space-y-4'>
+                <h1 className='text-4xl font-bold text-center'>Fostering partnerships with companies that align with our values</h1>
+                <p className='w-[95%] text-center'>Collaborating with industry-leading technology vendors, we deliver bespoke technology
+                    solutions precisely tailored to meet our customers’ business needs. From Artificial Intelligence
+                    to DevOps, Cloud Solutions to Cybersecurity our strategic partnerships ensure access to cutting-
+                    edge innovations and expertise, empowering organizations with the latest advancements in
+                    technology. With seamless integration to personalized support, we&#39;re committed to driving
+                    success through tailored solutions that optimize efficiency, enhance productivity, and propel
+                    growth.</p>
             </div>
-            <div className="w-full flex items-center justify-center p-4">
+            <div className="w-full flex items-center justify-center p-4 bg-[#F19F1F] bg-opacity-10">
 
                 <div className="flex items-center justify-center">
-                    <div className="md:w-[80%] flex flex-wrap justify-center items-center">
+                    <div className="md:w-[100%] flex flex-wrap justify-center items-center">
                         {
                             partners.map((partner, idx) => {
                                 return (

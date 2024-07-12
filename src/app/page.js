@@ -12,7 +12,8 @@ export default function Home() {
   const partners = [
     {
       imageSrc: "/images/techpartner/tp6.png",
-      link: "https://www.microsoft.com/en-in"
+      link: "https://www.microsoft.com/en-in",
+      out: true,
     },
     {
       imageSrc: "/images/techpartner/tp11.png",
@@ -22,11 +23,16 @@ export default function Home() {
     {
       imageSrc: "/images/techpartner/tp5.png",
       link: "https://www.redhat.com/en",
-      out:true
+      out: true
     },
     {
       imageSrc: "/images/techpartner/tp2.png",
       link: "https://www.vmware.com/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp17.png",
+      link: "https://cloud.google.com/",
+      out: true
     },
     {
       imageSrc: "/images/techpartner/tp3.png",
@@ -44,7 +50,11 @@ export default function Home() {
       imageSrc: "/images/techpartner/tp4.png",
       link: "https://www.sap.com/india/index.html"
     },
-
+    {
+      imageSrc: "/images/techpartner/tp21.png",
+      link: "https://aws.amazon.com/?nc2=h_lg",
+      out: true
+    },
     {
       imageSrc: "/images/techpartner/tp7.png",
       link: "https://www.imperva.com/"
@@ -70,6 +80,23 @@ export default function Home() {
     {
       imageSrc: "/images/techpartner/tp13.png",
       link: "https://www.arista.com/en/"
+    },
+    {
+      imageSrc: "/images/techpartner/tp16.png",
+      link: "https://www.arista.com/en/"
+    },
+
+    {
+      imageSrc: "/images/techpartner/tp18.jpg",
+      link: "https://www.commvault.com/",
+    },
+    {
+      imageSrc: "/images/techpartner/tp19.jpg",
+      link: "https://www.proofpoint.com/us",
+    },
+    {
+      imageSrc: "/images/techpartner/tp20.png",
+      link: "https://www.indusface.com/",
     },
 
   ]
@@ -224,8 +251,11 @@ export default function Home() {
           </div>
         </div>
         <div className="h-full items-center md:w-[50%] w-full space-y-6">
-          <h1 className="px-2 border-l-2 text-black text-[20px] font-bold border-[#F19F1F]">ABOUT US</h1>
-          <p className="text-[#F19F1F] md:text-4xl text-2xl md:text-justify text-start">Empowering Digital Transformation with Innovative IT Solutions</p>
+          <div className="space-y-1">
+            <h1 className="md:text-4xl text-2xl text-gray-800 mb-2 font-bold">About<span className="text-[#FFAB2E]"> Us</span></h1>
+            <p className="text-black mb-6 md:text-xl text-sm">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
+          </div>
+
 
           <p className="md:text-[18px] text-normal text-start text-[#3F444]">
             Intelli Vectra Technologies is a premier IT solutions provider committed to helping clients harness the power of technology innovation while simplifying IT complexities. Our mission is to drive digital transformation and maximize return on IT investments. Leveraging cutting-edge technologies and delivering customized solutions, we empower businesses to stay ahead in an ever-evolving digital landscape. Our expertise spans various domains, ensuring operational efficiency, enhanced security, and sustainable growth for our clients. At Intelli Vectra Technologies, we prioritize collaboration, transparency, and passion, making us a trusted partner in achieving your business goals and driving meaningful change.
@@ -245,7 +275,7 @@ export default function Home() {
       </div>
       <div className="text-black space-y-2">
         <div className="w-full flex items-center flex-col justify-center space-y-4">
-          <h1 className="text-center tracking-wide text-2xl font-bold md:text-4xl text-gray-600">Key <span className="text-[#FFAB2E]">Benefits</span></h1>
+          <h1 className="text-center tracking-wide text-2xl font-bold md:text-4xl text-gray-600">Our Competitive<span className="text-[#FFAB2E]"> Edge</span></h1>
           <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Tailored IT Solutions for Seamless Operations, Reliable Support, Cybersecurity Expertise, Innovation-driven Approach, Client-Centric Services, Proven Results.</p>
         </div>
         <div className="bg-white grid grid-cols-2 xl:grid-cols-4 justify-items-center gap-x-4 gap-y-12 md:gap-x-4 md:space-y-0 p-4">
@@ -274,11 +304,11 @@ export default function Home() {
             <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Partnering with industry-leading manufacturers to deliver cutting-edge technology solutions<br /> tailored to your business needs.</p>
           </div>
           <div className="flex items-center justify-center">
-            <div className="md:w-[80%] flex flex-wrap justify-center items-center">
+            <div className="md:w-[100%] flex flex-wrap justify-center items-center">
               {
-                partners.map((partner,idx) => {
+                partners.map((partner, idx) => {
                   return (
-                    <a href={partner.link} key={idx} target="_blank"><div className="p-2"><div className="border-2 bg-white rounded-md p-2 md:h-[90px] h-[60px] w-[150px] md:w-[200px] items-center justify-center"><div className="h-full relative w-full"><Image objectFit={partner.out ? "fill" :"cover"} alt="Technology Partner" layout='fill' src={partner.imageSrc}/></div></div></div></a>
+                    <a href={partner.link} key={idx} target="_blank"><div className="p-2"><div className="border-2 bg-white rounded-md p-2 md:h-[90px] h-[60px] w-[150px] md:w-[200px] items-center justify-center"><div className="h-full relative w-full"><Image objectFit={partner.out ? "fill" : "cover"} alt="Technology Partner" layout='fill' src={partner.imageSrc} /></div></div></div></a>
                   )
                 })
               }
@@ -316,7 +346,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-black pb-4 w-full space-y-6 flex flex-col justify-center items-center">
+      <div className="text-black bg-[#FFFAF2] p-8 w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
         <ul className="w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
           <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>

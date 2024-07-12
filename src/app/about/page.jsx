@@ -33,14 +33,13 @@ export default function Page() {
         dots: true,
         infinite: true,
         slidesToShow: 1,
-        dots: false,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 4000,
+        autoplaySpeed: 4000,
         cssEase: "fade",
         arrows: false,
-        pauseOnHover:false,
+        pauseOnHover: false,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         afterChange: () => setUpdateCount(updateCount + 1),
@@ -48,32 +47,54 @@ export default function Page() {
     };
     const slides = [
         {
-            text_content: "Our journey began with a vision to revolutionize the way people connect with technology. Founded in 2018, we set out to democratize access to cutting-edge technology solutions for businesses of all sizes. Our mission was clear to empower organizations to thrive in the digital age by providing innovative, scalable, and user-friendly IT solutions.",
+            text_content: `Our journey began with a vision to revolutionize the way people connect with technology.
+            Founded in 2018, we set out to democratize access to cutting-edge technology solutions for
+            businesses of all sizes. Our mission was clear to empower organizations to thrive in the digital
+            age by providing innovative, scalable, and user-friendly IT solutions.`,
             image_src: "/images/slider1image.png",
             heading: "Duis aute irure dolor"
         },
         {
-            text_content: "IVT's successful acquisition of its first major project bolstered its industry standing, highlighting the team's expertise and unwavering commitment to excellence in solution delivery.",
+            text_content: `IVT&#39;s successful acquisition of its first major project bolstered its industry standing, highlighting
+            the team&#39;s expertise and unwavering commitment to excellence in solution delivery. This
+            milestone underscores our dedication to exceeding client expectations and sets a solid
+            foundation for future growth and innovation in the field.`,
             image_src: "/images/slide2image.png",
         },
         {
-            text_content: "Since our inception, we've achieved several milestones that have shaped our journey. Expanding our global reach to India in 2020, each milestone represents a significant step forward in our commitment to democratizing access to technology solutions worldwide. These expansions not only solidify our presence in key markets but also enable us to better serve our diverse customer base and fulfill our mission of empowering organizations to thrive in the digital age.",
+            text_content: `Since our inception, we&#39;ve achieved several milestones that have shaped our journey, including
+            expanding our global reach to India in 2020. Each milestone represents a significant step
+            forward in our commitment to democratizing access to technology solutions worldwide,
+            solidifying our presence in key markets and enabling us to better serve our diverse customer
+            base in the digital age.`,
             image_src: "/images/slide3image.png",
         },
         {
-            text_content: "Strengthened our business portfolio by forging strategic alliances and expanding service offerings in Cybersecurity Solutions & Services, reinforcing our dedication to digital resilience.",
+            text_content: `Strengthened our business portfolio by forging strategic alliances and expanding service
+            offerings in Cybersecurity Solutions &amp; Services, reinforcing our dedication to digital resilience.
+            These initiatives enhance our capability to proactively safeguard our clients&#39; digital assets and
+            adapt to evolving cybersecurity challenges.`,
             image_src: "/images/slider1image.png",
         },
         {
-            text_content: "Diversified our business portfolio with AI & DevOps Solutions through strategic alliances and service offerings.",
+            text_content: `Diversified our business portfolio with AI &amp; DevOps Solutions through strategic alliances and
+            service offerings. These advancements empower us to deliver cutting-edge technology
+            solutions that drive efficiency and innovation across diverse industries, positioning us as a
+            leader in technological transformation.`,
             image_src: "/images/slide2image.png",
         },
         {
-            text_content: "The launch of IVT 2.0 heralded a new era, unveiling a revamped office space aimed at nurturing innovation, collaboration, and expansion.",
+            text_content: `The launch of IVT 2.0 heralded a new era, unveiling a revamped office space aimed at nurturing
+            innovation, collaboration, and expansion. This modern facility reflects our commitment to
+            creating a dynamic work environment that inspires creativity and fosters growth among our
+            team members.`,
             image_src: "/images/slide3image.png",
         },
         {
-            text_content: "IVT's expansion into the Kingdom of Saudi Arabia underscores its commitment to establishing a comprehensive regional presence, prioritizing accessibility, and exceeding client expectations regionwide.",
+            text_content: `IVT&#39;s expansion into the Kingdom of Saudi Arabia underscores its commitment to establishing a
+            comprehensive regional presence, prioritizing accessibility, and exceeding client expectations
+            regionwide. This strategic initiative further solidifies our role as a trusted partner in driving
+            technological advancement and innovation across the Middle East.`,
             image_src: "/images/slider1image.png",
         },
     ];
@@ -81,7 +102,7 @@ export default function Page() {
     const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024];
     return (
         <div className='space-y-[30px] w-full bg-white'>
-            <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Forging Connections in the digital realm."} />
+            <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Building Bridges in the Digital Landscape"} />
             <div className="w-full px-4 md:px-10 lg:px-20 space-y-6 bg-white text-black flex flex-col lg:flex-row items-center justify-center md:space-x-20">
                 <div className="flex md:w-[40%] w-full">
                     {/* First Image */}
@@ -106,14 +127,20 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="h-full items-center md:w-[50%] w-full space-y-6">
-                    <h1 className="px-2 border-l-2 text-black text-[20px] font-bold border-[#F19F1F]">ABOUT US</h1>
                     <p className="text-[#F19F1F] md:text-4xl text-2xl tracking-wide">Welcome to IVT</p>
 
                     <p className="md:text-[18px] text-normal text-[#3F444]">
-                    Intelli Vectra Technologies empower businesses through innovative technology solutions, our vision is to be the catalyst for digital transformation worldwide. With a commitment to excellence, integrity, and customer-centricity, we strive to redefine the possibilities of IT, delivering cutting-edge solutions that inspire progress, drive growth, and shape the future of industries. Our steadfast dedication to innovation and our drive to exceed expectations position us as the ideal partner for organizations striving to succeed in the dynamic digital landscape. Together, we foresee a future where technology empowers, connects, and transforms lives, fostering a brighter and more inclusive world for all.Our steadfast dedication to innovation and our drive to exceed expectations position us as the ideal partner for organizations striving to succeed in the dynamic digital landscape. Together, we foresee a future where technology empowers, connects, and transforms lives, fostering a brighter and more inclusive world for all.
+                        Intelli Vectra Technologies empower businesses through innovative technology solutions, our
+                        vision is to be the catalyst for digital transformation worldwide. With a commitment to
+                        excellence, integrity, and customer-centricity, we strive to redefine the possibilities of IT,
+                        delivering cutting-edge solutions that inspire progress, drive growth, and shape the future of
+                        industries. Our relentless pursuit of innovation, coupled with a passion for exceeding
+                        expectations, positions us as the ideal partner for organizations seeking to thrive in an ever-
+                        evolving digital landscape. Together, we envision a world where technology empowers,
+                        connects, and transforms lives, fostering a brighter, more inclusive future for all.
                     </p>
                     {/* <p className="md:text-[18px] text-normal text-[#3F444]">Our mission is to utilize the power of technology to empower businesses and individuals, driving positive change and facilitating success in an ever more digital world. Through our unwavering commitment to innovation, expertise, and customer satisfaction, we strive to deliver tailored IT solutions that exceed expectations, optimize efficiency, and unlock new opportunities for growth. With a focus on collaboration, integrity, and continuous improvement, we aim to be a trusted partner for our clients, providing reliable support, strategic guidance, and cutting-edge solutions that drive them towards their goals. Together, we embrace the transformative potential of technology to create a brighter, more connected future for all.</p> */}
-                    
+
                     <div className="w-full h-6 bg-white"></div>
                     <Link href="/about"><button className='cursor-pointer p-2 px-6 h-fit w-fit rounded-md text-white bg-[#F19F1F]'>Learn More</button></Link>
                 </div>
@@ -121,7 +148,7 @@ export default function Page() {
             </div>
 
             <div className="bg-[#FFFAF2] w-full ">
-                <div className="justify-center w-[100vw] space-y-8 md:space-y-16 bg-[#F19F1F] bg-blend-darken p-4" style={{ backgroundImage: "url('images/business-network-background-connecting-dots-technology-design 2.png')" }}>
+                <div className="justify-center w-[100vw] h-[60vh] space-y-8 md:space-y-16 bg-[#F19F1F] bg-opacity-100 bg-blend-screen p-4" style={{ backgroundImage: "url('images/business-network-background-connecting-dots-technology-design 2.png')" }}>
                     <div className='space-y-2'>
                         <h1 className="text-center font-bold text-black text-2xl md:text-4xl"><span className="text-white">Journey </span> Unfolded</h1>
                         <p className="text-center text-white md:text-xl text-sm">Exploring the journey towards excellence</p>
@@ -131,8 +158,8 @@ export default function Page() {
                         <div className="w-full items-center justify-center flex md:px-16">
                             <SamplePrevArrow></SamplePrevArrow>
                             <div className="border-t-2 relative border-white w-full px-4" >
-                                <div style={{ position: 'absolute', left: `${posi[slideIndex]}%` }}>
-                                    <FaCaretDown fontSize={40} />
+                                <div className="flex flex-col items-center justify-center" style={{ position: 'absolute', left: `${posi[slideIndex]}%`,color:'black' }}>
+                                    <FaCaretDown fontSize={60} />
                                     <p>{years[slideIndex]}</p>
                                 </div>
                             </div>
@@ -140,16 +167,13 @@ export default function Page() {
                         </div>
                     </div>
 
-                    <div className="h-[2vh]">
-
-                    </div>
                     <div className="w-full justify-center hidden md:block">
                         <Slider {...settings} ref={(slider) => sliderRef = slider}>
                             {slides.map((slide, idx) => {
                                 return (
                                     <div key={idx}>
                                         <div className="flex justify-center space-x-8 w-full flex-row">
-                                            <div className="w-[70%] rounded-lg bg-black bg-opacity-10 backdrop-blur-sm p-4 flex items-center space-y-4">
+                                            <div className="w-[70%] rounded-lg p-4 flex items-center space-y-4">
                                                 <div>{slide.text_content}</div>
                                             </div>
                                         </div>
@@ -191,7 +215,7 @@ export default function Page() {
             </div>
 
 
-            <div className="md:p-8 p-2 bg-[#FFFAF1] w-[100%] text-black space-y-4">
+            {/* <div className="md:p-8 p-2 bg-[#FFFAF1] w-[100%] text-black space-y-4">
                 <h1 className="font-bold text-center text-4xl"><span className="text-[#F19F1F]">Our </span>Approach</h1>
                 <div className="text-center md:text-xl text-sm font-normal">
                     <p>At IVT, We love technology - But we are obsessed with</p>
@@ -225,20 +249,20 @@ export default function Page() {
                 </div>
 
 
-            </div>
+            </div> */}
 
-            <div className="bg-white text-black space-y-6 p-4">
+            <div className="bg-[#FFFAF1] text-black space-y-6 p-4">
                 <h1 className="text-center font-bold text-4xl"><span className="text-[#F19F1F]">Mission </span>& Vision</h1>
 
                 <div className="space-x-0  md:space-x-2 space-y-4 md:space-y-0 flex flex-col md:flex-row">
-                    <div className="p-4 md:p-16 bg-[#FFFAF2] w-full md:w-[50%] space-y-4 md:space-y-6">
-                        <h1 className="text-2xl font-bold md:text-4xl">Our <span className="text-[#F19F1F]">Mission</span></h1>
+                    <div className="p-4 md:p-8 border w-full rounded-lg md:w-[50%] space-y-4 md:space-y-6">
+                        <h1 className="text-2xl text-center font-bold md:text-4xl">Our <span className="text-[#F19F1F]">Mission</span></h1>
                         <p className="text-lg md:text-xl font-normal">
                             Our mission at Intelli Vectra Technologies is to drive digital transformation by delivering innovative, tailored IT solutions. We strive to simplify complexities, optimize efficiency, and enhance security for businesses across diverse industries. With a commitment to excellence, integrity, and customer satisfaction, we empower our clients to achieve sustainable growth and success in a rapidly evolving technological landscape.
                         </p>
                     </div>
-                    <div className="p-4 md:p-16 bg-[#FFFAF2] w-full md:w-[50%] space-y-4 md:space-y-6">
-                        <h1 className="text-2xl font-bold md:text-4xl">Our <span className="text-[#F19F1F]">Vision</span></h1>
+                    <div className="p-4 md:p-8 border rounded-lg w-full md:w-[50%] space-y-4 md:space-y-6">
+                        <h1 className="text-2xl text-center font-bold md:text-4xl">Our <span className="text-[#F19F1F]">Vision</span></h1>
                         <p className="text-lg md:text-xl font-normal">
                             Our vision at Intelli Vectra Technologies is to be the forefront catalyst of global digital transformation. We aspire to pioneer cutting-edge technological advancements that empower businesses and individuals alike. Through innovation, integrity, and a commitment to excellence, we envision creating a connected world where technology fosters inclusive growth, transforms industries, and enriches lives on a global scale.
                         </p>

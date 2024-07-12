@@ -21,7 +21,7 @@ const PageStarterVideo = ({ videoSrc, tit1, tit1Col, tit2, desc, descColor,link 
                         </h1>
                     </div>
                     <div>
-                        <Link href={link}><button buttonText={"Explore"}  className='cursor-pointer rounded-lg p-2 px-10 h-fit w-fit text-white bg-[#F19F1F]' >Explore</button></Link>
+                        <Link href={link}><button buttonText={"Explore"}  className='cursor-pointer rounded-lg p-2 px-6 h-fit w-fit text-white bg-[#F19F1F]' >Explore</button></Link>
                     </div>
                 </div>
             </div>

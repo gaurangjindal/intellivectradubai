@@ -267,7 +267,7 @@ export default function Page() {
   return (
     <div className="w-full">
       <PageStarter tit1={"Contact"} tit2={" Us"} tit1Col={"black"} descColor={"black"} imageSrc={"/images/banners/contactusbanner.jpg"} desc={"Connect us today and discover the difference."}></PageStarter>
-      <div className='bg-[#FFFAF2] w-full py-4 md:py-8 space-y-2 md:px-32 md:space-y-8'>
+      <div className='bg-[#FFFAF2] w-full py-4 md:py-8 space-y-2 md:px-32 md:space-y-4'>
         <h1 className='text-center md:text-4xl text-2xl font-bold text-[#F19F1F] '> <span className='text-black'> Get In </span>Touch </h1>
         <div className='flex p-4 flex-col md:flex-row-reverse space-y-4 md:space-y-0 md:space-x-4 w-full justify-center items-center'>
           <div className='bg-white shadow-lg space-y-8 text-black p-4 py-8 rounded-lg md:w-[70%] w-full h-fit'>
@@ -334,7 +334,7 @@ export default function Page() {
 
                     <PhoneInputContainer>
                       <PhoneInput
-                      className='border-0'
+                        className='border-0'
                         buttonClass='h-[50px]'
                         inputClass='h-[50px] border-0'
                         containerClass=''
@@ -362,7 +362,7 @@ export default function Page() {
                     <button
                       type='submit'
                       disabled={loading}
-                      className='p-3 px-6 bg-[#F19F1F] tracking-wide rounded-lg text-white disabled:bg-gray-200 disabled:text-white'
+                      className='cursor-pointer rounded-lg p-2 px-6 h-fit w-fit text-white bg-[#F19F1F] disabled:bg-gray-200 disabled:text-white'
                     >
                       {loading ? "Loading..." : "Submit"}
                     </button>
@@ -430,7 +430,7 @@ export default function Page() {
           <p className='text-[#3F444D] text-center font-normal'>2nd Floor, Plot No. 29<br />
             Maruti Industrial Area, Sector-18<br />
             Gurugram–122015 (Haryana), India</p>
-          <a href='https://www.google.com/maps/dir/25.6170256,85.116814/Intelli+Vectra+Technologies/@26.787533,75.8239746,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390d1930ce6b42f9:0xb39219cee9e1d009!2m2!1d77.0743589!2d28.490693?entry=ttu'><div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
+          <a target='_blank' href='https://www.google.com/maps/dir/25.6170256,85.116814/Intelli+Vectra+Technologies/@26.787533,75.8239746,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390d1930ce6b42f9:0xb39219cee9e1d009!2m2!1d77.0743589!2d28.490693?entry=ttu'><div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
             <span><GrLocation /></span> <p className='hover:text-black'>Get Direction</p>
           </div>
           </a>
@@ -442,16 +442,19 @@ export default function Page() {
             King Fahd Road, Riyadh<br />
             Kingdom of Saudi Arabia
           </p>
-          <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
-            <span><GrLocation /></span> <p className='hover:text-black'>Get Direction</p>
-          </div>
+          <a target='_blank' href='https://www.google.com/maps/place/The+Place+-+Office+for+rent+in+Samama+Holdings+Riyadh/@24.706165,46.6744409,15z/data=!4m2!3m1!1s0x0:0xbe70ef02eedf2fb?sa=X&ved=1t:2428&ictx=111'>
+            <div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'><div className='flex text-[#F19F1F]  justify-center w-full items-center space-x-2 cursor-pointer'>
+              <span><GrLocation /></span> <p className='hover:text-black'>Get Direction</p>
+            </div>
+            </div>
+          </a>
         </div>
         <div className='space-y-4 flex flex-col'>
           <Image src="/images/london.jpg" height={300} width={500} />
           <h1 className='text-2xl text-[#F19F1F] text-center'>London, UK</h1>
           <p className='text-[#3F444D] text-center font-normal'>Coming Soon<br />
             <br />
-            <br/>
+            <br />
           </p>
           <div className='flex text-[#F19F1F] justify-center w-full items-center space-x-2 cursor-pointer'>
             <span><GrLocation /></span> <p className=''>Get Direction</p>

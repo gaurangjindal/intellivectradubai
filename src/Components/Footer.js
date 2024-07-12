@@ -35,9 +35,9 @@ export const Footer = () => {
                         <ul className='list-style-none space-y-2'>
                             <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/1">Infrastructure Design & Optimization</Link></li>
                             <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/2">AI & RPA Consulting Services</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/3">Cloud Consulting Services</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Cybersecurity Consulting Services</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/6">Devops Consulting Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/3">Cloud Solutions</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Cybersecurity</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/6">Devops</Link></li>
                             
                         </ul>
                     </div>
@@ -45,8 +45,8 @@ export const Footer = () => {
                     <div className='space-y-2 text-center lg:text-left'>
                         <h1 className='text-[#FFAB2E] font-bold'>&nbsp;</h1>
                         <ul className='list-style-none space-y-2'>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/4">Physical Datacenter Design & Layout</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/5">SAP Offerings Consulting Services</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/4">Data Center Design & Build</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/5">SAP Services</Link></li>
                             <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Managed Services</Link></li>
                             <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/8">Staff Augmentation Services</Link></li>
                         </ul>
