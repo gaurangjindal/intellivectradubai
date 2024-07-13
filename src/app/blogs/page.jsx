@@ -81,21 +81,21 @@ export default function Page() {
     const nonCurrPageStyle = "px-3 py-1 bg-gray-200 text-gray-600 rounded-md hover:bg-gray-300"
     return (
         <div className="bg-white space-y-4">
-            <PageStarter tit1={"Blogs"} tit2={""} tit1Col={"black"} descColor={"black"} imageSrc={"/images/blogsHeader.jpg"} desc={"Explore our blogs for in-depth analysis, case studies and practical tips to navigate digital transformation."}></PageStarter>
+            <PageStarter tit1={"Blogs"} tit2={""} tit1Col={"black"} descColor={"black"} imageSrc={"/images/blogsHeader.jpg"} desc={"Navigate the digital landscape with our insights and tips."}></PageStarter>
             <div className="flex flex-col w-full items-center">
-                <div className="flex bg-white md:px-4 justify-center items-center w-full md:w-[70%] space-x-4">
+                {/* <div className="flex bg-white md:px-4 justify-center items-center w-full md:w-[70%] space-x-4">
                     <input value={searchText} onChange={(e) => setSearchText(e.target.value)} type="text" className="rounded-md bg-[#FFF4E3] border p-2 text-black md:w-[500px]" placeholder="Search" />
                     <select value={category} onChange={(e) => setCategory(e.target.value)} className="rounded-md bg-[#FFF4E3] border p-2 text-black md:w-[200px]">
                         <option value="all">All Categories</option>
                         <option value={"technical"}>Technical</option>
                         <option value={"services"}>Services</option>
                     </select>
-                </div>
+                </div> */}
                 <div className="w-full flex items-center justify-center">
-                    <div className="bg-white md:w-full w-[80%] py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
+                    <div className="bg-white md:w-full w-[80%] py-4 flex flex-wrap items-center justify-center">
                         {
                             events.splice(page * 6, (page + 1) * 6).map((event, idx) => {
-                                return <ContentCard key={idx} content={event} />
+                                return <div className="p-6"><ContentCard key={idx} content={event} /></div>
                             })
                         }
                     </div>

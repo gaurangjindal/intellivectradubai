@@ -83,19 +83,19 @@ export default function Page() {
         <div className="bg-white space-y-4">
             <PageStarter tit1={"Case Study"} tit2={""} tit1Col={"black"} descColor={"black"} imageSrc={"/images/blogsHeader.jpg"} desc={"Explore our success stories showcasing transformative solutions and client achievements."}></PageStarter>
             <div className="flex flex-col w-full items-center">
-                <div className="flex bg-white md:px-4 justify-center items-center w-full md:w-[70%] space-x-4">
+                {/* <div className="flex bg-white md:px-4 justify-center items-center w-full md:w-[70%] space-x-4">
                     <input value={searchText} onChange={(e) => setSearchText(e.target.value)} type="text" className="bg-[#FFF4E3] rounded-md border p-2 text-black md:w-[500px]" placeholder="Search" />
                     <select value={category} onChange={(e) => setCategory(e.target.value)} className="bg-[#FFF4E3] rounded-md border p-2 text-black md:w-[200px]">
                         <option value="all">All Categories</option>
                         <option value={"technical"}>Technical</option>
                         <option value={"services"}>Services</option>
                     </select>
-                </div>
+                </div> */}
                 <div className="w-full flex items-center justify-center">
-                    <div className="bg-white md:w-full w-[80%] py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
+                    <div className="bg-white md:w-full w-[80%] py-4 flex flex-wrap items-center justify-center">
                         {
                             events.splice(page * 6, (page + 1) * 6).map((event, idx) => {
-                                return <ContentCard key={idx} content={event} />
+                                return <div className="p-6"><ContentCard key={idx} content={event} /></div>
                             })
                         }
                     </div>

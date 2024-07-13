@@ -83,12 +83,12 @@ export default function Page() {
 
     return (
         <div className="space-y-[5vh]">
-            <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/banners/carrerpagebanner.jpg"} desc={"Craft your career path with us: where growth thrives…"} />
+            <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/banners/carrerpagebanner.jpg"} desc={"Craft your career path with us: where growth thrives."} />
             <div>
                 <div className="flex flex-col w-[100vw] justify-center items-center space-y-4 bg-white">
                     <div className="space-y-4 w-[70vw]">
                         <h1 className="text-4xl text-center text-black font-bold">Join us on our journey to make a difference.</h1>
-                        <p className="text-black text-center font-normal">
+                        <p className="text-black md:text-center font-normal text-justify md:">
                             A workplace should be welcoming and engaging, exciting and meaningful. Our culture embodies years of hard work nurturing our employees with the right blend of opportunities—from pursuing innovative career tracks and upskilling through professional development, with best-in-class learning and training, to ensuring a fulfilling work-life balance.
                         </p>
                     </div>

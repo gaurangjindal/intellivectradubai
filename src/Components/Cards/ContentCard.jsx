@@ -11,8 +11,8 @@ export const ContentCard = ({ content }) => {
             <div className='flex items-center space-x-4'>
                 <Image alt='' height={40} width={40} src={content.userImageSrc} className='rounded-[50%]' />
                 <div>
-                    <p>{content.username}</p>
-                    <p className='text-xs'>{content.userDes}</p>
+                    <p>Admin</p>
+                    <p className='text-xs'>{"Published By Company Name"}</p>
                 </div>
             </div>
             <div className="h-[70px] overflow-hidden">
@@ -24,7 +24,7 @@ export const ContentCard = ({ content }) => {
             </div>
 
             <div>
-                <a href={content.link}><button className='cursor-pointer rounded-lg p-[12px] px-6 h-fit w-fit text-white bg-[#F19F1F]' buttonText={"Read More"}>Read More</button></a>
+                <a target='_blank' href={content.link}><button className='cursor-pointer rounded-lg p-2 px-4 h-fit w-fit text-white bg-[#F19F1F]' buttonText={"Read More"}>Read More</button></a>
             </div>
         </div>
     )

@@ -364,7 +364,7 @@ export default function Home() {
           </select>
         </div>
 
-        <div className="flex flex-col w-full px-4 py-4 space-y-4 md:px-20 md:flex-row md:space-y-0 md:space-x-4 items-center justify-between">
+        <div className="flex flex-col w-full px-4 py-4 space-y-4 md:px-20 md:flex-row md:space-y-0 md:space-x-12 items-center justify-between">
           {
             dataForContentHub[activeContentType].map((event, idx) => {
               return <ContentCard key={idx} content={event} />
@@ -373,7 +373,7 @@ export default function Home() {
         </div>
 
         <div className="w-full flex items-center justify-center">
-          <Link href="/blogs"><button className="bg-[#FFAB2E] p-4 rounded-lg">See More</button></Link>
+          <Link href="/blogs"><button className="bg-[#FFAB2E] p-2 px-4 rounded-lg text-white">See More</button></Link>
         </div>
       </div>
 
