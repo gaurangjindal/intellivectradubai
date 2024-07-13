@@ -95,7 +95,7 @@ export default function Page() {
                     <div className="bg-white md:w-full w-[80%] py-4 flex flex-wrap items-center justify-center">
                         {
                             events.splice(page * 6, (page + 1) * 6).map((event, idx) => {
-                                return <div className="p-6"><ContentCard key={idx} content={event} /></div>
+                                return <div key={idx} className="p-6"><ContentCard key={idx} content={event} /></div>
                             })
                         }
                     </div>

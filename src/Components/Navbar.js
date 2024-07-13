@@ -236,9 +236,9 @@ export const Navbar = () => {
                 <div className='text-black'>
                     <ul className='space-y-4'>
                         {
-                            jsonforServices.map((service) => {
+                            jsonforServices.map((service,idx) => {
                                 return (
-                                    <li><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p>{service.service_name}</p></Link></li>
+                                    <li key={idx}><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p>{service.service_name}</p></Link></li>
                                 )
                             })
                         }
@@ -250,9 +250,9 @@ export const Navbar = () => {
                 <div className='text-black'>
                     <ul className='space-y-4'>
                         {
-                            jsonforServices.map((service) => {
+                            jsonforServices.map((service,idx) => {
                                 return (
-                                    <li><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p>{service.service_name}</p></Link></li>
+                                    <li key={idx}><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p>{service.service_name}</p></Link></li>
                                 )
                             })
                         }
