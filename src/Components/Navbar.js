@@ -10,7 +10,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { useRouter } from 'next/navigation';
 import { RiMenu2Fill } from "react-icons/ri";
 import VerticalCarousel from './VerticleCorousel';
-
+import { jsonforServices } from '@/data';
 
 export const Navbar = () => {
     const pathname = usePathname();
@@ -50,9 +50,15 @@ export const Navbar = () => {
     }
 
     const handleSolutionAndServiceMenuClose = () => {
-
         setMenuHidden(true);
+    }
 
+    const handleContentHubOpen = () => {
+        setShowContentInner(true);
+    }
+
+    const handleContentHubClose = () => {
+        setShowContentInner(false);
     }
     return (
         <div className="relative w-[100%]">
@@ -75,23 +81,17 @@ export const Navbar = () => {
                         <Link href="/about"><li className={`${pathname === '/about' ? classActive : classUnActive}`}>About Us</li></Link>
                         <Link href="/solutionandservices" onMouseOver={handleSolutionAndServiceMenuOpen} onMouseOut={handleSolutionAndServiceMenuClose}><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solutions and Services<span><IoIosArrowDown /></span></li></Link>
                         <Link href="/technologypartner"><li className={`${pathname === '/technologypartner' ? classActive : classUnActive}`}>Technology Partners</li></Link>
-                        <button onClick={() => {
-                            setShowContentInner(!showContentInner);
-                            console.log()
-                        }
-                        }><li className={`${pathname === '/contenthub' ? classActive : classUnActive}`}>Content Hub<span><IoIosArrowDown /></span></li></button>
+                        <button onMouseEnter={handleContentHubOpen}
+                            onMouseOut={handleContentHubClose}
+                            
+                        ><li className={`${pathname === '/contenthub' ? classActive : classUnActive}`}>Content Hub<span><IoIosArrowDown /></span></li></button>
                         <Link href="/carrers"><li className={`${pathname === '/carrers' ? classActive : classUnActive}`}>Career</li></Link>
                         <Link href="/contactus"><li className={`${pathname === '/contactus' ? classActive : classUnActive}`}>Contact Us</li></Link>
                     </ul>
                 </div>
             </div>
-
-
-
-            <div
-                className={`transition-all duration-1000 transform ${showContentInner ? 'translate-y-0 opacity-100' : 'md:translate-y-0 translate-y-full opacity-0'
-                    } bg-white z-[1001] text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4`}
-            >
+            <div className={`
+                    bg-white z-[1001] text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4 ${!showContentInner ? 'hidden hover:flex' : ''}`}>
                 <ul className="space-y-4">
                     <li
                         onClick={() => {
@@ -100,14 +100,12 @@ export const Navbar = () => {
                         }}
                         className="cursor-pointer flex items-center text-lg space-x-4"
                     >
-                        <div className="flex items-center justify-between w-full space-x-4">
+                        <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/blog.png" height={40} width={40} alt="Blog" />
+                                <Image src="/images/icons/blog.png" height={25} width={25} alt="Blog" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Blogs</p>
-                            <span>
-                                <IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} />
-                            </span>
+
                         </div>
                     </li>
                     <li
@@ -117,14 +115,12 @@ export const Navbar = () => {
                         }}
                         className="cursor-pointer flex items-center text-lg space-x-4"
                     >
-                        <div className="flex items-center justify-between w-full space-x-4">
+                        <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/news.png" height={40} width={40} alt="News" />
+                                <Image src="/images/icons/news.png" height={25} width={25} alt="News" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">News</p>
-                            <span>
-                                <IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} />
-                            </span>
+
                         </div>
                     </li>
                     <li
@@ -134,14 +130,12 @@ export const Navbar = () => {
                         }}
                         className="cursor-pointer flex items-center text-lg space-x-4"
                     >
-                        <div className="flex items-center justify-between w-full space-x-4">
+                        <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/calender.png" height={40} width={40} alt="Events" />
+                                <Image src="/images/icons/calender.png" height={25} width={25} alt="Events" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Events</p>
-                            <span>
-                                <IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} />
-                            </span>
+
                         </div>
                     </li>
                     <li
@@ -151,34 +145,29 @@ export const Navbar = () => {
                         }}
                         className="cursor-pointer flex items-center text-lg space-x-4"
                     >
-                        <div className="flex items-center justify-between w-full space-x-4">
+                        <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/casestudy.png" height={40} width={40} alt="Case Study" />
+                                <Image src="/images/icons/casestudy.png" height={25} width={25} alt="Case Study" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Case Study</p>
-                            <span>
-                                <IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} />
-                            </span>
                         </div>
                     </li>
                 </ul>
             </div>
 
-            <div className={`md:space-x-4 z-[1000]  bg-white absolute top-14 left-2 p-4 rounded-lg ${(menuHidden) ? 'hidden hover:flex' : 'hidden md:flex'}`}>
+            <div className={`md:space-x-4 z-[1000]  bg-white absolute md:top-14 top-[210px] left-[50%] p-4 rounded-lg ${(menuHidden) ? 'hidden hover:flex' : 'flex'}`}>
                 <div className='text-black'>
-                    <ul className='space-y-8'>
-                        <li><Link href="/solutionandservices/1" className='w-full justify-between flex items-center space-x-4 text-[16px] font-semibold'><span><Image src='/images/icons/database.png' width={30} height={30}></Image></span><p>Datacenter Design & Optimization</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
-                        <li><Link href="/solutionandservices/2" className='w-full justify-between flex items-center space-x-4 text-[16px] font-semibold'><span><Image src='/images/icons/robot_2.png' width={30} height={30}></Image></span><p>AI & RPA Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
-                        <li><Link href="/solutionandservices/3" className='w-full justify-between flex items-center space-x-4 text-[16px] font-semibold'><span><Image src='/images/icons/cloud.png' width={30} height={30}></Image></span><p>Cloud Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
-                        <li><Link href="/solutionandservices/7" className='w-full justify-between flex items-center space-x-4 text-[16px] font-semibold'><span><Image src='/images/icons/shield.png' width={30} height={30}></Image></span><p>Cybersecurity Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
-                        <li><Link href="/solutionandservices/6" className='w-full justify-between flex items-center space-x-4 text-[16px] font-semibold'><span><Image src='/images/icons/all_inclusive.png' width={30} height={30}></Image></span><p>Devops Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
-                        <li><Link href="/solutionandservices/4" className='w-full justify-between flex items-center space-x-4 text-[16px] font-semibold'><span><Image src='/images/icons/home.png' width={30} height={30}></Image></span><p>Physical Datacenter Design & Layout</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
-                        <li><Link href="/solutionandservices/5" className='w-full justify-between flex items-center space-x-4 text-[16px] font-semibold'><span><Image src='/images/icons/support_agent.png' width={30} height={30}></Image></span><p>SAP Offerings Consulting Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
-                        <li><Link href="/solutionandservices/8" className='w-full justify-between flex items-center space-x-4 text-[16px] font-semibold'><span><Image src='/images/icons/group_add.png' width={30} height={30}></Image></span><p>Staff Augmentation Services</p><span><IoIosArrowForward style={{ fontSize: '20px', color: "#FFAB2E", fontWeight: "bold" }} ></IoIosArrowForward></span></Link></li>
+                    <ul className='space-y-4'>
+                        {
+                            jsonforServices.map((service) => {
+                                return (
+                                    <li><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p>{service.service_name}</p></Link></li>
+                                )
+                            })
+                        }
                     </ul>
                 </div>
-                <VerticalCarousel></VerticalCarousel>
             </div>
-        </div>
+        </div >
     );
 }

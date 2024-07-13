@@ -253,7 +253,7 @@ export default function Home() {
         <div className="h-full items-center md:w-[50%] w-full space-y-6">
           <div className="space-y-1">
             <h1 className="md:text-4xl text-2xl text-gray-800 mb-2 font-bold">About<span className="text-[#FFAB2E]"> Us</span></h1>
-            <p className="text-black mb-6 md:text-xl text-sm">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
+            <p className="text-black mb-6 md:text-xl text-sm">Building Bridges in the Digital Landscape</p>
           </div>
 
 

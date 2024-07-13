@@ -1,5 +1,6 @@
 import { MdOutlineSecurity } from "react-icons/md";
 import { GrStorage } from "react-icons/gr";
+import Image from "next/image";
 
 export const jsonforServices = [
     {
@@ -11,6 +12,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "logo_img_src": '/images/icons/database.png',
         "points": [
             {
                 "heading": "Data Center Assessment and Planning Services",
@@ -46,12 +48,13 @@ export const jsonforServices = [
     },
     {
         "service_id": 2,
-        "service_name": "AI & RPA",
+        "service_name": "AI & RPA Consulting Services",
         "description": "Intelli Vectra Technology specializes in AI and RPA, providing solutions for automating processes, enhancing efficiency, and driving innovation. Our offerings include intelligent automation, machine learning, predictive analytics, and workflow optimization to streamline operations and boost productivity.",
         "heading_pic_url": "/images/services/itsecsol.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
+        "logo_img_src": '/images/icons/robot_2.png',
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
         "points": [
             {
@@ -104,6 +107,7 @@ export const jsonforServices = [
         "type": "technology",
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
+        "logo_img_src": '/images/icons/cloud.png',
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
         "points":
             [
@@ -146,13 +150,117 @@ export const jsonforServices = [
 
     },
     {
+        "service_id": 7,
+        "service_name": "Cybersecurity",
+        "description": "Intelli Vectra Technology provides robust cybersecurity solutions, including threat detection, risk assessment, incident response, and compliance management. Our services ensure comprehensive protection of digital assets, safeguarding businesses against cyber threats and enhancing overall security posture.",
+        "heading_pic_url": "/images/services/datacenter.jpg",
+        "type": "technology",
+        "image1": "/images/dsimage1.png",
+        "image2": "/images/dsimage2.png",
+        "logo_img_src": '/images/icons/shield.png',
+        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "points": [
+            {
+                heading: "Cybersecurity Assessment and Strategy Services",
+                desc: "Evaluate your cybersecurity posture and develop a tailored strategy to mitigate risks effectively.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Network Security Solutions",
+                desc: "Secure your network infrastructure with advanced firewall, intrusion detection, and prevention systems.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Endpoint Security Solutions",
+                desc: "Protect endpoints from malware, ransomware, and other threats with robust endpoint protection software.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Identity and Access Management (IAM) Solutions",
+                desc: "Manage user identities and access permissions securely to prevent unauthorized access to sensitive data and systems.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Security Information and Event Management (SIEM)",
+                desc: "Monitor and analyze security events in real-time to detect and respond to threats effectively.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Incident Response and Threat Intelligence",
+                desc: "Rapidly respond to security incidents with proactive threat intelligence and incident response services.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Cloud Security Solutions",
+                desc: "Secure your cloud environments with encryption, access controls, and other cloud-native security measures.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Security Awareness Training and Education",
+                desc: "Educate your employees on cybersecurity best practices to prevent social engineering attacks and enhance overall security awareness.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            }
+        ]
+    },
+
+    {
+        "service_id": 6,
+        "service_name": "DevOps",
+        "description": "Intelli Vectra Technology offers DevOps services, focusing on automating development, deployment, and operations processes. Our solutions include continuous integration, continuous delivery, infrastructure as code, and monitoring, aimed at accelerating development cycles, enhancing collaboration, and improving software quality.",
+        "heading_pic_url": "/images/services/datacenter.jpg",
+        "type": "technology",
+        "image1": "/images/dsimage1.png",
+        "image2": "/images/dsimage2.png",
+        "logo_img_src" : "/images/icons/all_inclusive.png",
+        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "points": [
+            {
+                heading: "DevOps Consulting Services",
+                desc: "Expert consultation for implementing DevOps practices tailored to your organization's needs and goals.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Infrastructure as Code (IaC) Implementation",
+                desc: "Automate infrastructure provisioning and management using code for consistency and scalability.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Continuous Integration and Continuous Delivery (CI/CD) Pipeline Setup",
+                desc: "Establish automated pipelines to build, test, and deploy software rapidly and reliably.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Containerization and Orchestration Solutions",
+                desc: "Utilize containers and orchestration tools for efficient application deployment and scalability.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Infrastructure Automation and Configuration Management",
+                desc: "Automate infrastructure tasks and manage configurations to ensure consistency and reliability.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Release Management and Deployment Automation",
+                desc: "Automate release processes to reduce errors and accelerate software delivery.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "DevSecOps",
+                desc: "Integrate security practices into the DevOps workflow to ensure the continuous delivery of secure software.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            }
+        ]
+    },
+
+    {
         "service_id": 4,
-        "service_name": "Physical Datacenter Design & Layout",
+        "service_name": "Datacenter Design And Build",
         "description": "Intelli Vectra Technology excels in physical datacenter design and layout, creating efficient, scalable, and secure infrastructures. Our services include space utilization, cooling solutions, power management, and connectivity optimization to ensure optimal performance and energy efficiency.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
+        "logo_img_src": "/images/icons/home.png",
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
         "points": [
             {
@@ -189,12 +297,13 @@ export const jsonforServices = [
     },
     {
         "service_id": 5,
-        "service_name": "SAP Offerings",
+        "service_name": "SAP Services",
         "description": "Intelli Vectra Technology provides comprehensive SAP offerings, including implementation, integration, and support services. We specialize in optimizing SAP solutions for business processes, enhancing efficiency, and ensuring seamless operation, tailored to meet the unique needs of each client.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
+        "logo_img_src": "/images/icons/support_agent.png",
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
         "points": [
             {
@@ -245,114 +354,17 @@ export const jsonforServices = [
         ]
 
     },
-    {
-        "service_id": 6,
-        "service_name": "DevOps",
-        "description": "Intelli Vectra Technology offers DevOps services, focusing on automating development, deployment, and operations processes. Our solutions include continuous integration, continuous delivery, infrastructure as code, and monitoring, aimed at accelerating development cycles, enhancing collaboration, and improving software quality.",
-        "heading_pic_url": "/images/services/datacenter.jpg",
-        "type": "technology",
-        "image1": "/images/dsimage1.png",
-        "image2": "/images/dsimage2.png",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
-        "points": [
-            {
-                heading: "DevOps Consulting Services",
-                desc: "Expert consultation for implementing DevOps practices tailored to your organization's needs and goals.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Infrastructure as Code (IaC) Implementation",
-                desc: "Automate infrastructure provisioning and management using code for consistency and scalability.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Continuous Integration and Continuous Delivery (CI/CD) Pipeline Setup",
-                desc: "Establish automated pipelines to build, test, and deploy software rapidly and reliably.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Containerization and Orchestration Solutions",
-                desc: "Utilize containers and orchestration tools for efficient application deployment and scalability.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Infrastructure Automation and Configuration Management",
-                desc: "Automate infrastructure tasks and manage configurations to ensure consistency and reliability.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Release Management and Deployment Automation",
-                desc: "Automate release processes to reduce errors and accelerate software delivery.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "DevSecOps",
-                desc: "Integrate security practices into the DevOps workflow to ensure the continuous delivery of secure software.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            }
-        ]
-    },
-    {
-        "service_id": 7,
-        "service_name": "Cybersecurity",
-        "description": "Intelli Vectra Technology provides robust cybersecurity solutions, including threat detection, risk assessment, incident response, and compliance management. Our services ensure comprehensive protection of digital assets, safeguarding businesses against cyber threats and enhancing overall security posture.",
-        "heading_pic_url": "/images/services/datacenter.jpg",
-        "type": "technology",
-        "image1": "/images/dsimage1.png",
-        "image2": "/images/dsimage2.png",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
-        "points": [
-            {
-                heading: "Cybersecurity Assessment and Strategy Services",
-                desc: "Evaluate your cybersecurity posture and develop a tailored strategy to mitigate risks effectively.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Network Security Solutions",
-                desc: "Secure your network infrastructure with advanced firewall, intrusion detection, and prevention systems.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Endpoint Security Solutions",
-                desc: "Protect endpoints from malware, ransomware, and other threats with robust endpoint protection software.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Identity and Access Management (IAM) Solutions",
-                desc: "Manage user identities and access permissions securely to prevent unauthorized access to sensitive data and systems.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Security Information and Event Management (SIEM)",
-                desc: "Monitor and analyze security events in real-time to detect and respond to threats effectively.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Incident Response and Threat Intelligence",
-                desc: "Rapidly respond to security incidents with proactive threat intelligence and incident response services.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Cloud Security Solutions",
-                desc: "Secure your cloud environments with encryption, access controls, and other cloud-native security measures.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            },
-            {
-                heading: "Security Awareness Training and Education",
-                desc: "Educate your employees on cybersecurity best practices to prevent social engineering attacks and enhance overall security awareness.",
-                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
-            }
-        ]
-    },
-
+    
+    
     {
         "service_id": 15,
-        "service_name": "Cloud Solution",
+        "service_name": "Managed Services",
         "description": "Intelli Vectra Technology offers comprehensive cloud solutions, including cloud migration, infrastructure management, security, and optimization. Our services ensure scalable, flexible, and secure cloud environments, enabling businesses to enhance performance, reduce costs, and improve agility.",
         "heading_pic_url": "/images/services/coludsoln.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
+        "logo_img_src": "/images/icons/support_agent.png",
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
         "points":
             [
@@ -397,12 +409,13 @@ export const jsonforServices = [
     
     {
         "service_id": 8,
-        "service_name": "Managed Services",
+        "service_name": "Staff Augmentation Services",
         "description": "Intelli Vectra Technology offers managed services, providing proactive monitoring, maintenance, and support for IT systems. Our services include network management, server management, helpdesk support, and IT strategy, ensuring optimal performance, reduced downtime, and efficient operations for businesses.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
+        "logo_img_src": "/images/icons/group_add.png",
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
         "points": [
             {

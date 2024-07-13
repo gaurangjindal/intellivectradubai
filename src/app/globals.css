@@ -68,3 +68,12 @@ body {
   background: white;
 }
 
+/* Remove arrows
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+/* Remove shadow */
+/* .slick-list {
+  box-shadow: none !important;
+}  */

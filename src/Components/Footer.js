@@ -21,7 +21,7 @@ export const Footer = () => {
                     </div>
 
                     <div className='space-y-2 text-center lg:text-left'>
-                        <h1 className='text-[#FFAB2E] font-bold'>Company</h1>
+                        <h1 className='text-[#FFAB2E]'>Company</h1>
                         <ul className='list-style-none space-y-2'>
                             <li className='hover:text-[#FFAB2E]'><Link href="/about">About Us</Link></li>
                             <li className='hover:text-[#FFAB2E]'><Link href="/technologypartner">Technology Partners</Link></li>
@@ -31,7 +31,7 @@ export const Footer = () => {
                     </div>
 
                     <div className='space-y-2 text-center lg:text-left'>
-                        <h1 className='text-[#FFAB2E] font-bold'>Solutions and Services</h1>
+                        <h1 className='text-[#FFAB2E]'>Solutions and Services</h1>
                         <ul className='list-style-none space-y-2'>
                             <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/1">Infrastructure Design & Optimization</Link></li>
                             <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/2">AI & RPA Consulting Services</Link></li>
@@ -43,7 +43,7 @@ export const Footer = () => {
                     </div>
 
                     <div className='space-y-2 text-center lg:text-left'>
-                        <h1 className='text-[#FFAB2E] font-bold'>&nbsp;</h1>
+                        <h1 className='text-[#FFAB2E]'>&nbsp;</h1>
                         <ul className='list-style-none space-y-2'>
                             <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/4">Data Center Design & Build</Link></li>
                             <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/5">SAP Services</Link></li>
@@ -53,12 +53,12 @@ export const Footer = () => {
                     </div>
 
                     <div className='space-y-2 text-center lg:text-left'>
-                        <h1 className='text-[#FFAB2E] font-bold'>Contact Us</h1>
+                        <h1 className='text-[#FFAB2E]'>Contact Us</h1>
                         <ul className='list-style-none space-y-2'>
-                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><CiPhone style={{ color: '#FFAB2E' }} /></span><span>+971 4 5667357</span></li>
-                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><MdOutlineEmail style={{ color: '#FFAB2E' }} /></span><span>info@intellivectra.com</span></li>
+                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><CiPhone style={{ color: '#FFAB2E',fontSize:'20px'  }} /></span><span>+971 4 5667357</span></li>
+                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><MdOutlineEmail style={{ color: '#FFAB2E',fontSize:'20px'  }} /></span><span>info@intellivectra.com</span></li>
                             <li className='flex justify-center items-start lg:justify-start space-x-1'>
-                                <span><CiLocationOn style={{ color: '#FFAB2E' }} /></span>
+                                <span><CiLocationOn style={{ color: '#FFAB2E',fontSize:'20px' }} /></span>
                                 <span className="mt-[-5px]">
                                     Office #1111, Clover Bay Tower<br />
                                     Business Bay, PO Box: 283426<br />
@@ -76,10 +76,10 @@ export const Footer = () => {
                         <Link className='hover:text-[#FFAB2E]' href={'/privacy'}><li>Privacy & Policy</li></Link>
                     </ul>
                     <div className='flex items-center space-x-4 text-white'>
-                        <SocialIcon link={'https://www.linkedin.com/company/intellivectra/'}>
+                        <SocialIcon color={'#0369a1'} link={'https://www.linkedin.com/company/intellivectra/'}>
                             <FaLinkedin size={20} />
                         </SocialIcon>
-                        <SocialIcon link={'https://x.com/IntelliVectra'}>
+                        <SocialIcon color={'black'} link={'https://x.com/IntelliVectra'}>
                             <FaXTwitter size={20} />
                         </SocialIcon>
                     </div>
