@@ -104,7 +104,7 @@ export const Navbar = () => {
             </div>
             <div className={`
                     bg-white z-[1001]  text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4 ${!showContentInner ? 'hidden hover:flex' : 'hidden md:block'}`}>
-                <ul className="space-y-4">
+                <ul className="space-y-2">
                     <li
                         onClick={() => {
                             router.push("/blogs");
@@ -114,7 +114,7 @@ export const Navbar = () => {
                     >
                         <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/blog.png" height={25} width={25} alt="Blog" />
+                                <Image src="/images/icons/blog.png" height={20} width={20} alt="Blog" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Blogs</p>
 
@@ -129,7 +129,7 @@ export const Navbar = () => {
                     >
                         <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/news.png" height={25} width={25} alt="News" />
+                                <Image src="/images/icons/news.png" height={20} width={20} alt="News" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">News</p>
 
@@ -144,7 +144,7 @@ export const Navbar = () => {
                     >
                         <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/calender.png" height={25} width={25} alt="Events" />
+                                <Image src="/images/icons/calender.png" height={20} width={20} alt="Events" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Events</p>
 
@@ -159,7 +159,7 @@ export const Navbar = () => {
                     >
                         <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/casestudy.png" height={25} width={25} alt="Case Study" />
+                                <Image src="/images/icons/casestudy.png" height={20} width={20} alt="Case Study" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Case Study</p>
                         </div>
@@ -169,7 +169,7 @@ export const Navbar = () => {
 
             <div className={`
                     bg-white z-[1001] md:hidden text-black md:w-fit w-fit absolute md:top-10 top-[310px] md:shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 md:bg-opacity-100 md:right-40 right-0 md:rounded-lg p-4 ${!showContentInnerMobile ? 'hidden hover:flex' : ''}`}>
-                <ul className="space-y-4">
+                <ul className="space-y-2">
                     <li
                         onClick={() => {
                             router.push("/blogs");
@@ -179,7 +179,7 @@ export const Navbar = () => {
                     >
                         <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/blog.png" height={25} width={25} alt="Blog" />
+                                <Image src="/images/icons/blog.png" height={20} width={20} alt="Blog" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Blogs</p>
 
@@ -194,7 +194,7 @@ export const Navbar = () => {
                     >
                         <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/news.png" height={25} width={25} alt="News" />
+                                <Image src="/images/icons/news.png" height={20} width={20} alt="News" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">News</p>
 
@@ -209,7 +209,7 @@ export const Navbar = () => {
                     >
                         <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/calender.png" height={25} width={25} alt="Events" />
+                                <Image src="/images/icons/calender.png" height={20} width={20} alt="Events" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Events</p>
 
@@ -224,7 +224,7 @@ export const Navbar = () => {
                     >
                         <div className="flex items-center justify-start w-full space-x-4">
                             <span>
-                                <Image src="/images/icons/casestudy.png" height={25} width={25} alt="Case Study" />
+                                <Image src="/images/icons/casestudy.png" height={20} width={20} alt="Case Study" />
                             </span>
                             <p className="hover:border-b hover:text-[#FFAB2E] border-[#FFAB2E]">Case Study</p>
                         </div>
@@ -234,7 +234,7 @@ export const Navbar = () => {
 
             <div className={`md:space-x-4 z-[1000] bg-white absolute md:top-14 top-[210px] left-[50%] p-4 rounded-lg ${(menuHidden) ? 'hidden hover:flex' : 'hidden md:flex'}`}>
                 <div className='text-black'>
-                    <ul className='space-y-4'>
+                    <ul className='space-y-2'>
                         {
                             jsonforServices.map((service,idx) => {
                                 return (
@@ -248,7 +248,7 @@ export const Navbar = () => {
 
             <div className={`md:space-x-4 z-[1000] md:hidden  bg-white absolute md:top-14 top-[210px] left-[50%] p-4 rounded-lg ${(menuHiddenMobile) ? 'hidden' : 'flex'}`}>
                 <div className='text-black'>
-                    <ul className='space-y-4'>
+                    <ul className='space-y-2'>
                         {
                             jsonforServices.map((service,idx) => {
                                 return (

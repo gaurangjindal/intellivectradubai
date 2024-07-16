@@ -257,8 +257,15 @@ export default function Home() {
           </div>
 
 
-          <p className="md:text-[18px] text-normal text-start text-[#3F444]">
-            Intelli Vectra Technologies is a premier IT solutions provider committed to helping clients harness the power of technology innovation while simplifying IT complexities. Our mission is to drive digital transformation and maximize return on IT investments. Leveraging cutting-edge technologies and delivering customized solutions, we empower businesses to stay ahead in an ever-evolving digital landscape. Our expertise spans various domains, ensuring operational efficiency, enhanced security, and sustainable growth for our clients. At Intelli Vectra Technologies, we prioritize collaboration, transparency, and passion, making us a trusted partner in achieving your business goals and driving meaningful change.
+          <p className="md:text-[18px] text-normal text-[#3F444]">
+            Intelli Vectra Technologies empower businesses through innovative technology solutions, our
+            vision is to be the catalyst for digital transformation worldwide. With a commitment to
+            excellence, integrity, and customer-centricity, we strive to redefine the possibilities of IT,
+            delivering cutting-edge solutions that inspire progress, drive growth, and shape the future of
+            industries. Our relentless pursuit of innovation, coupled with a passion for exceeding
+            expectations, positions us as the ideal partner for organizations seeking to thrive in an ever-
+            evolving digital landscape. Together, we envision a world where technology empowers,
+            connects, and transforms lives, fostering a brighter, more inclusive future for all.
           </p>
           <div className="w-full h-6 bg-white"></div>
           <Link href="/about"><Button buttonText={"Learn More"} /></Link>
@@ -270,13 +277,13 @@ export default function Home() {
         <p className="text-black mb-6 md:text-xl text-sm">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
 
         <div className="flex items-center justify-center rounded-[50%]">
-          <Link href={"/solutionandservices"}><Image className="rounded-[50%]" width={500} height={500} src="/images/wheelImage.png" alt="Solutions & Services" /></Link>
+          <Link href={"/solutionandservices"}><Image className="rounded-[50%]" width={500} height={500} src="/images/solutionandservices.png" alt="Solutions & Services" /></Link>
         </div>
       </div>
       <div className="text-black space-y-2">
         <div className="w-full flex items-center flex-col justify-center space-y-4">
           <h1 className="text-center tracking-wide text-2xl font-bold md:text-4xl text-gray-600">Our Competitive<span className="text-[#FFAB2E]"> Edge</span></h1>
-          <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Tailored IT Solutions for Seamless Operations, Reliable Support, Cybersecurity Expertise, Innovation-driven Approach, Client-Centric Services, Proven Results.</p>
+          <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Ahead of the Curve</p>
         </div>
         <div className="bg-white grid grid-cols-2 xl:grid-cols-4 justify-items-center gap-x-4 gap-y-12 md:gap-x-4 md:space-y-0 p-4">
           <BenifitCard
@@ -317,29 +324,29 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full p-4 flex items-center justify-center">
-        <div className="bg-white py-8 p-4 w-full text-black flex items-center justify-center">
+      <div className="w-full flex items-center justify-center">
+        <div className="bg-white w-full text-black flex items-center justify-center">
           <div className="w-full md:w-[45%] space-y-8">
             <div className="space-y-4 flex flex-col justify-center items-center w-full">
-              <h1 className="text-center text-2xl md:text-4xl font-bold">Our <span className="text-[#F19F1F]">Achievements</span></h1>
+              <h1 className="text-center text-2xl md:text-4xl font-bold">Accomplishments <span className="text-[#F19F1F]">that Define Us</span></h1>
               <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
             </div>
             <div className="flex flex-row justify-center">
               <div className="md:p-8 p-4 text-center space-y-4 border-r">
-                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">3+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Our presence</p>
+                <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">3+</h1>
+                <p className="font-bold md:text-xl text-sm tracking-wider">Our Presence</p>
               </div>
               <div className="md:p-8 p-4 text-center space-y-4 border-r">
-                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">19+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">On-time delivery</p>
+                <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">50+</h1>
+                <p className="font-bold md:text-xl text-sm tracking-wider">Clientele</p>
               </div>
               <div className="md:p-8 p-4 text-center space-y-4 border-r">
-                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">80+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Project executed</p>
+                <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">80+</h1>
+                <p className="font-bold md:text-xl text-sm tracking-wider">Project executed</p>
               </div>
               <div className="md:p-8 p-4 text-center space-y-4">
-                <h1 className="text-[#F19F1F] text-xl md:text-5xl font-bold">50+</h1>
-                <p className="font-bold md:text-sm text-xs tracking-wider">Client satisfaction</p>
+                <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">10+</h1>
+                <p className="font-bold md:text-xl text-sm tracking-wider">Accolades</p>
               </div>
             </div>
           </div>
@@ -347,7 +354,7 @@ export default function Home() {
       </div>
 
       <div className="text-black bg-[#FFFAF2] p-8 w-full space-y-6 flex flex-col justify-center items-center">
-        <h1 className="text-4xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
+        <h1 className="md:text-4xl text-2xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
         <ul className="w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
           <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>
           <li className={activeContentType === "news" ? classActive : classUnactive} onClick={() => setActiveContentType("news")}>News</li>

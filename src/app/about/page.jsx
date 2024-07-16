@@ -30,10 +30,9 @@ export default function Page() {
     let sliderRef = useRef(null);
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
-        dots: false,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
@@ -115,7 +114,7 @@ export default function Page() {
                     {/* <p className="md:text-[18px] text-normal text-[#3F444]">Our mission is to utilize the power of technology to empower businesses and individuals, driving positive change and facilitating success in an ever more digital world. Through our unwavering commitment to innovation, expertise, and customer satisfaction, we strive to deliver tailored IT solutions that exceed expectations, optimize efficiency, and unlock new opportunities for growth. With a focus on collaboration, integrity, and continuous improvement, we aim to be a trusted partner for our clients, providing reliable support, strategic guidance, and cutting-edge solutions that drive them towards their goals. Together, we embrace the transformative potential of technology to create a brighter, more connected future for all.</p> */}
                     
                     <div className="w-full h-6 bg-white"></div>
-                    <Link href="/about"><button className='cursor-pointer p-2 px-6 h-fit w-fit rounded-md text-white bg-[#F19F1F]'>Learn More</button></Link>
+                
                 </div>
 
             </div>
@@ -131,8 +130,8 @@ export default function Page() {
                         <div className="w-full items-center justify-center flex md:px-16">
                             <SamplePrevArrow></SamplePrevArrow>
                             <div className="border-t-2 relative border-white w-full px-4" >
-                                <div style={{ position: 'absolute', left: `${posi[slideIndex]}%` }}>
-                                    <FaCaretDown fontSize={40} />
+                                <div className="flex items-center justify-center flex-col" style={{ position: 'absolute', left: `${posi[slideIndex]}%` }}>
+                                    <FaCaretDown fontSize={60} style={{color:"black"}} />
                                     <p>{years[slideIndex]}</p>
                                 </div>
                             </div>
@@ -140,16 +139,16 @@ export default function Page() {
                         </div>
                     </div>
 
-                    <div className="h-[2vh]">
+                    <div className="h-[2vh] md:hidden">
 
                     </div>
-                    <div className="w-full justify-center hidden md:block">
+                    <div className="w-full justify-center hidden md:block p-2">
                         <Slider {...settings} ref={(slider) => sliderRef = slider}>
                             {slides.map((slide, idx) => {
                                 return (
                                     <div key={idx}>
                                         <div className="flex justify-center space-x-8 w-full flex-row">
-                                            <div className="w-[70%] rounded-lg bg-black bg-opacity-10 backdrop-blur-sm p-4 flex items-center space-y-4">
+                                            <div className="w-[70%] rounded-lg p-4 text-lg flex items-center space-y-4">
                                                 <div>{slide.text_content}</div>
                                             </div>
                                         </div>
@@ -165,7 +164,7 @@ export default function Page() {
                                 return (
                                     <div key={idx} >
                                         <div className="flex flex-col justify-center md:space-x-8 w-full md:flex-row">
-                                            <div className="w-[95%] rounded-lg bg-black bg-opacity-10 backdrop-blur-sm p-4  flex items-center space-y-4">
+                                            <div className="w-[95%] rounded-lg p-4  flex items-center space-y-4">
                                                 <div>{slide.text_content}</div>
                                             </div>
                                         </div>
@@ -179,14 +178,20 @@ export default function Page() {
             </div>
 
             <div className="p-4 md:p-8 bg-white space-y-4 flex flex-col items-center">
-                <h1 className="text-center text-4xl font-bold text-black">Our <span className="text-[#F19F1F]">Methodology</span></h1>
+                <h1 className="text-center text-2xl md:text-4xl  font-bold text-black">Our <span className="text-[#F19F1F]">Methodology</span></h1>
                 <div className="text-center text-black md:text-xl text-sm font-normal">
                     <p>Navigating Excellence: From Concept to Completion</p>
                 </div>
                 <div className="w-full flex justify-center">
-                    <div className="relative w-full md:w-[80%] h-[300px] md:h-[400px]">
-                        <Image src={"/images/ourprocess.jpg"} layout="fill" />
+                    <div className="relative sm:block hidden w-full md:w-[80%] h-[300px] md:h-[400px]">
+                        <Image src={"/images/ourMethodology.png"} layout="fill" />
                     </div>
+
+                    <div className="relative w-full block sm:hidden md:w-[80%] h-[130vh] md:h-[400px]">
+                        <Image src={"/images/ourmethodmobile.png"} layout="fill" />
+                    </div>
+
+                    
                 </div>
             </div>
 
@@ -228,7 +233,7 @@ export default function Page() {
             </div> */}
 
             <div className="bg-[#FFFAF2] text-black space-y-6 md:p-8 p-4">
-                <h1 className="text-center font-bold text-4xl"><span className="text-[#F19F1F]">Mission </span>& Vision</h1>
+                <h1 className="text-center font-bold text-2xl md:text-4xl "><span className="text-[#F19F1F]">Mission </span>& Vision</h1>
 
                 <div className="space-x-0 md:space-x-2 space-y-4 md:space-y-0 flex flex-col md:flex-row">
                     <div className="p-4 md:p-8 rounded-lg border bg-[#FFFAF2] w-full md:w-[50%] space-y-4 md:space-y-6">

@@ -399,7 +399,7 @@ export default function Page() {
               </div>
             </div>
             <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
-              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><FaRegClock style={{ fontSize: '30px' }} /></div>
+              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><Image src="/images/clock.png" height={40} width={40}></Image></div>
               <div className="text-black  w-[90%] font-normal text-sm">
                 <p className="text-[#F19F1F] font-bold text-sm">Office Hours</p>
                 <p>Monday - Friday<br /> 9.30 AM - 5.30 PM</p>

@@ -29,36 +29,36 @@ export const Footer = () => {
                             <li className='hover:text-[#FFAB2E]'><Link href="/blog">Content Hub</Link></li>
                         </ul>
                     </div>
+                    <div className='flex space-x-0 lg:space-x-10 flex-col md:flex-row lg:space-y-0'>
+                        <div className='space-y-2 text-center lg:text-left'>
+                            <h1 className='text-[#FFAB2E]'>Solutions and Services</h1>
+                            <ul className='list-style-none space-y-2'>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/1">Infrastructure Design & Optimization</Link></li>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/2">AI & RPA Consulting Services</Link></li>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/3">Cloud Solutions</Link></li>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Cybersecurity</Link></li>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/6">Devops</Link></li>
+                            </ul>
+                        </div>
 
-                    <div className='space-y-2 text-center lg:text-left'>
-                        <h1 className='text-[#FFAB2E]'>Solutions and Services</h1>
-                        <ul className='list-style-none space-y-2'>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/1">Infrastructure Design & Optimization</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/2">AI & RPA Consulting Services</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/3">Cloud Solutions</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Cybersecurity</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/6">Devops</Link></li>
-                            
-                        </ul>
-                    </div>
-
-                    <div className='space-y-2 text-center lg:text-left'>
-                        <h1 className='text-[#FFAB2E]'>&nbsp;</h1>
-                        <ul className='list-style-none space-y-2'>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/4">Data Center Design & Build</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/5">SAP Services</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Managed Services</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/8">Staff Augmentation Services</Link></li>
-                        </ul>
+                        <div className='space-y-2 text-center lg:text-left'>
+                            <h1 className='text-[#FFAB2E] hidden md:block'>&nbsp;</h1>
+                            <ul className='list-style-none space-y-2'>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/4">Data Center Design & Build</Link></li>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/5">SAP Services</Link></li>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/7">Managed Services</Link></li>
+                                <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/8">Staff Augmentation Services</Link></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div className='space-y-2 text-center lg:text-left'>
                         <h1 className='text-[#FFAB2E]'>Contact Us</h1>
                         <ul className='list-style-none space-y-2'>
-                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><CiPhone style={{ color: '#FFAB2E',fontSize:'20px'  }} /></span><span>+971 4 5667357</span></li>
-                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><MdOutlineEmail style={{ color: '#FFAB2E',fontSize:'20px'  }} /></span><span>info@intellivectra.com</span></li>
+                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><CiPhone style={{ color: '#FFAB2E', fontSize: '20px' }} /></span><span>+971 4 5667357</span></li>
+                            <li className='flex justify-center lg:justify-start space-x-[5px] items-center'><span><MdOutlineEmail style={{ color: '#FFAB2E', fontSize: '20px' }} /></span><span>info@intellivectra.com</span></li>
                             <li className='flex justify-center items-start lg:justify-start space-x-1'>
-                                <span><CiLocationOn style={{ color: '#FFAB2E',fontSize:'20px' }} /></span>
+                                <span><CiLocationOn style={{ color: '#FFAB2E', fontSize: '20px' }} /></span>
                                 <span className="mt-[-5px]">
                                     Office #1111, Clover Bay Tower<br />
                                     Business Bay, PO Box: 283426<br />

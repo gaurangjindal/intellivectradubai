@@ -11,7 +11,7 @@ export default function Page({ params }) {
     console.log(jsonforServices)
     console.log(service)
     return (
-        <div className='bg-white w-full space-y-[30px] md:space-y-[60px] pb-4'>
+        <div className='bg-white pb-12  w-full space-y-[30px] md:space-y-[60px]'>
             <PageStarter imageSrc={service.heading_pic_url} desc={service.short_description} descColor={'white'} tit1={service.service_name} tit1Col={'white'} />
             <div className="w-full md:px-10 md:space-x-20 bg-white text-black items-center justify-center flex flex-col md:flex-row">
                 <div className="flex md:w-[40%] w-[100%]">
@@ -48,7 +48,7 @@ export default function Page({ params }) {
                 {
                     service.points.map((point, idx) => {
                         return (
-                            <div key={idx} className="md:w-[90%] text-[#F19F1F] w-[100%] group  border-l-8 hover-box hover:text-white  transition-all duration-1000 ease-in-out  hover:bg-[#F19F1F]  border-[#F19F1F] space-y-4 p-8">
+                            <div key={idx} className="md:w-[92%] text-[#F19F1F] w-[100%] group  border-l-8 hover-box hover:text-white  transition-all duration-1000 ease-in-out  hover:bg-[#F19F1F]  border-[#F19F1F] space-y-4 p-8">
 
                                 <div className=" space-y-4">
                                     <div className='flex items-center space-x-2'><div>{point.logo}</div> <h1 className="text-2xl font-normal">{point.heading}</h1></div>
