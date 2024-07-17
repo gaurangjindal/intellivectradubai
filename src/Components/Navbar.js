@@ -238,7 +238,7 @@ export const Navbar = () => {
                         {
                             jsonforServices.map((service,idx) => {
                                 return (
-                                    <li key={idx}><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p>{service.service_name}</p></Link></li>
+                                    <li key={idx}><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start cursor-pointer text-lg flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p className=' hover:border-b hover:text-[#FFAB2E] hover:border-[#FFAB2E]'>{service.service_name}</p></Link></li>
                                 )
                             })
                         }
@@ -252,7 +252,7 @@ export const Navbar = () => {
                         {
                             jsonforServices.map((service,idx) => {
                                 return (
-                                    <li key={idx}><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p>{service.service_name}</p></Link></li>
+                                    <li key={idx}><Link href={`/solutionandservices/${service.service_id}`} className='w-full justify-start cursor-pointer text-lg flex items-center space-x-4 text-[16px]'><span><Image src={service.logo_img_src} width={30} height={30}></Image></span><p>{service.service_name}</p></Link></li>
                                 )
                             })
                         }
