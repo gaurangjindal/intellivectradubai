@@ -85,18 +85,18 @@ export default function Page() {
         <div className="space-y-[5vh]">
             <PageStarter tit1={"Career"} tit1Col={"white"} tit2={""} descColor={"white"} imageSrc={"/images/banners/carrerpagebanner.jpg"} desc={"Craft your career path with us: where growth thrives."} />
             <div>
-                <div className="flex flex-col w-[100vw] justify-center items-center space-y-4 bg-white">
-                    <div className="space-y-4 w-[70vw]">
+                <div className="flex flex-col w-[100%] justify-center items-center space-y-4 bg-white">
+                    <div className="space-y-4 lg:w-[70%] p-4">
                         <h1 className="text-4xl text-center text-black font-bold">Join us on our journey to make a difference.</h1>
                         <p className="text-black md:text-center font-normal text-justify md:">
                             A workplace should be welcoming and engaging, exciting and meaningful. Our culture embodies years of hard work nurturing our employees with the right blend of opportunities—from pursuing innovative career tracks and upskilling through professional development, with best-in-class learning and training, to ensuring a fulfilling work-life balance.
                         </p>
                     </div>
-                    <div className="w-full flex flex-col md:flex-row">
-                        <div className="md:w-[50%] w-[100%] relative h-[400px]">
+                    <div className="w-full flex flex-col lg:flex-row">
+                        <div className="lg:w-[50%] w-[100%] relative h-[400px]">
                             <Image src="/images/nowhiring.jpg" layout="fill" />
                         </div>
-                        <div className="md:w-[50%] w-[100%] bg-[#FFDFAD] p-16 py-16 space-y-8">
+                        <div className="lg:w-[50%] w-[100%] bg-[#FFDFAD] p-16 py-16 space-y-8">
                             <p className="text-black font-normal">We&apos;re a company that emphasizes autonomy, personal responsibility, and trust because satisfied clients start with employees who enjoy what they do. Our success as a company depends on our strength as a team and cultivating a workplace that&apos;s professionally empowering and enjoyable has been a priority from the beginning. We are always looking for new team members, If you&apos;re interested in joining our team, the process starts with a simple.</p>
                             <button onClick={moveToApply} className="cursor-pointer rounded-lg p-2 px-6 h-fit w-fit text-white bg-[#F19F1F]">Apply</button>
                         </div>
@@ -104,7 +104,7 @@ export default function Page() {
                 </div>
                 <div className={applyOpen ? "" : "hidden"}>
                     <div className='bg-[#FFFAF2] p-4 text-black w-full flex md:flex-row flex-col items-center justify-center space-y-8 md:space-y-0 md:space-x-16'>
-                        <div className='md:space-y-8 space-y-4 md:w-[70%] w-[100%]'>
+                        <div className='md:space-y-8 space-y-4 lg:w-[70%] w-[100%]'>
                             <h1 className='text-4xl text-[#F19F1F] text-light text-center tracking-wide'>Join Our Team</h1>
                             <Formik
                                 initialValues={{ name: '', email: '', phone: '', appliedFor: '', coverletter: '', cv: null }}

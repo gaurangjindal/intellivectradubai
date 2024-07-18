@@ -26,8 +26,8 @@ export default function Page() {
             
 
             {/* Main content section */}
-            <div className="flex flex-col md:flex-row items-center justify-center p-8 px-10 space-y-8 md:space-y-0 md:space-x-20 bg-white text-black">
-                <div className="w-full md:w-[40%]">
+            <div className="flex flex-col lg:flex-row justify-center p-8 px-10 space-y-8 md:space-y-0 lg:space-x-20 bg-white text-black">
+                <div className="w-full lg:w-[40%]">
                     {/* Image component */}
                     <Image
                         src="/images/aboutusGroup.jpg"
@@ -37,7 +37,7 @@ export default function Page() {
                         className="rounded-lg"
                     />
                 </div>
-                <div className="w-full md:w-[50%] space-y-6">
+                <div className="w-full lg:w-[50%] space-y-6">
                     {/* Main text content */}
                     <h1 className="text-[#F19F1F] text-4xl font-normal">
                         <span className="text-black">Solutions</span> & Services
@@ -77,7 +77,7 @@ export default function Page() {
             </div> */}
 
             {/* Service cards section */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8 bg-white">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8 bg-white">
                 {jsonforServices
                     .filter((serv) => serv.type === activeServIdx)
                     .map((service) => (

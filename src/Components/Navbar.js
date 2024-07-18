@@ -92,11 +92,7 @@ export const Navbar = () => {
                         <Link href="/about"><li className={`${pathname === '/about' ? classActive : classUnActive}`}>About Us</li></Link>
                         <Link href="/solutionandservices" onMouseOver={handleSolutionAndServiceMenuOpen} onMouseOut={handleSolutionAndServiceMenuClose}><li className={`${pathname === '/solutionandservices' ? classActive : classUnActive}`}>Solutions and Services<span><IoIosArrowDown /></span></li></Link>
                         <Link href="/technologypartner"><li className={`${pathname === '/technologypartner' ? classActive : classUnActive}`}>Technology Partners</li></Link>
-                        <button 
-                            onMouseEnter={handleContentHubOpen}
-                            onMouseOut={handleContentHubClose}
-                            onClick={handleContentHubClick}
-                        ><li className={`${pathname === '/contenthub' ? classActive : classUnActive}`}>Content Hub<span><IoIosArrowDown /></span></li></button>
+                        <Link href="/contenthub"><li className={`${pathname === '/contenthub' ? classActive : classUnActive}`}>Content Hub</li></Link>
                         <Link href="/carrers"><li className={`${pathname === '/carrers' ? classActive : classUnActive}`}>Career</li></Link>
                         <Link href="/contactus"><li className={`${pathname === '/contactus' ? classActive : classUnActive}`}>Contact Us</li></Link>
                     </ul>

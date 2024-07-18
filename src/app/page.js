@@ -225,10 +225,11 @@ export default function Home() {
   const classActive = "text-xl border-b-2 md:px-6 border-[#FFAB2E] h-full items-center cursor-pointer flex";
   const classUnactive = "text-xl cursor-pointer md:px-6 h-full items-center flex hover:border-b-2 hover:border-[#FFAB2E]"
   return (
-    <div className="h-min-[100vh] w-full space-y-[40px] md:space-y-[60px] bg-white">
-      <PageStarterVideo tit1={"BUSINESS"} videoSrc={"videos/homepagebgVideo.mp4"} tit2={" & ENTERPRISE HUB"} tit1Col={"#F19F1F"} desc={"Empowering businesses with agile, transparent, and innovative technology solutions, Intelli Vectra Technologies drives success through collaboration and passionate expertise."} descColor={"white"} link={"/solutionandservices"} />
-      <div className="w-full px-10 md:space-x-20 bg-white text-black justify-center items-center flex md:flex-row flex-col">
-        <div className="flex md:w-[40%] w-full">
+    <div className="h-min-[100vh] w-full bg-white">
+      <PageStarterVideo tit1={"Solutions"} videoSrc={"videos/homepagebgVideo.mp4"} tit2={" & Services"} tit1Col={"#F19F1F"} desc={"Empowering businesses with agile, transparent, and innovative technology solutions, Intelli Vectra Technologies drives success through collaboration and passionate expertise."} descColor={"white"} link={"/solutionandservices"} />
+      
+      <div className="w-full md:px-4 md:py-8 p-4 lg:space-x-20 bg-white text-black justify-center flex lg:flex-row flex-col">
+        <div className="flex lg:w-[40%] w-full">
           {/* First Image */}
           <div className="bg-white w-full">
             <div className="relative w-[100%] md:w-[350px] h-[400px]">
@@ -250,10 +251,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-full items-center md:w-[50%] w-full space-y-6">
+        <div className="h-full items-center lg:w-[50%] w-full space-y-6">
           <div className="space-y-1">
             <h1 className="md:text-4xl text-2xl text-gray-800 mb-2 font-bold">About<span className="text-[#FFAB2E]"> Us</span></h1>
-            <p className="text-black mb-6 md:text-xl text-sm">Building Bridges in the Digital Landscape</p>
+            <p className="text-black mb-6 md:text-xl text-sm italic">Building Bridges in the Digital Landscape</p>
           </div>
 
 
@@ -268,24 +269,28 @@ export default function Home() {
             connects, and transforms lives, fostering a brighter, more inclusive future for all.
           </p>
           <div className="w-full h-6 bg-white"></div>
-          <Link href="/about"><Button buttonText={"Learn More"} /></Link>
+          <Link href="/about"><Button buttonText={"Read More"} /></Link>
         </div>
       </div>
 
-      <div className="text-center md:min-h-[70vh] bg-[#FFFAF2] p-8">
-        <h1 className="md:text-4xl text-2xl text-gray-800 mb-2 font-bold">Solutions & <span className="text-[#FFAB2E]">Services</span></h1>
-        <p className="text-black mb-6 md:text-xl text-sm">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
+      <div className="text-center bg-[#FFFAF2] p-8 space-y-4">
+        <div className="space-y-4 ">
+          <h1 className="md:text-4xl text-2xl text-gray-800 mb-2 font-bold">Solutions & <span className="text-[#FFAB2E]">Services</span></h1>
+          <p className="text-black mb-6 md:text-xl text-sm italic">Empowering Your Digital Journey: Seamless Solutions for Every IT Need.</p>
+        </div>
+
 
         <div className="flex items-center justify-center rounded-[50%]">
-          <Link href={"/solutionandservices"}><Image className="rounded-[50%]" width={500} height={500} src="/images/solutionandservices.png" alt="Solutions & Services" /></Link>
+          <Link href={"/solutionandservices"}><Image className="rounded-[50%]" width={500} height={500} src="/images/solutionandservice.png" alt="Solutions & Services" /></Link>
         </div>
       </div>
-      <div className="text-black space-y-2">
+
+      <div className="text-black space-y-8 p-4 pb-12 md:py-8 md:px-2 md:pb-20">
         <div className="w-full flex items-center flex-col justify-center space-y-4">
           <h1 className="text-center tracking-wide text-2xl font-bold md:text-4xl text-gray-600">Our Competitive<span className="text-[#FFAB2E]"> Edge</span></h1>
-          <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Ahead of the Curve</p>
+          <p className="font-normal text-sm md:text-xl tracking-wide italic text-center md:w-[70%] w-[100%]">Ahead of the Curve</p>
         </div>
-        <div className="bg-white grid grid-cols-2 xl:grid-cols-4 justify-items-center gap-x-4 gap-y-12 md:gap-x-4 md:space-y-0 p-4">
+        <div className="bg-white grid grid-cols-2 xl:grid-cols-4 justify-items-center gap-x-4 gap-y-12 md:gap-x-4 md:space-y-0">
           <BenifitCard
             imagesrc={"/images/bp2.png"}
             title={"CUSTOMER FOCUS"}
@@ -305,10 +310,10 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center">
-        <div className="w-full p-4 text-black space-y-10 bg-[#FFFAF2] py-12 flex flex-col">
+        <div className="w-full md:px-4 md:py-8 text-black space-y-10 bg-[#FFFAF2] flex flex-col">
           <div className="w-full space-y-4 flex-col flex items-center">
             <h1 className="text-2xl md:text-4xl font-bold text-center">Technology <span className="text-[#FFAB2E]">Partners</span></h1>
-            <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Partnering with industry-leading manufacturers to deliver cutting-edge technology solutions<br /> tailored to your business needs.</p>
+            <p className="font-normal italic text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Partnering with industry-leading manufacturers to deliver cutting-edge technology solutions<br /> tailored to your business needs.</p>
           </div>
           <div className="flex items-center justify-center">
             <div className="md:w-[100%] flex flex-wrap justify-center items-center">
@@ -324,12 +329,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex p-4 md:px-4 md:py-8 items-center px justify-center">
         <div className="bg-white w-full text-black flex items-center justify-center">
-          <div className="w-full md:w-[45%] space-y-8">
+          <div className="w-full lg:w-[60%] space-y-8">
             <div className="space-y-4 flex flex-col justify-center items-center w-full">
               <h1 className="text-center text-2xl md:text-4xl font-bold">Accomplishments <span className="text-[#F19F1F]">that Define Us</span></h1>
-              <p className="font-normal text-sm md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
+              <p className="font-normal text-sm italic md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
             </div>
             <div className="flex flex-row justify-center">
               <div className="md:p-8 p-4 text-center space-y-4 border-r">
@@ -342,7 +347,7 @@ export default function Home() {
               </div>
               <div className="md:p-8 p-4 text-center space-y-4 border-r">
                 <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">80+</h1>
-                <p className="font-bold md:text-xl text-sm tracking-wider">Project executed</p>
+                <p className="font-bold md:text-xl text-sm tracking-wider">Projects Executed</p>
               </div>
               <div className="md:p-8 p-4 text-center space-y-4">
                 <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">10+</h1>
@@ -353,16 +358,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-black bg-[#FFFAF2] p-8 w-full space-y-6 flex flex-col justify-center items-center">
+      <div className="text-black p-4 bg-[#FFFAF2] md:py-8 md:px-4 w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="md:text-4xl text-2xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
-        <ul className="w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
+        <ul className="lg:w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
           <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>
           <li className={activeContentType === "news" ? classActive : classUnactive} onClick={() => setActiveContentType("news")}>News</li>
           <li className={activeContentType === "case_study" ? classActive : classUnactive} onClick={() => setActiveContentType("case_study")}>Case Study</li>
           <li className={activeContentType === "events" ? classActive : classUnactive} onClick={() => setActiveContentType("events")}>Events</li>
         </ul>
 
-        <div className='w-full px-4 md:hidden'>
+        <div className='w-full md:hidden'>
           <select className='w-full bg-gray-100 text-center p-4 font-bold' onChange={(e) => setActiveContentType(e.target.value)}>
             <option className='w-full bg-gray-100 ' value={"blogs"}>Blogs</option>
             <option className='w-full bg-gray-100 ' value={'news'}>News</option>
@@ -371,7 +376,7 @@ export default function Home() {
           </select>
         </div>
 
-        <div className="flex flex-col w-full px-4 py-4 space-y-4 md:px-20 md:flex-row md:space-y-0 md:space-x-12 items-center justify-between">
+        <div className="flex flex-col w-full px-4 py-4 space-y-4 md:px-10 md:flex-row md:space-y-0 md:space-x-12 items-center justify-between">
           {
             dataForContentHub[activeContentType].map((event, idx) => {
               return <ContentCard key={idx} content={event} />
@@ -379,9 +384,6 @@ export default function Home() {
           }
         </div>
 
-        <div className="w-full flex items-center justify-center">
-          <Link href="/blogs"><button className="bg-[#FFAB2E] p-2 px-4 rounded-lg text-white">See More</button></Link>
-        </div>
       </div>
 
 

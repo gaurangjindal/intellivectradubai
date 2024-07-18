@@ -14,7 +14,7 @@ export const Footer = () => {
         <div className='w-full bg-white'>
             <div className='bg-[#343A40]'>
                 <div className='py-8 border-b p-4 border-white text-white flex flex-col lg:flex-row justify-center lg:space-x-10 space-y-8 lg:space-y-0'>
-                    <div className="md:w-[20%] w-full flex items-center justify-center">
+                    <div className="lg:w-[10%] w-full flex items-center justify-center">
                         <div className='flex justify-center lg:justify-start w-[150px] h-[110px] relative'>
                             <Image src='/images/logo2.png' layout="fill" />
                         </div>
@@ -29,7 +29,7 @@ export const Footer = () => {
                             <li className='hover:text-[#FFAB2E]'><Link href="/blog">Content Hub</Link></li>
                         </ul>
                     </div>
-                    <div className='flex space-x-0 lg:space-x-10 flex-col md:flex-row lg:space-y-0'>
+                    <div className='flex space-x-0 lg:space-x-10 flex-col lg:flex-row lg:space-y-0'>
                         <div className='space-y-2 text-center lg:text-left'>
                             <h1 className='text-[#FFAB2E]'>Solutions and Services</h1>
                             <ul className='list-style-none space-y-2'>
@@ -42,7 +42,7 @@ export const Footer = () => {
                         </div>
 
                         <div className='space-y-2 text-center lg:text-left'>
-                            <h1 className='text-[#FFAB2E] hidden md:block'>&nbsp;</h1>
+                            <h1 className='text-[#FFAB2E] hidden lg:block'>&nbsp;</h1>
                             <ul className='list-style-none space-y-2'>
                                 <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/4">Data Center Design & Build</Link></li>
                                 <li className='hover:text-[#FFAB2E]'><Link href="/solutionandservices/5">SAP Services</Link></li>
@@ -71,8 +71,8 @@ export const Footer = () => {
 
                 <div className='bg-[#343A40] p-4 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left space-y-4 lg:space-y-0'>
                     <p className="text-white">© 2024 Intelli Vectra Technologies LLC All Rights Reserved.</p>
-                    <ul className='flex list-style-none text-white items-center space-x-4'>
-                        <Link className='hover:text-[#FFAB2E]' href={'/terms'}><li>Terms & Condition</li></Link>
+                    <ul className='flex list-style-none text-white items-center space-x-8'>
+                        <Link className='hover:text-[#FFAB2E]' href={'/terms'}><li>Terms & Conditions</li></Link>
                         <Link className='hover:text-[#FFAB2E]' href={'/privacy'}><li>Privacy & Policy</li></Link>
                     </ul>
                     <div className='flex items-center space-x-4 text-white'>

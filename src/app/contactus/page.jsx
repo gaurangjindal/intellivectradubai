@@ -267,10 +267,10 @@ export default function Page() {
   return (
     <div className="w-full">
       <PageStarter tit1={"Contact"} tit2={" Us"} tit1Col={"black"} descColor={"black"} imageSrc={"/images/banners/contactusbanner.jpg"} desc={"Connect us today and discover the difference."}></PageStarter>
-      <div className='bg-[#FFFAF2] w-full py-4 md:py-8 space-y-2 md:px-32 md:space-y-4'>
+      <div className='bg-[#FFFAF2] w-full py-4 md:py-8 space-y-2 lg:px-32 md:space-y-4'>
         <h1 className='text-center md:text-4xl text-2xl font-bold text-[#F19F1F] '> <span className='text-black'> Get In </span>Touch </h1>
-        <div className='flex p-4 flex-col md:flex-row-reverse space-y-4 md:space-y-0 md:space-x-4 w-full justify-center items-center'>
-          <div className='bg-white shadow-lg space-y-8 text-black p-4 py-8 rounded-lg md:w-[70%] w-full h-fit'>
+        <div className='flex p-4 flex-col lg:flex-row-reverse space-y-4 lg:space-y-0 lg:space-x-4 w-full justify-center items-center'>
+          <div className='bg-white shadow-lg space-y-8 text-black p-4 py-8 rounded-lg lg:w-[70%] w-full'>
             <div>
               <p className='text-lg font-normal'> We&apos;re committed to helping your organization with our Solutions & Services. Submit the form below, and we&apos;ll be in touch soon.</p>
             </div>
@@ -371,23 +371,23 @@ export default function Page() {
               )}
             </Formik>
           </div>
-          <div className='w-full md:grid-cols-1 grid grid-cols-1 gap-1 gap-y-2 md:w-[35%]'>
-            <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4 shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
-              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a className='underline cursor-pointer' href='tel:012-4496-0635'><FaPhoneAlt style={{ fontSize: '30px' }} /></a></div>
+          <div className='w-full lg:grid-cols-1 md:grid-cols-2 grid grid-cols-1 gap-4 gap-y-2 lg:w-[35%]'>
+            <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4 shadow-lg lg:w-[300px] w-full bg-white rounded-lg'>
+              <div className="p-4 rounded-[50%] bg-[#FFAE2F] text-white"><a className='underline cursor-pointer' href='tel:012-4496-0635'><FaPhoneAlt style={{ fontSize: '30px' }} /></a></div>
               <div className='text-black w-[90%] text-sm font-normal'>
                 <p className="text-[#F19F1F] font-bold">Call Us On</p>
                 <a className='cursor-pointer' href='tel:012-4496-0635'>+971 4 5667357</a>
               </div>
             </div>
-            <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
-              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a className='cursor-pointer' href='mailto:info@intellivectra.tech'><MdEmail style={{ fontSize: '30px' }} /></a></div>
+            <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg lg:w-[300px] w-full bg-white rounded-lg'>
+              <div className="p-4 rounded-[50%] text-white bg-[#FFAE2F]"><a className='cursor-pointer' href='mailto:info@intellivectra.tech'><MdEmail style={{ fontSize: '30px' }} /></a></div>
               <div className='text-black w-[90%] text-sm font-normal'>
                 <p className="text-[#F19F1F] font-bold">Mailing Address</p>
                 <a className='cursor-pointer' href='mailto:info@intellivectra.com'>info@intellivectra.com</a>
               </div>
             </div>
-            <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
-              <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><a href="https://www.google.com/maps/place/Clover+Bay+Tower+-+6a+Marasi+Dr+-+Business+Bay+-+Dubai+-+United+Arab+Emirates/data=!4m2!3m1!1s0x3e5f69d353d52701:0xea5908e654d1ea82?sa=X&ved=1t:242&ictx=111"><FaLocationDot style={{ fontSize: '30px' }} /></a></div>
+            <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg lg:w-[300px] w-full bg-white rounded-lg'>
+              <div className="p-4 rounded-[50%] text-white bg-[#FFAE2F]"><a href="https://www.google.com/maps/place/Clover+Bay+Tower+-+6a+Marasi+Dr+-+Business+Bay+-+Dubai+-+United+Arab+Emirates/data=!4m2!3m1!1s0x3e5f69d353d52701:0xea5908e654d1ea82?sa=X&ved=1t:242&ictx=111"><FaLocationDot style={{ fontSize: '30px' }} /></a></div>
               <div className="text-black  w-[90%] font-normal">
                 <p className="text-[#F19F1F] font-bold text-sm">Visit Us At</p>
                 <p className="text-sm">
@@ -398,7 +398,7 @@ export default function Page() {
 
               </div>
             </div>
-            <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg md:w-[300px] w-full bg-white rounded-lg'>
+            <div className='md:h-[104px] h-full p-2 flex items-center md:justify-between space-x-4  shadow-lg lg:w-[300px] w-full bg-white rounded-lg'>
               <div className="p-4 rounded-[50%] bg-[#FFAE2F]"><Image src="/images/clock.png" height={40} width={40}></Image></div>
               <div className="text-black  w-[90%] font-normal text-sm">
                 <p className="text-[#F19F1F] font-bold text-sm">Office Hours</p>
@@ -409,7 +409,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className='flex pb-4 flex-col md:flex-row items-end justify-center w-full bg-white'>
+      <div className='flex pb-4 flex-col lg:flex-row lg:items-end items-center justify-center w-full bg-white'>
         <div className='space-y-4 flex flex-col justify-center'>
           <Image src="/images/burzkhalifa.jpg" height={300} width={500} />
           <h1 className='text-2xl text-[#F19F1F] text-center'>Dubai, UAE</h1>
@@ -456,8 +456,8 @@ export default function Page() {
             <br />
             <br />
           </p>
-          <div className='flex text-[#F19F1F] justify-center w-full items-center space-x-2 cursor-pointer'>
-            <span><GrLocation /></span> <p className=''>Get Direction</p>
+          <div className='flex text-gray-200 justify-center w-full items-center space-x-2'>
+            <span><GrLocation/></span> <p className=''>Get Direction</p>
           </div>
         </div>
 

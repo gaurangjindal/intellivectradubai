@@ -2,6 +2,7 @@ import * as React from 'react';
 import { PageStarter } from '@/Components/PageStarter';
 import Image from 'next/image';
 import { TechPartCard } from '@/Components/Cards/TechPartCard';
+import Link from 'next/link';
 
 const Page = () => {
     const partners = [
@@ -137,6 +138,14 @@ const Page = () => {
                             })
                         }
                     </div>
+                </div>
+
+            </div>
+
+            <div className='p-4 w-full flex items-center justify-center md:px-4 md:py-4'>
+                <div className='p-4 space-x-2 flex items-center justify-center border border-black flex flex-col lg:flex-row'>
+                    <p>Our partner network is constantly growing. Don&apos;t see the vendor you&apos;re looking for?</p>
+                    <Link href={"/contactus"} className='px-4 bg-[#F19F1F] text-white rounded-lg p-2'>Contact Us</Link>
                 </div>
 
             </div>
