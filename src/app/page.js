@@ -331,7 +331,7 @@ export default function Home() {
 
       <div className="w-full flex p-4 md:px-4 md:py-8 items-center px justify-center">
         <div className="bg-white w-full text-black flex items-center justify-center">
-          <div className="w-full lg:w-[60%] space-y-8">
+          <div className="w-full lg:w-[100%] space-y-8">
             <div className="space-y-4 flex flex-col justify-center items-center w-full">
               <h1 className="text-center text-2xl md:text-4xl font-bold">Accomplishments <span className="text-[#F19F1F]">that Define Us</span></h1>
               <p className="font-normal text-sm italic md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>

@@ -34,14 +34,12 @@ export default function Page() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 4000,
         autoplaySpeed: 4000,
         cssEase: "fade",
         arrows: false,
         pauseOnHover: false,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
-        
         afterChange: () => setUpdateCount(updateCount + 1),
         beforeChange: (current, next) => setSlideIndex(next)
     };
