@@ -20,22 +20,34 @@ export default function Page() {
                 tit2=" & Services"
                 tit1Col="white"
                 descColor="white"
-                imageSrc="/images/solutionservicesHeader.jpg"
+                imageSrc="/images/banners/solandservicebanner.jpg"
             />
 
-            
+
 
             {/* Main content section */}
             <div className="flex flex-col lg:flex-row justify-center p-8 px-10 space-y-8 md:space-y-0 lg:space-x-20 bg-white text-black">
-                <div className="w-full lg:w-[40%]">
-                    {/* Image component */}
-                    <Image
-                        src="/images/aboutusGroup.jpg"
-                        alt="About us"
-                        height={400}
-                        width={400}
-                        className="rounded-lg"
-                    />
+                <div className="flex lg:w-[40%] w-full">
+                    {/* First Image */}
+                    <div className="bg-white w-full">
+                        <div className="relative w-[100%] md:w-[350px] h-[400px]">
+                            <Image
+                                src="/images/banners/solandservvert.jpg"
+                                alt="Team hands"
+                                layout='fill'
+                            />
+                        </div>
+                    </div>
+                    {/* Second Image */}
+                    <div className="p-4 w-full z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
+                        <div className="relative w-[100%] md:w-[400px] h-[200px] max-w-xs">
+                            <Image
+                                src="/images/banners/solandservhorz.jpg"
+                                alt="Team meeting"
+                                layout="fill"
+                            />
+                        </div>
+                    </div>
                 </div>
                 <div className="w-full lg:w-[50%] space-y-6">
                     {/* Main text content */}
@@ -81,7 +93,7 @@ export default function Page() {
                 {jsonforServices
                     .filter((serv) => serv.type === activeServIdx)
                     .map((service) => (
-                        <ServiceCard key={service.service_id} service={service} desc={service.description}/>
+                        <ServiceCard key={service.service_id} service={service} desc={service.description} />
                     ))}
             </div>
         </div>

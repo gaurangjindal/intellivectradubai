@@ -94,7 +94,7 @@ export default function Page() {
                     </div>
                     <div className="w-full flex flex-col lg:flex-row">
                         <div className="lg:w-[50%] w-[100%] relative h-[400px]">
-                            <Image src="/images/nowhiring.jpg" layout="fill" />
+                            <Image src="/images/banners/carrerinside.jpg" layout="fill" />
                         </div>
                         <div className="lg:w-[50%] w-[100%] bg-[#FFDFAD] p-16 py-16 space-y-8">
                             <p className="text-black font-normal">We&apos;re a company that emphasizes autonomy, personal responsibility, and trust because satisfied clients start with employees who enjoy what they do. Our success as a company depends on our strength as a team and cultivating a workplace that&apos;s professionally empowering and enjoyable has been a priority from the beginning. We are always looking for new team members, If you&apos;re interested in joining our team, the process starts with a simple.</p>

@@ -9,18 +9,17 @@ import { GrPrevious } from "react-icons/gr";
 import { useRef } from "react";
 import { FaCaretDown } from "react-icons/fa";
 
-
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <div className="rounded-[50%] p-4 border border-white"><MdNavigateNext /></div>
+        <div className="rounded-[50%] p-4 border border-black text-black"><MdNavigateNext /></div>
     );
 }
 
 function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <div className="rounded-[50%] p-4 border border-white"><GrPrevious /></div>
+        <div className="rounded-[50%] p-4 border border-black text-black"><GrPrevious /></div>
     );
 }
 
@@ -35,62 +34,64 @@ export default function Page() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 4000,
+        autoplaySpeed: 4000,
         cssEase: "fade",
         arrows: false,
         pauseOnHover: false,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        
         afterChange: () => setUpdateCount(updateCount + 1),
         beforeChange: (current, next) => setSlideIndex(next)
     };
     const slides = [
         {
-            text_content: `Our journey began with a vision to revolutionize the way people connect with technology.
+            cardDetailedText: `Our journey began with a vision to revolutionize the way people connect with technology.
             Founded in 2018, we set out to democratize access to cutting-edge technology solutions for
             businesses of all sizes. Our mission was clear to empower organizations to thrive in the digital
             age by providing innovative, scalable, and user-friendly IT solutions.`,
-            image_src: "/images/slider1image.png",
-            heading: "Duis aute irure dolor"
+            title: 2018
         },
         {
-            text_content: `IVT's successful acquisition of its first major project bolstered its industry standing, highlighting the team's expertise and unwavering commitment to excellence in solution delivery. This milestone underscores our dedication to exceeding client expectations and sets a solid foundation for future growth and innovation in the field.`,
+            cardDetailedText: `IVT's successful acquisition of its first major project bolstered its industry standing, highlighting the team's expertise and unwavering commitment to excellence in solution delivery. This milestone underscores our dedication to exceeding client expectations and sets a solid foundation for future growth and innovation in the field.`,
             image_src: "/images/slide2image.png",
+            title: 2019
         },
         {
-            text_content: `Since our inception, we've achieved several milestones that have shaped our journey, including expanding our global reach to India in 2020. Each milestone represents a significant step forward in our commitment to democratizing access to technology solutions worldwide, solidifying our presence in key markets and enabling us to better serve our diverse customer base in the digital age.`,
+            cardDetailedText: `Since our inception, we've achieved several milestones that have shaped our journey, including expanding our global reach to India in 2020. Each milestone represents a significant step forward in our commitment to democratizing access to technology solutions worldwide, solidifying our presence in key markets and enabling us to better serve our diverse customer base in the digital age.`,
             image_src: "/images/slide3image.png",
+            title: 2020
         },
         {
-            text_content: `Strengthened our business portfolio by forging strategic alliances and expanding service offerings in Cybersecurity Solutions & Services, reinforcing our dedication to digital resilience. These initiatives enhance our capability to proactively safeguard our clients' digital assets and adapt to evolving cybersecurity challenges.`,
-            image_src: "/images/slider1image.png",
+            cardDetailedText: `Strengthened our business portfolio by forging strategic alliances and expanding service offerings in Cybersecurity Solutions & Services, reinforcing our dedication to digital resilience. These initiatives enhance our capability to proactively safeguard our clients' digital assets and adapt to evolving cybersecurity challenges.`,
+            title: 2021
         },
         {
-            text_content: `Diversified our business portfolio with AI & DevOps Solutions through strategic alliances and service offerings. These advancements empower us to deliver cutting-edge technology solutions that drive efficiency and innovation across diverse industries, positioning us as a leader in technological transformation.`,
-            image_src: "/images/slide2image.png",
+            cardDetailedText: `Diversified our business portfolio with AI & DevOps Solutions through strategic alliances and service offerings. These advancements empower us to deliver cutting-edge technology solutions that drive efficiency and innovation across diverse industries, positioning us as a leader in technological transformation.`,
+            title: 2022
         },
         {
-            text_content: `The launch of IVT 2.0 heralded a new era, unveiling a revamped office space aimed at nurturing innovation, collaboration, and expansion. This modern facility reflects our commitment to creating a dynamic work environment that inspires creativity and fosters growth among our team members.`,
-            image_src: "/images/slide3image.png",
+            cardDetailedText: `The launch of IVT 2.0 heralded a new era, unveiling a revamped office space aimed at nurturing innovation, collaboration, and expansion. This modern facility reflects our commitment to creating a dynamic work environment that inspires creativity and fosters growth among our team members.`,
+            title: 2023
         },
         {
-            text_content: `IVT's expansion into the Kingdom of Saudi Arabia underscores its commitment to establishing a comprehensive regional presence, prioritizing accessibility, and exceeding client expectations regionwide. This strategic initiative further solidifies our role as a trusted partner in driving technological advancement and innovation across the Middle East.`,
-            image_src: "/images/slider1image.png",
+            cardDetailedText: `IVT's expansion into the Kingdom of Saudi Arabia underscores its commitment to establishing a comprehensive regional presence, prioritizing accessibility, and exceeding client expectations regionwide. This strategic initiative further solidifies our role as a trusted partner in driving technological advancement and innovation across the Middle East.`,
+            title: 2024
         },
     ];
     const posi = [0, 16, 32, 48, 64, 80, 96];
     const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024];
     return (
-        <div className='space-y-[30px] w-full bg-white'>
+        <div className='w-full bg-white'>
             <PageStarter tit1Col={"black"} tit1={"About"} tit2={" Us"} imageSrc={"/images/banners/aboutusbanner.jpg"} descColor={"black"} desc={"Building Bridges in the Digital Landscape."} />
-            <div className="w-full px-4 pt-4 md:px-10 lg:px-20 space-y-6 md:space-y-0 bg-white text-black flex flex-col lg:flex-row justify-center lg:space-x-20">
+            <div className="w-full px-4 md:py-8 p-4 md:px-10 lg:px-20 space-y-6 md:space-y-0 bg-white text-black flex flex-col lg:flex-row justify-center lg:space-x-20">
                 <div className="flex lg:w-[40%] w-full">
                     {/* First Image */}
                     <div className="bg-white w-full">
                         <div className="relative w-[100%] md:w-[350px] h-[400px]">
                             <Image
-                                src="/images/aboutusvert.jpg"
+                                src="/images/banners/VERTICAL.jpg"
                                 alt="Team hands"
                                 layout='fill'
                             />
@@ -100,7 +101,7 @@ export default function Page() {
                     <div className="p-4 w-full z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
                         <div className="relative w-[100%] md:w-[400px] h-[200px] max-w-xs">
                             <Image
-                                src="/images/aboutushorz.jpg"
+                                src="/images/banners/HORIZONTAL.jpg"
                                 alt="Team meeting"
                                 layout="fill"
                             />
@@ -108,7 +109,6 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="h-full items-center lg:w-[50%] w-full space-y-6">
-
                     <p className="text-[#F19F1F] md:text-4xl text-2xl tracking-wide">Welcome to IVT</p>
 
                     <p className="md:text-[18px] text-normal text-[#3F444]">
@@ -129,20 +129,20 @@ export default function Page() {
 
             </div>
 
-            <div className="bg-[#FFFAF2] w-full ">
-                <div className="justify-center w-[100vw] space-y-8 md:space-y-16 bg-[#F19F1F] bg-blend-darken p-4" style={{ backgroundImage: "url('images/business-network-background-connecting-dots-technology-design 2.png')" }}>
+            <div className="bg-[#FFFAF2] w-full flex flex-col items-center justify-center">
+                <div className="justify-center w-[100vw] space-y-8 md:px-4 md:py-8 p-4 md:space-y-16">
                     <div className='space-y-2'>
-                        <h1 className="text-center font-bold text-black text-2xl md:text-4xl"><span className="text-white">Journey </span> Unfolded</h1>
+                        <h1 className="text-center font-bold text-black text-2xl md:text-4xl"><span className="text-[#F19F1F] ">Journey </span> Unfolded</h1>
                         <p className="text-center md:text-xl text-sm text-black italic">Discovering Paths to Success</p>
                     </div>
 
                     <div className="w-full">
                         <div className="w-full items-center justify-center flex md:px-16">
                             <SamplePrevArrow></SamplePrevArrow>
-                            <div className="border-t-2 relative border-white w-full px-4" >
+                            <div className="border-t-2  relative border-black w-full px-4" >
                                 <div className="flex items-center justify-center flex-col" style={{ position: 'absolute', left: `${posi[slideIndex]}%` }}>
                                     <FaCaretDown fontSize={60} style={{ color: "black" }} />
-                                    <p>{years[slideIndex]}</p>
+                                    <p style={{color: 'black'}}>{years[slideIndex]}</p>
                                 </div>
                             </div>
                             <SampleNextArrow />
@@ -152,14 +152,15 @@ export default function Page() {
                     <div className="h-[2vh] md:hidden">
 
                     </div>
+                    
                     <div className="w-full justify-center hidden md:block p-2">
                         <Slider {...settings} ref={(slider) => sliderRef = slider}>
                             {slides.map((slide, idx) => {
                                 return (
                                     <div key={idx}>
                                         <div className="flex justify-center space-x-8 w-full flex-row">
-                                            <div className="w-[70%] rounded-lg p-4 text-lg flex items-center space-y-4">
-                                                <div>{slide.text_content}</div>
+                                            <div className="w-[70%] rounded-lg p-4 text-lg flex items-center space-y-4 text-black">
+                                                <div className="text-black">{slide.cardDetailedText}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -174,8 +175,8 @@ export default function Page() {
                                 return (
                                     <div key={idx} >
                                         <div className="flex flex-col justify-center md:space-x-8 w-full md:flex-row">
-                                            <div className="w-[95%] rounded-lg p-4  flex items-center space-y-4">
-                                                <div>{slide.text_content}</div>
+                                            <div className="w-[95%] rounded-lg p-4 text-black  flex items-center space-y-4">
+                                                <div>{slide.cardDetailedText}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -187,7 +188,7 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="p-4 md:p-8 bg-white space-y-4 flex flex-col items-center">
+            <div className="md:px-4 md:py-8 p-4 bg-white space-y-4 flex flex-col items-center">
                 <h1 className="text-center text-2xl md:text-4xl  font-bold text-black">Our <span className="text-[#F19F1F]">Methodology</span></h1>
                 <div className="text-center text-black md:text-xl text-sm font-normal">
                     <p className="italic">Navigating Excellence: From Concept to Completion</p>
@@ -242,7 +243,7 @@ export default function Page() {
 
             </div> */}
 
-            <div className="bg-[#FFFAF2] text-black space-y-6 md:p-8 p-4">
+            <div className="bg-[#FFFAF2] text-black space-y-6  md:px-4 md:py-8 p-4">
                 <h1 className="text-center font-bold text-2xl md:text-4xl "><span className="text-[#F19F1F]">Mission </span>& Vision</h1>
 
                 <div className="space-x-0 md:space-x-2 space-y-4 md:space-y-0 flex flex-col md:flex-row">

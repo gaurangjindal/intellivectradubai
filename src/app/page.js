@@ -234,7 +234,7 @@ export default function Home() {
           <div className="bg-white w-full">
             <div className="relative w-[100%] md:w-[350px] h-[400px]">
               <Image
-                src="/images/homevert.jpg"
+                src="/images/banners/VERTICAL.jpg"
                 alt="Team hands"
                 layout='fill'
               />
@@ -244,7 +244,7 @@ export default function Home() {
           <div className="p-4 w-full z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
             <div className="relative w-[100%] md:w-[400px] h-[200px] max-w-xs">
               <Image
-                src="/images/homehorz.jpg"
+                src="/images/banners/HORIZONTAL.jpg"
                 alt="Team meeting"
                 layout="fill"
               />
@@ -268,7 +268,7 @@ export default function Home() {
             evolving digital landscape. Together, we envision a world where technology empowers,
             connects, and transforms lives, fostering a brighter, more inclusive future for all.
           </p>
-          <div className="w-full h-6 bg-white"></div>
+          <div className="w-full h-2 bg-white"></div>
           <Link href="/about"><Button buttonText={"Read More"} /></Link>
         </div>
       </div>
@@ -361,7 +361,7 @@ export default function Home() {
       <div className="text-black p-4 bg-[#FFFAF2] md:py-8 md:px-4 w-full space-y-6 flex flex-col justify-center items-center">
         <h1 className="md:text-4xl text-2xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
         <ul className="lg:w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
-          <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>
+          <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blogs</li>
           <li className={activeContentType === "news" ? classActive : classUnactive} onClick={() => setActiveContentType("news")}>News</li>
           <li className={activeContentType === "case_study" ? classActive : classUnactive} onClick={() => setActiveContentType("case_study")}>Case Study</li>
           <li className={activeContentType === "events" ? classActive : classUnactive} onClick={() => setActiveContentType("events")}>Events</li>

@@ -26,7 +26,7 @@ export const Footer = () => {
                             <li className='hover:text-[#FFAB2E]'><Link href="/about">About Us</Link></li>
                             <li className='hover:text-[#FFAB2E]'><Link href="/technologypartner">Technology Partners</Link></li>
                             <li className='hover:text-[#FFAB2E]'><Link href="/carrers">Careers</Link></li>
-                            <li className='hover:text-[#FFAB2E]'><Link href="/blog">Content Hub</Link></li>
+                            <li className='hover:text-[#FFAB2E]'><Link href="/contenthub">Content Hub</Link></li>
                         </ul>
                     </div>
                     <div className='flex space-x-0 lg:space-x-10 flex-col lg:flex-row lg:space-y-0'>

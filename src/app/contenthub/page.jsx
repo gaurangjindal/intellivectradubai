@@ -238,11 +238,11 @@ function Page() {
 
     return (
         <div className="bg-white">
-            <PageStarter tit1={"Content Hub"} tit2={""} tit1Col={"black"} descColor={"black"} imageSrc={"/images/blogsHeader.jpg"} desc={"Explore our success stories showcasing transformative solutions and client achievements."}></PageStarter>
+            <PageStarter tit1={"Content Hub"} tit2={""} tit1Col={"black"} descColor={"black"} imageSrc={"/images/banners/contenthubbanner.jpg"} desc={"Explore our success stories showcasing transformative solutions and client achievements."}></PageStarter>
             <div className="text-black p-4 bg-[#FFFAF2] md:py-8 md:px-4 w-full space-y-6 flex flex-col justify-center items-center">
                 <h1 className="md:text-4xl text-2xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
                 <ul className="lg:w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">
-                    <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blog</li>
+                    <li className={activeContentType === "blogs" ? classActive : classUnactive} onClick={() => setActiveContentType("blogs")}>Blogs</li>
                     <li className={activeContentType === "news" ? classActive : classUnactive} onClick={() => setActiveContentType("news")}>News</li>
                     <li className={activeContentType === "case_study" ? classActive : classUnactive} onClick={() => setActiveContentType("case_study")}>Case Study</li>
                     <li className={activeContentType === "events" ? classActive : classUnactive} onClick={() => setActiveContentType("events")}>Events</li>
