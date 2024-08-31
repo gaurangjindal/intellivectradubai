@@ -97,28 +97,14 @@ const Page = () => {
 
     ]
 
+    const imgSrc = "/images/banners/techpartbanner.jpg";
+
     return (
         <div className="text-black bg-white bg-opacity-10 space-y-4">
-            <div
-                className="h-[50vh] w-full bg-cover bg-center flex felx -col items-center justify-center"
-                style={{ backgroundImage: `url(${"/images/banners/techpartbanner.jpg"})` }}
-            >
-                <div className="bg-black px-4 md:px-10 lg:px-20 bg-blend-overlay flex items-center  w-full h-full bg-opacity-10 backdrop-blur-sm">
-                    <div className="flex flex-col space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
-                        <div className="border-[#F19F1F] border-l-2 rounded-lg p-4 space-y-2 md:space-y-4 px-2 md:px-4">
-                            <h1 className="text-2xl text-white md:text-3xl lg:text-4xl">
-                                <span className='text-[#F19F1F]'>Technology</span> Partners
-                            </h1>
-                            <p className="w-full" style={{ color: 'white' }}>
-                                Where Innovation Meets Collaboration.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PageStarter tit1Col={"black"} tit1={"Technology"} tit2={" Partner"} imageSrc={imgSrc} descColor={"black"} desc={"Where Innovation meets Collaboration."} />
             <div className='text-black flex flex-col items-center justify-center px-8 py-3 space-y-4'>
-                <h1 className='text-4xl font-bold text-center'>Fostering partnerships with companies that align with our values</h1>
-                <p className='w-[95%] text-center'>Collaborating with industry-leading technology vendors, we deliver bespoke technology
+                <h1 className='text-4xl font-bold text-justify md:text-center'>Fostering partnerships with companies that align with our values</h1>
+                <p className='w-[95%] md:text-center text-justify'>Collaborating with industry-leading technology vendors, we deliver bespoke technology
                     solutions precisely tailored to meet our customers’ business needs. From Artificial Intelligence
                     to DevOps, Cloud Solutions to Cybersecurity our strategic partnerships ensure access to cutting-
                     edge innovations and expertise, empowering organizations with the latest advancements in
@@ -144,7 +130,7 @@ const Page = () => {
 
             <div className='p-4 w-full flex items-center justify-center md:px-4 md:py-4'>
                 <div className='p-4 space-x-2 flex items-center justify-center border border-black flex flex-col lg:flex-row'>
-                    <p>Our partner network is constantly growing. Don&apos;t see the vendor you&apos;re looking for?</p>
+                    <p>Our partner network is constantly growing. Don&apos;t see the Vendor you&apos;re looking for?</p>
                     <Link href={"/contactus"} className='px-4 bg-[#F19F1F] text-white rounded-lg p-2'>Contact Us</Link>
                 </div>
 

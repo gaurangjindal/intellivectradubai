@@ -34,7 +34,7 @@ export default function Page() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 8000,
         cssEase: "fade",
         arrows: false,
         pauseOnHover: false,
@@ -109,7 +109,7 @@ export default function Page() {
                 <div className="h-full items-center lg:w-[50%] w-full space-y-6">
                     <p className="text-[#F19F1F] md:text-4xl text-2xl tracking-wide">Welcome to IVT</p>
 
-                    <p className="md:text-[18px] text-normal text-[#3F444]">
+                    {/* <p className="md:text-[18px] text-normal text-[#3F444]">
                         Intelli Vectra Technologies empower businesses through innovative technology solutions, our
                         vision is to be the catalyst for digital transformation worldwide. With a commitment to
                         excellence, integrity, and customer-centricity, we strive to redefine the possibilities of IT,
@@ -118,7 +118,14 @@ export default function Page() {
                         expectations, positions us as the ideal partner for organizations seeking to thrive in an ever-
                         evolving digital landscape. Together, we envision a world where technology empowers,
                         connects, and transforms lives, fostering a brighter, more inclusive future for all.
-                    </p>
+                    </p> */}
+                    <p className="md:text-[18px] text-normal text-[#3F444]">Intelli Vectra Technologies stands as a beacon of innovation in the realm of IT solutions, dedicated to pioneering advancements that revolutionize how businesses operate and interact with their ecosystems. Our holistic approach, grounded in a deep-seated commitment to excellence and integrity, ensures that every solution we deliver not only meets but exceeds the expectations of our clients worldwide.</p>
+
+                    <p className="md:text-[18px] text-normal text-[#3F444]">At Intelli Vectra, we believe in the power of technology to transcend boundaries and create meaningful connections. By harnessing the latest advancements in AI, IoT, and digital transformation, we empower enterprises to adapt, grow, and thrive in an increasingly interconnected world. Our collaborative partnerships foster a culture of continuous improvement, where together with our clients, we shape the future landscape of industries.
+
+                    Driven by a passion for innovation and a customer-first philosophy, we are not just technology providers but trusted advisors, guiding organizations through complex digital challenges with clarity and foresight. With every project and partnership, we strive to build a more inclusive and sustainable future, where technology serves as a catalyst for positive change in communities around the globe.</p>
+
+                    <p className="md:text-[18px] text-normal text-[#3F444]">Intelli Vectra Technologies: Redefining possibilities, empowering businesses, and transforming lives for a brighter tomorrow.</p>
                     {/* <p className="md:text-[18px] text-normal text-[#3F444]">Our mission is to utilize the power of technology to empower businesses and individuals, driving positive change and facilitating success in an ever more digital world. Through our unwavering commitment to innovation, expertise, and customer satisfaction, we strive to deliver tailored IT solutions that exceed expectations, optimize efficiency, and unlock new opportunities for growth. With a focus on collaboration, integrity, and continuous improvement, we aim to be a trusted partner for our clients, providing reliable support, strategic guidance, and cutting-edge solutions that drive them towards their goals. Together, we embrace the transformative potential of technology to create a brighter, more connected future for all.</p> */}
 
                     <div className="w-full h-6 bg-white"></div>
@@ -140,7 +147,7 @@ export default function Page() {
                             <div className="border-t-2  relative border-black w-full px-4" >
                                 <div className="flex items-center justify-center flex-col" style={{ position: 'absolute', left: `${posi[slideIndex]}%` }}>
                                     <FaCaretDown fontSize={60} style={{ color: "black" }} />
-                                    <p style={{color: 'black'}}>{years[slideIndex]}</p>
+                                    <p style={{ color: 'black' }}>{years[slideIndex]}</p>
                                 </div>
                             </div>
                             <SampleNextArrow />
@@ -150,7 +157,7 @@ export default function Page() {
                     <div className="h-[2vh] md:hidden">
 
                     </div>
-                    
+
                     <div className="w-full justify-center hidden md:block p-2">
                         <Slider {...settings} ref={(slider) => sliderRef = slider}>
                             {slides.map((slide, idx) => {
@@ -193,11 +200,11 @@ export default function Page() {
                 </div>
                 <div className="w-full flex justify-center">
                     <div className="relative sm:block hidden w-full  h-[300px] md:h-[500px]">
-                        <Image src={"/images/ourMethodology.png"} layout="fill" />
+                        <Image src={"/images/our_method_desktop.png"} layout="fill" />
                     </div>
 
                     <div className="relative w-full block sm:hidden md:w-[80%] h-[130vh] md:h-[400px]">
-                        <Image src={"/images/ourmethodmobile.png"} layout="fill" />
+                        <Image src={"/images/our_method_mobile (1).png"} layout="fill" />
                     </div>
 
 

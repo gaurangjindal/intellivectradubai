@@ -357,7 +357,7 @@ export const jsonforServices = [
 
     {
         "service_id": 4,
-        "service_name": "Datacenter Design And Build",
+        "service_name": "Datacenter Design and Build",
         "description": "Intelli Vectra Technology excels in physical datacenter design and layout, creating efficient, scalable, and secure infrastructures. Our services include space utilization, cooling solutions, power management, and connectivity optimization to ensure optimal performance and energy efficiency.",
         "heading_pic_url": "/images/services/datacenterbuildanddesign.jpg",
         "type": "technology",

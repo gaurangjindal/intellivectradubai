@@ -294,7 +294,7 @@ export default function Home() {
           <BenifitCard
             imagesrc={"/images/bp2.png"}
             title={"CUSTOMER FOCUS"}
-            description={"From the initial consultation to ongoing support, we listen intently, communicate transparently, and remain dedicated to delivering outcomes that exceed your expectations."} />
+            description={"From the initial consultation to ongoing support, we listen intently to our customers, communicate transparently, and remain dedicated to delivering outcomes that exceed your expectations."} />
           <BenifitCard
             imagesrc={"/images/bp1.png"}
             title={"TRANSPARENCY"}
@@ -313,7 +313,7 @@ export default function Home() {
         <div className="w-full md:px-4 md:py-8 text-black space-y-10 bg-[#FFFAF2] flex flex-col">
           <div className="w-full space-y-4 flex-col flex items-center">
             <h1 className="text-2xl md:text-4xl font-bold text-center">Technology <span className="text-[#FFAB2E]">Partners</span></h1>
-            <p className="font-normal italic text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Partnering with industry-leading manufacturers to deliver cutting-edge technology solutions<br /> tailored to your business needs.</p>
+            <p className="font-normal italic text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Where Innovation Meets Collaboration.</p>
           </div>
           <div className="flex items-center justify-center">
             <div className="md:w-[100%] flex flex-wrap justify-center items-center">
