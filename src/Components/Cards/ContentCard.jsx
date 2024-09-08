@@ -12,7 +12,7 @@ export const ContentCard = ({ content }) => {
                 <Image alt='' height={40} width={40} src={content.userImageSrc} className='rounded-[50%]' />
                 <div>
                     <p>Admin</p>
-                    <p className='text-xs'>{"Published By Company Name"}</p>
+                    <p className='text-xs'>{`Published By ${content.username}`}</p>
                 </div>
             </div>
             <div className="h-[70px] overflow-hidden">

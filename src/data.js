@@ -6,6 +6,7 @@ export const jsonforServices = [
     {
         "service_id": 1,
         "service_name": "Infrastructure Design & Optimization",
+        "punch_line" : "Evaluate current infrastructure and plan improvements for optimal performance and scalability.",
         "description": "Intelli Vectra Technology specializes in datacenter design and optimization, offering planning, infrastructure optimization, cooling and power management, network solutions, security measures, and disaster recovery strategies to create efficient, scalable, and secure datacenter infrastructures.",
         "heading_pic_url": "/images/services/datacenter.jpg",
         "type": "technology",
