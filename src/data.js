@@ -12,7 +12,7 @@ export const jsonforServices = [
         "type": "technology",
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Empowering your IT Infrastructure for agility and scalability.",
         "logo_img_src": '/images/icons/database.png',
         "points": [
             {
@@ -74,7 +74,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "logo_img_src": '/images/icons/robot_2.png',
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Transforming your businesses through intelligent automation solutions.",
         "points": [
             {
                 "heading": "AI Consulting Services",
@@ -149,7 +149,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "logo_img_src": '/images/icons/cloud.png',
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Optimizing your journey to the cloud- seamless, secure, scalable solutions.",
         "points":
             [
                 {
@@ -220,7 +220,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "logo_img_src": '/images/icons/shield.png',
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Fortifying your business with next-gen robust, reliable cyber security solutions.",
         "points": [
             {
                 heading: "Cybersecurity Assessment and Strategy Services",
@@ -299,7 +299,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "logo_img_src": "/images/icons/all_inclusive.png",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Deliver faster, smarter, and more efficiently with our DevOps solutions.",
         "points": [
             {
                 heading: "DevOps Consulting Services",
@@ -365,7 +365,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "logo_img_src": "/images/icons/home.png",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Precision- built data centers- scalable, secure, and sustainable for seamless operations.",
         "points": [
             {
                 "heading": "Data Center Design and Architecture",
@@ -426,7 +426,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "logo_img_src": "/images/icons/support_agent.png",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Optimize, innovate, and scale with expert SAP services.",
         "points": [
             {
                 "heading": "Enterprise Resource Planning (ERP) solutions",
@@ -514,7 +514,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "logo_img_src": "/images/icons/managed_services.png",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Optimizing operations, reducing complexity with our Managed Services.",
         "points":
             [
                 {
@@ -566,7 +566,7 @@ export const jsonforServices = [
         "image1": "/images/dsimage1.png",
         "image2": "/images/dsimage2.png",
         "logo_img_src": "/images/icons/group_add.png",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+        "short_description": "Scale your workforce with flexibility & expertise when you need.",
         "points": [
             {
                 heading: "Managed IT Support Services",
