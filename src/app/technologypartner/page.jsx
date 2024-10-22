@@ -91,8 +91,9 @@ const Page = () => {
             link: "https://www.proofpoint.com/us",
         },
         {
-            imageSrc: "/images/techpartner/tp20.png",
-            link: "https://www.indusface.com/",
+            imageSrc: "/images/techpartner/tp20.jpeg",
+            link: "https://www.veeam.com/",
+            out: true
         },
 
     ]
