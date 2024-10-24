@@ -338,7 +338,7 @@ export default function Home() {
   const classUnactive = "text-xl cursor-pointer md:px-6 h-full items-center flex hover:border-b-2 hover:border-[#FFAB2E]"
   return (
     <div className="h-min-[100vh] w-full bg-white">
-      <PageStarterVideo tit1={"Solutions"} videoSrc={"videos/homePagebgVideo.mp4"} tit2={" & Services"} tit1Col={"#F19F1F"} desc={"Empowering businesses with agile, transparent, and innovative technology solutions, Intelli Vectra Technologies drives success through collaboration and passionate expertise."} descColor={"white"} link={"/solutionandservices"} />
+      <PageStarterVideo tit1={"Solutions"} videoSrc={"https://intellivectrawebbucket.s3.ap-south-1.amazonaws.com/homePagebgVideo.mp4"} tit2={" & Services"} tit1Col={"#F19F1F"} desc={"Empowering businesses with agile, transparent, and innovative technology solutions, Intelli Vectra Technologies drives success through collaboration and passionate expertise."} descColor={"white"} link={"/solutionandservices"} />
 
       <div className="w-full md:px-4 md:py-8 p-4 lg:space-x-20 bg-white text-black justify-center flex lg:flex-row flex-col">
         <div className="flex lg:w-[40%] w-full">
