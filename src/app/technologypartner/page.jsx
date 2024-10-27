@@ -8,17 +8,17 @@ const Page = () => {
     const partners = [
         {
             imageSrc: "/images/techpartner/tp6.png",
-            link: "https://www.microsoft.com/en-in",
+            link: "https://www.microsoft.com/",
             out: true,
         },
         {
             imageSrc: "/images/techpartner/tp11.png",
-            link: "https://www.hpe.com/in/en/home.html",
+            link: "https://www.hpe.com/",
             out: true
         },
         {
             imageSrc: "/images/techpartner/tp5.png",
-            link: "https://www.redhat.com/en",
+            link: "https://www.redhat.com/",
             out: true
         },
         {
@@ -69,8 +69,8 @@ const Page = () => {
             out: true
         },
         {
-            imageSrc: "/images/techpartner/tp8.png",
-            link: "https://www.prolabs.com/",
+            imageSrc: "/images/techpartner/tp8.svg",
+            link: "https://www.fortinet.com/",
             out: true
         },
         {
@@ -79,24 +79,24 @@ const Page = () => {
         },
         {
             imageSrc: "/images/techpartner/tp16.png",
-            link: "https://www.arista.com/en/"
+            link: "https://www.trendmicro.com/"
         },
-
+    
         {
             imageSrc: "/images/techpartner/tp18.jpg",
             link: "https://www.commvault.com/",
         },
         {
             imageSrc: "/images/techpartner/tp19.jpg",
-            link: "https://www.proofpoint.com/us",
+            link: "https://www.proofpoint.com/",
         },
         {
             imageSrc: "/images/techpartner/tp20.jpeg",
             link: "https://www.veeam.com/",
             out: true
         },
-
-    ]
+    
+      ]
 
     const imgSrc = "/images/banners/techpartbanner.jpg";
 

@@ -515,45 +515,48 @@ export const jsonforServices = [
         "image2": "/images/dsimage2.png",
         "logo_img_src": "/images/icons/managed_services.png",
         "short_description": "Optimizing operations, reducing complexity with our Managed Services.",
-        "points":
-            [
-                {
-                    "heading": "Cloud Migration Services",
-                    "desc": `Minimize downtime and seamlessly transition your infrastructure to the cloud with expert
-                    planning and execution, ensuring optimized performance and scalability.`,
-                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
-                },
-                {
-                    "heading": "Cloud Architecture Design and Implementation",
-                    "desc": "Customized cloud solutions tailored to your business needs, designed and implemented by our expert architects.",
-                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
-                },
-                {
-                    "heading": "Cloud Platform Management",
-                    "desc": "Proactive management and optimization of your cloud platforms to ensure optimal performance and scalability.",
-                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
-                },
-                {
-                    "heading": "Cloud Backup and Disaster Recovery",
-                    "desc": "Robust backup and recovery solutions to safeguard your data against unforeseen disasters and ensure business continuity.",
-                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
-                },
-                {
-                    "heading": "Serverless Computing Solutions",
-                    "desc": "Harness the power of serverless computing to build and deploy applications without the complexity of managing infrastructure.",
-                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
-                },
-                {
-                    "heading": "Cloud Cost Management and Optimization",
-                    "desc": "Monitor, analyze, and optimize your cloud spending to maximize ROI and minimize costs.",
-                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
-                },
-                {
-                    "heading": "Cloud Governance and Compliance",
-                    "desc": "Ensure adherence to regulatory requirements and industry best practices with our comprehensive cloud governance and compliance solutions.",
-                    "logo": <MdOutlineSecurity style={{ fontSize: '60px' }} />
-                }
-            ]
+        "points": [
+            {
+                heading: "Managed IT Support Services",
+                desc: "Our IT support services provide comprehensive assistance for your technology needs, including troubleshooting, maintenance, and user assistance, ensuring smooth operations and minimizing downtime.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Managed Security Services",
+                desc: "We offer proactive monitoring and protection against cyber threats, utilizing advanced security tools and techniques to safeguard your infrastructure, data, and sensitive information.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Managed Cloud Services",
+                desc: "Our expert team manages and optimizes your cloud infrastructure, ensuring high availability, scalability, and performance while leveraging the latest cloud technologies to drive business growth.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Managed Backup and Disaster Recovery Services",
+                desc: "Protect your critical data and ensure business continuity with our managed backup and disaster recovery solutions, which include regular backups, data replication, and rapid recovery procedures.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Managed Network Services",
+                desc: "Our managed network services provide reliable management and optimization of your network infrastructure, ensuring efficient data transmission, secure connectivity, and minimal downtime.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Managed Endpoint Security Services",
+                desc: "Protect your endpoints from threats and vulnerabilities with our managed endpoint security services, including antivirus, firewall management, and advanced threat detection to mitigate risks effectively.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Managed Application Services",
+                desc: "Ensure the reliability and performance of your critical business applications with our managed application services, which include installation, updates, monitoring, and support to keep your applications running smoothly.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            },
+            {
+                heading: "Managed Compliance Services",
+                desc: "Stay compliant with industry regulations and standards while maintaining data security with our managed compliance services, which include risk assessments, policy development, and ongoing monitoring to address compliance requirements effectively.",
+                logo: <MdOutlineSecurity style={{ fontSize: '60px' }} />
+            }
+        ]
 
     },
 
