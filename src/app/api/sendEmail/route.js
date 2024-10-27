@@ -17,7 +17,7 @@ export async function POST(req, res) {
         // Define email options
         let mailOptions = {
             from: '"Your Name" <your-email@example.com>', // sender address
-            to: 'milangupta95@gmail.com', // list of receivers
+            to: process.env.EMAIL, // list of receivers
             subject: subject, // Subject line
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`, // plain text body
             html: `<p><strong>Name:</strong> ${name}</p>

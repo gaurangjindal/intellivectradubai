@@ -238,7 +238,7 @@ function Page() {
 
     return (
         <div className="bg-white">
-            <PageStarter tit1={"Content Hub"} tit2={""} tit1Col={"black"} descColor={"black"} imageSrc={"/images/banners/contenthubbanner.jpg"} desc={"Explore our success stories showcasing transformative solutions and client achievements."}></PageStarter>
+            <PageStarter tit1={"Content"} tit2={" Hub"} tit1Col={"black"} descColor={"black"} imageSrc={"/images/banners/contenthubbanner.jpg"} desc={"Empowering Innovation: Transformative Solutions, Tangible Results."}></PageStarter>
             <div className="text-black p-4 bg-[#FFFAF2] md:py-8 md:px-4 w-full space-y-6 flex flex-col justify-center items-center">
                 <h1 className="md:text-4xl text-2xl text-center font-bold">Content <span className="text-[#FFAB2E]">Hub</span></h1>
                 <ul className="lg:w-[60%] hidden md:flex md:justify-between space-x-6 text-[#FFAB2E] items-center justify-center bg-gradient-to-r  from-white via-[#F4F4F4] to-white h-[50px]">

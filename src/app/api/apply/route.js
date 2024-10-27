@@ -31,7 +31,7 @@ export async function POST(req, res) {
 
         let mailOptions = {
             from: `"${name}" <${email}>`,
-            to: 'milangupta95@gmail.com', // Replace with your recipient email
+            to: process.env.EMAIL, // Replace with your recipient email
             subject: `Application for ${appliedFor}`,
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nApplied For: ${appliedFor}\nCover Letter:\n${coverletter}`,
             html: `<p><strong>Name:</strong> ${name}</p>

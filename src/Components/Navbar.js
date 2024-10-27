@@ -228,7 +228,7 @@ export const Navbar = () => {
                 </ul>
             </div>
 
-            <div className={`md:space-x-4 z-[1000] bg-white absolute md:top-14 top-[200px] right-[400px] p-4 rounded-lg ${(menuHidden) ? 'hidden hover:flex' : 'hidden md:flex'}`}>
+            <div className={`md:space-x-4 z-[1000] bg-white absolute md:top-10 top-[150px] right-[400px] p-4 rounded-lg ${(menuHidden) ? 'hidden hover:flex' : 'hidden md:flex'}`}>
                 <div className='text-black'>
                     <ul className='space-y-2'>
                         {
@@ -242,7 +242,7 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className={`md:space-x-4 z-[1000] md:hidden  bg-white absolute md:top-14 top-[200px] left-[400px] p-4 rounded-lg ${(menuHiddenMobile) ? 'hidden' : 'flex'}`}>
+            <div className={`md:space-x-4 z-[1000] md:hidden  bg-white absolute md:top-10 top-[150px] left-[400px] p-4 rounded-lg ${(menuHiddenMobile) ? 'hidden' : 'flex'}`}>
                 <div className='text-black'>
                     <ul className='space-y-2'>
                         {

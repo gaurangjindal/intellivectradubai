@@ -1,22 +1,11 @@
 import * as React from 'react';
+import { PageStarter } from '@/Components/PageStarter';
 
 const Page = () => {
     return (
         <div>
-            <div
-                className="h-[50vh] w-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${"/images/banners/techpartbanner.png"})` }}
-            >
-                <div className="bg-black px-4 md:px-10 lg:px-20 bg-blend-overlay flex items-center  w-full h-full bg-opacity-10 backdrop-blur-sm">
-                    <div className="flex flex-col space-y-4 md:space-y-8 max-w-full md:max-w-2xl lg:max-w-none">
-                        <div className="border-[#F19F1F] border-l-2 rounded-lg p-4 space-y-2 md:space-y-4 px-2 md:px-4">
-                            <h1 className="text-2xl text-white md:text-3xl lg:text-4xl">
-                                <span className='text-[#F19F1F]'>Privacy</span> & Policy
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PageStarter tit1={"Privacy"} tit2={" & Policy"} tit1Col={"black"} descColor={"black"} imageSrc={"/images/banners/techpartbanner.png"} desc={""}></PageStarter>
+
 
             <div className="px-6 py-2 sm:px-12 sm:py-2">
                 <div className="w-full mx-auto bg-white text-black p-8 rounded-lg ">
