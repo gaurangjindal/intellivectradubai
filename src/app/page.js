@@ -344,7 +344,7 @@ export default function Home() {
         <div className="flex lg:w-[40%] w-full">
           {/* First Image */}
           <div className="bg-white w-full">
-            <div className="relative w-[100%] md:w-[350px] h-[400px]">
+            <div className="relative w-[100%] md:w-[450px] md:h-[400px] h-[250px]">
               <Image
                 src="/images/banners/VERTICAL.jpg"
                 alt="Team hands"
@@ -353,8 +353,8 @@ export default function Home() {
             </div>
           </div>
           {/* Second Image */}
-          <div className="p-4 w-full z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
-            <div className="relative w-[100%] md:w-[400px] h-[200px] max-w-xs">
+          <div className="p-4 w-full z-[100] bg-white rounded-lg  md:mt-[300px] mt-[150px] md:ml-[-200px] ml-[-100px]">
+            <div className="relative w-[100%] md:w-[550px] md:h-[200px] h-[150px] max-w-xs">
               <Image
                 src="/images/banners/HORIZONTAL.jpg"
                 alt="Team meeting"
@@ -422,7 +422,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center">
-        <div className="w-full md:px-4 md:py-8 text-black space-y-10 bg-[#FFFAF2] flex flex-col">
+        <div className="w-full md:px-4 md:py-8 p-4 text-black space-y-10 bg-[#FFFAF2] flex flex-col">
           <div className="w-full space-y-4 flex-col flex items-center">
             <h1 className="text-2xl md:text-4xl font-bold text-center">Technology <span className="text-[#FFAB2E]">Partners</span></h1>
             <p className="font-normal italic text-sm md:text-xl tracking-wide text-center md:w-[70%] w-[100%]">Where Innovation Meets Collaboration.</p>
@@ -449,19 +449,19 @@ export default function Home() {
               <p className="font-normal text-sm italic md:text-xl tracking-wide text-center md:w-[70vw] w-[95vw]">Our achievements at Intelli Vectra Technologies reflect our commitment to innovation, client satisfaction, and transformative impact in technology solutions.</p>
             </div>
             <div className="flex flex-row justify-center">
-              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+              <div className="md:p-8 p-2 text-center space-y-4 border-r">
                 <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">3+</h1>
                 <p className="font-bold md:text-xl text-sm tracking-wider">Our Presence</p>
               </div>
-              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+              <div className="md:p-8 p-2 text-center space-y-4 border-r">
                 <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">50+</h1>
                 <p className="font-bold md:text-xl text-sm tracking-wider">Clientele</p>
               </div>
-              <div className="md:p-8 p-4 text-center space-y-4 border-r">
+              <div className="md:p-8 p-2 text-center space-y-4 border-r">
                 <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">80+</h1>
                 <p className="font-bold md:text-xl text-sm tracking-wider">Projects Executed</p>
               </div>
-              <div className="md:p-8 p-4 text-center space-y-4">
+              <div className="md:p-8 p-2 text-center space-y-4">
                 <h1 className="text-[#F19F1F] text-xl md:text-3xl font-bold">10+</h1>
                 <p className="font-bold md:text-xl text-sm tracking-wider">Accolades</p>
               </div>

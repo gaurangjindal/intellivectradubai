@@ -87,7 +87,7 @@ export default function Page() {
                 <div className="flex lg:w-[40%] w-full">
                     {/* First Image */}
                     <div className="bg-white w-full">
-                        <div className="relative w-[100%] md:w-[350px] h-[400px]">
+                        <div className="relative w-[100%] md:w-[450px] md:h-[400px] h-[250px]">
                             <Image
                                 src="/images/banners/VERTICAL.jpg"
                                 alt="Team hands"
@@ -96,8 +96,8 @@ export default function Page() {
                         </div>
                     </div>
                     {/* Second Image */}
-                    <div className="p-4 w-full z-[100] bg-white rounded-lg  mt-[300px] ml-[-200px]">
-                        <div className="relative w-[100%] md:w-[400px] h-[200px] max-w-xs">
+                    <div className="p-4 w-full z-[100] bg-white rounded-lg  md:mt-[300px] mt-[150px] md:ml-[-200px] ml-[-100px]">
+                        <div className="relative w-[100%] md:w-[550px] md:h-[200px] h-[150px] max-w-xs">
                             <Image
                                 src="/images/banners/HORIZONTAL.jpg"
                                 alt="Team meeting"
@@ -123,7 +123,7 @@ export default function Page() {
 
                     <p className="md:text-[18px] text-normal text-[#3F444]">At Intelli Vectra, we believe in the power of technology to transcend boundaries and create meaningful connections. By harnessing the latest advancements in AI, IoT, and digital transformation, we empower enterprises to adapt, grow, and thrive in an increasingly interconnected world. Our collaborative partnerships foster a culture of continuous improvement, where together with our clients, we shape the future landscape of industries.
 
-                    Driven by a passion for innovation and a customer-first philosophy, we are not just technology providers but trusted advisors, guiding organizations through complex digital challenges with clarity and foresight. With every project and partnership, we strive to build a more inclusive and sustainable future, where technology serves as a catalyst for positive change in communities around the globe.</p>
+                        Driven by a passion for innovation and a customer-first philosophy, we are not just technology providers but trusted advisors, guiding organizations through complex digital challenges with clarity and foresight. With every project and partnership, we strive to build a more inclusive and sustainable future, where technology serves as a catalyst for positive change in communities around the globe.</p>
 
                     <p className="md:text-[18px] text-normal text-[#3F444]">Intelli Vectra Technologies: Redefining possibilities, empowering businesses, and transforming lives for a brighter tomorrow.</p>
                     {/* <p className="md:text-[18px] text-normal text-[#3F444]">Our mission is to utilize the power of technology to empower businesses and individuals, driving positive change and facilitating success in an ever more digital world. Through our unwavering commitment to innovation, expertise, and customer satisfaction, we strive to deliver tailored IT solutions that exceed expectations, optimize efficiency, and unlock new opportunities for growth. With a focus on collaboration, integrity, and continuous improvement, we aim to be a trusted partner for our clients, providing reliable support, strategic guidance, and cutting-edge solutions that drive them towards their goals. Together, we embrace the transformative potential of technology to create a brighter, more connected future for all.</p> */}
